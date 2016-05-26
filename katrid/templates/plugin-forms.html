@@ -1,0 +1,313 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content">
+
+  <div class="panel panel-default data-panel">
+    <div class="panel-body">
+      <h2>jQuery-ui</h2>
+      <h3>Autocomplete</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <label>Tags</label>
+          <input id="tags" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>Datepicker</h3>
+      <div class="row">
+        <div class="form-group">
+          <div class="col-sm-4">
+            <input type="text" class="datepicker form-control">
+          </div>
+          <div class="col-sm-4">
+            <div class="input-daterange input-group">
+              <input type="text" class="form-control" name="start">
+              <span class="input-group-addon">to</span>
+              <input type="text" class="form-control" name="end">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div id="inline-datepicker"></div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Slider</h3>
+      <div class="form-group">
+        <div class="col-sm-4">
+          <div id="jq-slider"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div id="jq-slider-2"></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider - slider-primary</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4 slider-primary">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4 slider-primary">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4 slider-primary">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider - slider-success</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4 slider-success">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4 slider-success">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4 slider-success">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider - slider-warning</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4 slider-warning">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4 slider-warning">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4 slider-warning">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider - slider-info</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4 slider-info">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4 slider-info">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4 slider-info">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+      <h3>RangeSlider - slider-danger</h3>
+
+      <div class="form-group">
+        <div class="col-sm-4 slider-danger">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+        </div>
+
+        <div class="col-sm-4 slider-danger">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450">
+        </div>
+
+        <div class="col-sm-4 slider-danger">
+          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                 data-slider-to="450" data-slider-grid="true">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+
+  <div class="panel panel-default data-panel">
+    <div class="panel-body">
+      <h3>Masked Input</h3>
+      <div class="form-group">
+        <label>Date</label>
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder="-">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="text" class="form-control" data-mask="(999)999-9999" placeholder="Phone number">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Credit Card</label>
+        <div class="row">
+          <div class="col-sm-4">
+            <input type="text" class="form-control" data-mask="9999-9999-9999-9999" data-mask-placeholder="*"
+                   placeholder="Credit Card Number">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default data-panel">
+    <div class="panel-body">
+      <h3>Select Element</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <select id="id-select-1" class="form-control">
+            <option>Choose an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+      </div>
+      <h3>Select Multiple</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <select id="id-select-1" class="form-control" multiple>
+            <option>Choose an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+      </div>
+      <h3>Select2 Plugin</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <select id="id-select2-1" class="form-control">
+            <option>Choose an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+      </div>
+      <h3>Select2 Multiple</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <select class="form-control select2" multiple>
+            <option>Choose an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block additional_scripts %}
+<script>
+  $(document).ready(function () {
+    // auto complete
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $("#tags").autocomplete({
+      source: availableTags
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('#id-select2-1').select2();
+    $('.select2').select2();
+
+    // jquery.maskedinput
+    $('[data-mask]').each(function (idx, el) {
+      el = $(el);
+      var placeholder = el.data('mask-placeholder');
+      console.log(placeholder);
+      el.mask(el.data('mask'), {placeholder: placeholder});
+    });
+
+    $('.datepicker').datepicker({
+      autoclose: true
+    });
+
+    $('#jq-slider').slider();
+    $('#jq-slider-2').slider({range: true, min: 0, max: 500, values: [75, 300]});
+    $('.slider').each(function (idx, el) {
+      el = $(el);
+      var min = el.data('slider-min'), max = el.data('slider-max'), from = el.data('slider-value'), to = el.data('slider-to'), grid = el.data('slider-grid');
+      if (!from) from = el.data('slider-from');
+      var cfg = {min: min, max: max, from: from};
+      if (to) {
+        cfg.to = to;
+        cfg.type = 'double';
+      }
+      if (grid) cfg.grid = true;
+      el.ionRangeSlider(cfg);
+    });
+
+    $('.input-daterange').datepicker({});
+    $('#inline-datepicker').datepicker({});
+  });
+</script>
+
+{% endblock %}

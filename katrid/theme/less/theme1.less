@@ -1,0 +1,112 @@
+@import "variables.less";
+
+body {
+  background: #eeeeee;
+}
+
+.skin(@bg-color) {
+  .navbar.navbar-inverse {
+    background: @bg-color;
+    border: none;
+    color: #ffffff;
+  }
+
+  .navbar-header {
+    width: 220px;
+    border-right: none;
+    background: rgba(255, 255, 255, .1);
+  }
+
+  #left-menu.skin .menu-item>a {
+    background: @bg-color;
+    color: lighten(@bg-color, 67%);
+  }
+  #left-menu.skin .menu-item>a:hover {
+    background: lighten(@bg-color, 10%);
+    color: #ffffff;
+  }
+
+  #left-menu.skin li.menu-item {
+    border-top: 1px solid lighten(@bg-color, 7%);
+  }
+  #left-side-menu > li.menu-item:last-child {
+    border-bottom: 1px solid lighten(@bg-color, 7%);
+  }
+  #main-content>.footer {
+    background: @bg-color;
+    color: #ffffff;
+  }
+
+}
+
+#left-side-menu > .menu-item > a {
+  background: #eeeeee;
+}
+
+/*#left-menu .menu-item > a {
+  color: @text-color;
+  background: transparent;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+#left-menu li.menu-item {
+  border: none;
+  font-weight: 500;
+}
+*/
+
+#left-menu {
+  //background: #e67e22;
+  //top: 50px;
+  .logo-area {
+    background: #ffffff;
+  }
+}
+
+.navbar.navbar-inverse .navbar-search-control {
+  background: white;
+  color: @text-color;
+}
+
+.navbar.navbar-inverse li.border-right {
+  border-right: none;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background: rgba(0,0,0,.20);
+}
+
+.gray-skin {
+  .skin(#2d2d2d);
+}
+.gray-skin.bg-skin {
+  background: #2d2d2d;
+}
+
+
+.blue-skin {
+  .skin(#3292d3);
+}
+.blue-skin.bg-skin {
+  background: #3292d3;
+}
+
+.red-skin {
+  .skin(#e64b3b);
+}
+.red-skin.bg-skin {
+  background: #e64b3b;
+}
+
+.navy-skin {
+  .skin(#143c58);
+}
+.navy-skin.bg-skin {
+  background: #143c58;
+}

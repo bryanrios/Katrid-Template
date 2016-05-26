@@ -1,0 +1,30 @@
+<!-- web.layout -->
+<!DOCTYPE html>
+<html style="height: 100%;" ng-app="katrid.services">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>{% block html_title %}Orun{% endblock %}</title>
+    <link rel="shortcut icon" href="/client/static/favicon.ico" type="image/x-icon"/>
+
+    <!-- web.common-assets -->
+
+    <link rel="stylesheet" type="text/css" href="../dist/bootstrap/css/bootstrap.min.css"/>
+    <script src="../dist/jquery/jquery-2.2.3.min.js"></script>
+    <script src="../dist/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../dist/angular/angular.js"></script>
+    <script src="../dist/angular/angular-resource.min.js"></script>
+    <script src="../src/js/components.js"></script>
+
+    <!-- end web.common-assets -->
+
+  </head>
+  <body ng-controller="testController" ng-init="test()">
+
+    <input ng-model="field1">
+    <label>{{ field1 }}</label>
+    <p>{{ a }}</p>
+
+  </body>
+</html>
+<!-- end web.layout -->

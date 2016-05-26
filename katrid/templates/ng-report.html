@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <link href="plugins/ng-report/ng-report.css" type="text/css" rel="stylesheet">
+  <link href="plugins/ng-report/print.css" type="text/css" rel="stylesheet">
+  <style>@page { margin: 0}</style>
+{% endblock %}
+{% block content %}
+
+  <div class="content">
+    <div class="panel panel-default data-panel">
+      <div class="panel-body">
+        <button id="btn-preview" class="btn btn-default"><i class="fa fa-fw fa-print"></i> Preview</button>
+        <div id="report-container"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+<script src="js/angular/angular.min.js"></script>
+<script src="plugins/ng-report/ng-report.min.js"></script>
+<script src="plugins/ng-report/ng-report-test.js"></script>
+<script>
+  angular.element(document).ready(function() {
+    $('#btn-preview').click(function() {
+      var rep = showReport(angular.element('#report-container'), testReport);
+      $(this).hide();
+    });
+  })
+</script>
+{% endblock %}
