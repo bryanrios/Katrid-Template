@@ -4,6 +4,10 @@
  * Copyright 2013-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*!
+ * Katrid's Gruntfile
+ * Copyright 2016 Katrid
+ */
 
 module.exports = function (grunt) {
   'use strict';
@@ -175,6 +179,30 @@ module.exports = function (grunt) {
         },
         src: 'less/theme.less',
         dest: 'dist/css/<%= pkg.name %>-theme.css'
+      },
+      // Katrid style.less
+      compileStyle: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'style.css.map',
+          sourceMapFilename: 'dist/css/style.css.map'
+        },
+        src: 'less/style.less',
+        dest: 'dist/css/style.css'
+      },
+      // Katrid skins.less
+      compileSkin: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'skins.css.map',
+          sourceMapFilename: 'dist/css/skins.css.map'
+        },
+        src: 'less/skins.less',
+        dest: 'dist/css/skins.css'
       }
     },
 

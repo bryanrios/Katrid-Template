@@ -9,6 +9,28 @@ templates = [
     'xeditable-forms.html',
     'plugin-forms.html',
     'ng-report.html',
+    'flot.html',
+    'chartjs.html',
+    'dashboard-1.html',
+    'dashboard-2.html',
+    'buttons.html',
+    'easy-pie-chart.html',
+    'crm.html',
+    'advanced-forms.html',
+    'blog.html',
+    'article.html',
+    'login.html',
+    'index.html',
+    '404.html',
+    '403.html',
+    '500.html',
+    'debug-500.html',
+    '550.html',
+    'typography.html',
+    'panels.html',
+    'wells.html',
+    'font-awesome.html',
+    'faq.html',
 ]
 
 for tmp in templates:
@@ -17,4 +39,4 @@ for tmp in templates:
     f = open('output/' + tmp, 'w')
     f.write(s)
 
-os.system('cp output/*.html ../theme/dist/')
+os.system('mv output/*.html ../theme/dist/')

@@ -1,0 +1,30 @@
+
+.bg-fn(@bg-color) {
+  background-color: @bg-color !important;
+  color: lighten(@bg-color, 50%) !important;
+}
+
+.bg-white {
+  background: #ffffff !important;
+}
+.bg-red {
+  .bg-fn(#e64b3b);
+}
+.bg-deep-purple {
+  .bg-fn(@brand-deep-purple);
+}
+.bg-deep-orange {
+  .bg-fn(@brand-deep-orange);
+}
+.bg-blue-gray {
+  .bg-fn(@brand-blue-gray)
+}
+.bg-light-blue {
+  .bg-fn(@brand-light-blue);
+}
+.bg-light-green {
+  .bg-fn(@brand-light-green);
+}
+.bg-green {
+  .bg-fn(@brand-green);
+}

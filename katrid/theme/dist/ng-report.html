@@ -14,13 +14,15 @@
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
-  <!-- Bootstrap theme -->
+  <!-- Bootstrap example theme -->
   <!--link href="css/bootstrap-theme.css" rel="stylesheet"-->
 
-  <!-- Katrid style -->
-  <link href="css/style.css" rel="stylesheet">
-
+  <!-- Font-awesome -->
   <link href="css/font-awesome.css" rel="stylesheet">
+
+  <!-- Pe-icon-7-stroke -->
+  <link href="plugins/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="plugins/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -34,7 +36,12 @@
   <link href="plugins/select2-3.5.4/select2.css" type="text/css" rel="stylesheet">
   <link href="plugins/select2-3.5.4/select2-bootstrap.css" type="text/css" rel="stylesheet">
 
-  <link href="css/theme1.css" type="text/css" rel="stylesheet">
+  <!-- Katrid style -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/skins.css" type="text/css" rel="stylesheet">
+
+  <!-- demo.css -->
+  <link href="css/demo.css" type="text/css" rel="stylesheet">
 
   <!-- extra head -->
   
@@ -50,13 +57,6 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse">
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
     <ul class="dropdown-menu animated flipInX">
@@ -66,17 +66,21 @@
     </ul>
 
   </div>
+  <div class="header-link hide-left-menu">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="small-logo">
+    <span id="current-menu-name">Accounting</span>
+  </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="border-right">
-        <a href="#"><i class="fa fa-lg fa-bars"></i></a>
-      </li>
-
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-           aria-expanded="false">Shortcuts <span class="caret"></span></a>
+           aria-expanded="false">Shortcuts <span class="caret"></span>
+        </a>
         <ul class="dropdown-menu animated flipInX">
-          <li><a href="#">Action</a></li>
+          <li><a href="ng-pos.html" target="_blank">POS (Point of Sales)</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
           <li role="separator" class="divider"></li>
@@ -85,17 +89,25 @@
           <li><a href="#">One more separated link</a></li>
         </ul>
       </li>
-
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Type your search here..."> <i class="fa fa-fw fa-search"></i></li>
-
+      <li><a href="javascript:void(0);" data-action="voiceCommand" title="Execute command voice"><i class="fa fa-microphone"></i></a></li>
+      <li><a href="javascript:void(0);" data-action="fullScreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
+      <li class="user-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <img class="user-avatar" src="img/user-avatar.jpg"></a>
+        <ul class="dropdown-menu animated flipInX">
+          <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-sign-out"></i> Sign out</a></li>
+        </ul>
+      </li>
       <li><a href="#" title="Logout"><i class="fa fa-lg fa-sign-out"></i></a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </nav>
 <aside id="left-menu" class="sidebar skin">
-  <div class="logo-area">
+  <div class="logo-area animated fadeIn" style="display: none;">
     <a href="/">
       <img id="avatar" src="img/logo.png" alt="avatar">
     </a>
@@ -103,30 +115,35 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Dashboard <span
-            class="label label-danger pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="dashboard-1.html">Dashboard 1</a>
+          </li>
+          <li class="menu-item">
+            <a href="dashboard-2.html">Dashboard 2</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRM / Sales <span
-            class="label label-warning pull-right">New</span><br>
-          <small>CRM and sales management...</small>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
+          <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+          </li>
+          <li class="menu-item">
+            <a href="crm.html">CRM (Opportunities)</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> BI / Reporting <span
-            class="label label-info pull-right">New</span><br>
+            class="label label-info pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -136,8 +153,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Messages <span class="badge">10</span> <span
-            class="label label-primary pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
+            class="label label-primary pull-right animated bounceIn">New</span><br>
           <small>You got 10 new messages...</small>
         </a>
         <ul class="nav">
@@ -147,7 +164,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>
           <small>CRUD, REST and Ajax examples...</small>
         </a>
         <ul class="nav">
@@ -162,11 +179,13 @@
             <a href="forms.html">Basic Forms</a>
           </li>
           <li class="menu-item">
+            <a href="advanced-forms.html">Advanced Forms</a>
+          </li>
+          <li class="menu-item">
             <a href="xeditable-forms.html">X-Editable Forms</a>
           </li>
           <li class="menu-item">
             <a href="plugin-forms.html">Plugin Controls</a>
-          </li>
           </li>
         </ul>
       </li>
@@ -174,7 +193,13 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> Graphs</a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="flot.html">Flot</a>
+          </li>
+          <li class="menu-item">
+            <a href="chartjs.html">Chart.js</a>
+          </li>
+          <li class="menu-item">
+            <a href="easy-pie-chart.html">Easy pie chart</a>
           </li>
         </ul>
       </li>
@@ -190,10 +215,27 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> UI Elements</a>
         <ul class="nav">
           <li class="menu-item">
+            <a href="typography.html">Typography</a>
+          </li>
+          <li class="menu-item">
             <a href="buttons.html">Buttons</a>
           </li>
           <li class="menu-item">
-            <a href="buttons.html">Icons</a>
+            <a href="#">Icons</a>
+            <ul class="nav">
+              <li>
+                <a href="font-awesome.html">Font Awesome</a>
+              </li>
+              <li>
+                <a href="#">Glyph Icons</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="panels.html">Panels</a>
+          </li>
+          <li class="menu-item">
+            <a href="wells.html">Wells</a>
           </li>
           <li class="menu-item">
             <a href="buttons.html">Tree View</a>
@@ -207,7 +249,21 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> App Views</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-book"></i> App Views</a>
+        <ul class="nav">
+          <li class="menu-item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="article.html">Article</a>
+          </li>
+          <li class="menu-item">
+            <a href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="tables.html">Basic Tables</a>
@@ -215,26 +271,28 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Widgets</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="login.html">Login</a>
+          </li>
+          <li class="menu-item">
+            <a href="404.html">Error 404</a>
+          </li>
+          <li class="menu-item">
+            <a href="403.html">Error 403</a>
+          </li>
+          <li class="menu-item">
+            <a href="500.html">Error 500</a>
+          </li>
+          <li class="menu-item">
+            <a href="debug-500.html">Debug 500</a>
+          </li>
+          <li class="menu-item">
+            <a href="550.html">Error 550</a>
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Landing Pages</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
     </ul>
   </nav>
 </aside>
@@ -258,6 +316,11 @@
 </footer>
 </div> <!-- /container -->
 
+<div id="demo-settings" title="Theme settings">
+  <span class="demo"><i class="fa fa-lg fa-gear"></i></span>
+</div>
+
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -274,6 +337,10 @@
 <script src="plugins/jquery-ui/jquery-ui.js"></script>
 
 
+
+
+<!-- startup script -->
+<script src="js/app.js"></script>
 
 <!-- menu-startup -->
 <script>
@@ -320,6 +387,11 @@ $( document ).ready(function() {
 });
 </script>
 <!-- end menu -->
+
+
+<!-- demo js -->
+<script src="js/demo.js"></script>
+
 
 
 

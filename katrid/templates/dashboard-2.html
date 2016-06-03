@@ -1,0 +1,386 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content">
+    <div class="row">
+
+      <!-- dashboard highlight panels -->
+      <div class="dashboard-header col-sm-12">
+
+        <div class="panel-default col-sm-2">
+          <div class="panel-body dashboard-panel">
+            <div id="pie-chart-0" class="pie-chart" data-percent="28" data-size="80" data-pie-size="25">
+              <span class="percent font-lg"></span>
+            </div>
+            <div class="pull-right text-right">
+              <span class="title">Dashboard Panel</span><br>
+              <strong>TEST GAUGE</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-default col-sm-2">
+          <div class="panel-body dashboard-panel">
+            <i class="pe pe-7s-rocket pe-4x pull-right"></i>
+            <div class="pull-right text-right">
+              <span class="title">Dashboard Panel</span><br>
+              <strong>TEST LAUNCH</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-deep-purple col-sm-2">
+          <div class="panel-body dashboard-panel">
+            <i class="pe pe-7s-rocket pe-4x pull-right"></i>
+            <div class="pull-right text-right">
+              <span class="title">Dashboard Panel</span><br>
+              <strong>TEST LAUNCH</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-green col-sm-2">
+          <div class="panel-body dashboard-panel">
+            <div class="pull-right text-right">
+              <span class="title pull-right">Green Example</span>
+              <h1>$100.00</h1>
+            </div>
+            <i class="pe-7s-cash pe-4x"></i>
+          </div>
+        </div>
+        <div class="bg-light-blue col-sm-2">
+          <div class="panel-body dashboard-panel">
+            <div class="pull-right text-right">
+              <span class="title">Last Sale Value</span><br>
+              <strong>$1,000.00</strong>
+            </div>
+            <i class="pe pe-7s-search pe-4x"></i>
+          </div>
+        </div>
+        <div class="bg-red col-sm-2 animated bounceIn">
+          <div class="panel-body dashboard-panel">
+            <div class="pull-right text-right">
+              <span class="title">Stock Alert</span><br>
+              <strong>Item stock alert!</strong>
+            </div>
+            <i class="pe pe-7s-alarm pe-4x"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- dashboard widgets -->
+      <div class="col-md-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Easy Pie Chart
+          </div>
+          <div class="panel-body">
+            <p>
+              This is a easy pie chart widget. You can customize your own chart following the easypiechart documentation.
+              <br>
+            </p>
+            <div id="pie-chart-1" class="pie-chart" data-percent="28" data-size="100" data-pie-size="25">
+              <span class="percent font-lg"></span>
+            </div>
+            <div id="pie-chart-2" class="pie-chart" data-percent="59" data-size="100" data-pie-size="25">
+              <span class="percent font-lg"></span>
+            </div>
+            <p>
+              Click here and go to <a href="https://rendro.github.io/easy-pie-chart/" target="_blank">Easy pie chart website.</a>
+            </p>
+            <hr>
+            <p>
+              <a class="btn btn-default" href="easy-pie-chart.html">More Examples</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <i class="fa fa-fw fa-pie-chart"></i>
+            Expenses by category
+          </div>
+          <div class="panel-body">
+            <div id="pie-chart" style="height: 300px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-fw fa-bar-chart"></i> Income x Expenditure</div>
+          <div class="panel-body">
+            <div id="stack-chart" style="height: 300px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Expenses by month
+          </div>
+          <div class="panel-body">
+            <div id="expenses-chart" style="height: 300px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Revenue by month
+          </div>
+          <div class="panel-body">
+            <div id="income-chart" style="height: 300px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/flot/jquery.flot.min.js"></script>
+  <script src="plugins/flot/jquery.flot.pie.min.js"></script>
+  <script src="plugins/flot/jquery.flot.categories.min.js"></script>
+  <script>
+
+    function setCode(lines) {
+      $("#code").text(lines.join("\n"));
+    }
+
+    $(function () {
+      var userConfig = {
+        series: {
+          pie: {
+            innerRadius: 0.5,
+            show: true
+          }
+        },
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8',
+          hoverable: true,
+          clickable: true
+        },
+        colors: ['#444d58', '#a03c4f', '#40a06f', '#3690a0', '#a07142', '#7e4ba0']
+      };
+      var data = [
+        {label: "Employees", data: 100},
+        {label: "Web Hosting", data: 30},
+        {label: "Hardware", data: 90},
+        {label: "Products Development", data: 80},
+        {label: "Marketing Campaigns", data: 70},
+        {label: "Office Rent", data: 10}
+      ];
+
+      $("#title").text("Interactivity");
+      $("#description").text("The pie can be made interactive with hover and click events.");
+      var placeholder = $('#pie-chart');
+
+      $.plot(placeholder, data, userConfig);
+
+      setCode([
+        "$.plot('#placeholder', data, {",
+        "    series: {",
+        "        pie: {",
+        "            show: true",
+        "        }",
+        "    },",
+        "    grid: {",
+        "        hoverable: true,",
+        "        clickable: true",
+        "    }",
+        "});"
+      ]);
+
+      placeholder.bind("plothover", function (event, pos, obj) {
+
+        if (!obj) {
+          return;
+        }
+
+        var percent = parseFloat(obj.series.percent).toFixed(2);
+        $("#hover").html("<span style='font-weight:bold; color:" + obj.series.color + "'>" + obj.series.label + " (" + percent + "%)</span>");
+      });
+
+      placeholder.bind("plotclick", function (event, pos, obj) {
+
+        if (!obj) {
+          return;
+        }
+
+        percent = parseFloat(obj.series.percent).toFixed(2);
+        alert("" + obj.series.label + ": " + percent + "%");
+      });
+
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d1.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d2.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d3.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var stack = 0,
+          bars = true,
+          lines = false,
+          steps = false;
+
+      function plotWithOptions() {
+        $.plot("#stack-chart", [d1, d2, d3], {
+          grid: {
+            borderWidth: 1,
+            borderColor: '#d5d6d8'
+          },
+          series: {
+            stack: stack,
+            lines: {
+              show: lines,
+              fill: true,
+              steps: steps
+            },
+            bars: {
+              lineWidth: 0,
+              show: bars,
+              barWidth: 0.6
+            }
+          }
+        });
+      }
+
+      plotWithOptions();
+
+      data = [];
+      var totalPoints = 300;
+
+      function getRandomData() {
+
+        if (data.length > 0)
+          data = data.slice(1);
+
+        // Do a random walk
+
+        while (data.length < totalPoints) {
+
+          var prev = data.length > 0 ? data[data.length - 1] : 50,
+              y = prev + Math.random() * 10 - 5;
+
+          if (y < 0) {
+            y = 0;
+          } else if (y > 100) {
+            y = 100;
+          }
+
+          data.push(y);
+        }
+
+        // Zip the generated y values with the x values
+
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+          res.push([i, data[i]])
+        }
+
+        return res;
+      }
+
+      var data2 = [["January", 10], ["February", 8], ["March", 4], ["April", 13], ["May", 17], ["June", 9]];
+
+      $.plot("#expenses-chart", [data2], {
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8'
+        },
+        series: {
+          bars: {
+            lineWidth: 0,
+            show: true,
+            barWidth: 0.6,
+            align: "center"
+          }
+        },
+        colors: ['#FF4136'],
+        xaxis: {
+          mode: "categories",
+          tickLength: 0
+        }
+      });
+
+
+    });
+
+    $(function () {
+      var data2 = [["January", 24], ["February", 12], ["March", 2], ["April", 5], ["May", 18], ["June", 12]];
+
+      $.plot("#income-chart", [data2], {
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8'
+        },
+        series: {
+          bars: {
+            lineWidth: 0,
+            show: true,
+            barWidth: 0.6,
+            align: "center"
+          }
+        },
+        colors: ['#40a06f'],
+        xaxis: {
+          mode: "categories",
+          tickLength: 0
+        }
+      });
+
+    });
+
+  </script>
+  <script src="plugins/jquery.easing/jquery.easing.js"></script>
+  <script src="plugins/easy-pie-chart/jquery.easypiechart.min.js"></script>
+  <script>
+    $(function () {
+      $('#pie-chart-0').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#69c',
+        trackColor: '#ace',
+        scaleColor: false,
+        lineWidth: 8,
+        trackWidth: 5,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+      $('#pie-chart-1').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#69c',
+        trackColor: '#ace',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 16,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+      $('#pie-chart-2').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#69c',
+        trackColor: '#ace',
+        scaleColor: false,
+        lineWidth: 20,
+        trackWidth: 20,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+    });
+  </script>
+{% endblock %}

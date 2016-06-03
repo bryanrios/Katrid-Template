@@ -1,0 +1,428 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content">
+    <div class="row">
+
+      <!-- dashboard widgets -->
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4><i class="fa fa-fw fa-line-chart"></i> Real-time Sales</h4>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-9" id="realtime-chart" style="height: 180px;"></div>
+            <div class="col-md-3">
+              <div class="row">
+                <h5><strong>Last 24 hours</strong></h5>
+                <span class="col-md-6"><i class="fa fa-fw fa-shopping-cart"></i> Sales:</span>
+                <strong class="col-md-6 animated bounceIn">
+                  <span class="text-primary font-300">1,000</span>
+                  <span class="text-danger"> (<i class="fa fa-arrow-down"></i>100)</span>
+                </strong>
+              </div>
+              <div class="row">
+                <span class="col-md-6"><i class="fa fa-fw fa-dollar"></i> Amount:</span>
+                <strong class="col-md-6 animated bounceIn">
+                  <span class="text- text-primary font-300">$15,790.10</span>
+                  <span class="text- text-success"> (<i class="fa fa-arrow-up"></i>702.02)</span>
+                </strong>
+              </div>
+              <div class="row">
+                <hr class="dashboard-hr">
+              </div>
+              <div class="row">
+                <h5><strong>Last 30 days</strong></h5>
+                <span class="col-md-6"><i class="fa fa-fw fa-shopping-cart"></i> Sales:</span>
+                <strong class="col-md-6 animated bounceIn">
+                  <span class="text-primary font-300">27,000</span>
+                  <span class="text-danger"> (<i class="fa fa-arrow-down"></i>2,780)</span>
+                </strong>
+              </div>
+              <div class="row">
+                <span class="col-md-6"><i class="fa fa-fw fa-dollar"></i> Amount:</span>
+                <strong class="col-md-6 animated bounceIn">
+                  <span class="text-primary font-300">$415,790.10</span>
+                  <span class="text-success"> (<i class="fa fa-arrow-up"></i>80,189.00)</span>
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Expenses by category
+          </div>
+          <div class="panel-body">
+            <div id="pie-chart" style="height: 300px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-fw fa-bar-chart"></i> Income x Expenditure</div>
+          <div class="panel-body">
+            <div id="stack-chart" style="height: 300px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="panel panel-default dashboard-panel">
+          <div class="panel-heading">Stock status</div>
+          <div class="panel-body">
+            <a href="#">Product 1</a>
+            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-danger" style="width: 10%" aria-valuenow="10" aria-valuemax="100" aria-valuemin="0">
+
+            </div></div>
+            <a href="#">Product 2</a>
+            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-danger" style="width: 20%" aria-valuenow="10" aria-valuemax="100" aria-valuemin="0">
+
+            </div></div>
+            <a href="#">Product 3</a>
+            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-warning" style="width: 18%" aria-valuenow="18" aria-valuemax="100" aria-valuemin="0">
+            </div></div>
+            <a href="#">Product 4</a>
+            <div class="progress"><div class="progress-bar progress-bar-info" style="width: 40%" aria-valuenow="40" aria-valuemax="100" aria-valuemin="0">
+            </div></div>
+            <a href="#">Product 5 (with %)</a>
+            <div class="progress"><div class="progress-bar progress-bar-success" style="width: 83%" aria-valuenow="83" aria-valuemax="100" aria-valuemin="0">
+              83%
+            </div></div>
+            <div>
+              <button class="btn btn-default btn-block">More products <i class="fa fa-fw fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            My ToDo Tasks
+          </div>
+          <div class="panel-body dashboard-panel">
+            <ul class="list-unstyled">
+
+              <!-- to do item -->
+              <li class="todo-item">
+                <span class="handle">
+                  <label class="checkbox"><input type="checkbox"><i></i></label>
+                </span>
+                <p class="todo-task-description">
+                <strong class="text-muted">Task #103</strong> - Check products stock status [<a href="#">Details</a>]
+                <span class="text-muted">Task description.</span>
+                <span class="text-muted">Today</span>
+                </p>
+              </li>
+              <!-- end to do item -->
+
+              <li class="todo-item">
+                <span class="handle">
+                  <label class="checkbox"><input type="checkbox"><i></i></label>
+                </span>
+                <p class="todo-task-description">
+                <strong class="text-muted">Task #106</strong> - Write and send new client quotations [<a href="#">Details</a>]
+                <span class="text-muted">Build a new fresh company website.</span>
+                <span class="text-muted">Today</span>
+                </p>
+              </li>
+
+              <li class="todo-item">
+                <span class="handle">
+                  <label class="checkbox"><input type="checkbox"><i></i></label>
+                </span>
+                <p class="todo-task-description">
+                <strong class="text-muted">Task #104</strong> - Build a new company website [<a href="#">Details</a>]
+                <span class="text-muted">Build a new fresh company website.</span>
+                <span class="text-muted">Today</span>
+                </p>
+              </li>
+
+              <li class="todo-item">
+                <span class="handle">
+                  <label class="checkbox"><input type="checkbox"><i></i></label>
+                </span>
+                <p class="todo-task-description">
+                <strong class="text-muted">Task #107</strong> - Check orders report and call clients on phone [<a href="#">Details</a>]
+                <span class="text-muted">Build a new fresh company website.</span>
+                <span class="text-muted">Today</span>
+                </p>
+              </li>
+            </ul>
+            <hr>
+            <button class="btn btn-default pull-right">Go to Tasks</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Expenses by month
+          </div>
+          <div class="panel-body">
+            <div id="expenses-chart" style="height: 287px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Revenue by month
+          </div>
+          <div class="panel-body">
+            <div id="income-chart" style="height: 287px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/flot/jquery.flot.min.js"></script>
+  <script src="plugins/flot/jquery.flot.pie.min.js"></script>
+  <script src="plugins/flot/jquery.flot.categories.min.js"></script>
+  <script>
+
+    function setCode(lines) {
+      $("#code").text(lines.join("\n"));
+    }
+
+    $(function () {
+      var userConfig = {
+        series: {
+          pie: {
+            innerRadius: 0.5,
+            show: true
+          }
+        },
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8',
+          hoverable: true,
+          clickable: true
+        },
+        colors: ['#444d58', '#a03c4f', '#40a06f', '#3690a0', '#a07142', '#7e4ba0']
+      };
+      var data = [
+        {label: "Employees", data: 100},
+        {label: "Web Hosting", data: 30},
+        {label: "Hardware", data: 90},
+        {label: "Products Development", data: 80},
+        {label: "Marketing Campaigns", data: 70},
+        {label: "Office Rent", data: 10}
+      ];
+
+      $("#title").text("Interactivity");
+      $("#description").text("The pie can be made interactive with hover and click events.");
+      var placeholder = $('#pie-chart');
+
+      $.plot(placeholder, data, userConfig);
+
+      setCode([
+        "$.plot('#placeholder', data, {",
+        "    series: {",
+        "        pie: {",
+        "            show: true",
+        "        }",
+        "    },",
+        "    grid: {",
+        "        hoverable: true,",
+        "        clickable: true",
+        "    }",
+        "});"
+      ]);
+
+      placeholder.bind("plothover", function (event, pos, obj) {
+
+        if (!obj) {
+          return;
+        }
+
+        var percent = parseFloat(obj.series.percent).toFixed(2);
+        $("#hover").html("<span style='font-weight:bold; color:" + obj.series.color + "'>" + obj.series.label + " (" + percent + "%)</span>");
+      });
+
+      placeholder.bind("plotclick", function (event, pos, obj) {
+
+        if (!obj) {
+          return;
+        }
+
+        percent = parseFloat(obj.series.percent).toFixed(2);
+        alert("" + obj.series.label + ": " + percent + "%");
+      });
+
+
+      var d1 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d1.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var d2 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d2.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var d3 = [];
+      for (var i = 0; i <= 10; i += 1) {
+        d3.push([i, parseInt(Math.random() * 30)]);
+      }
+
+      var stack = 0,
+          bars = true,
+          lines = false,
+          steps = false;
+
+      function plotWithOptions() {
+        $.plot("#stack-chart", [d1, d2, d3], {
+          grid: {
+            borderWidth: 1,
+            borderColor: '#d5d6d8'
+          },
+          series: {
+            stack: stack,
+            lines: {
+              show: lines,
+              fill: true,
+              steps: steps
+            },
+            bars: {
+              lineWidth: 0,
+              show: bars,
+              barWidth: 0.6
+            }
+          }
+        });
+      }
+
+      plotWithOptions();
+
+      data = [];
+      var totalPoints = 300;
+
+      function getRandomData() {
+
+        if (data.length > 0)
+          data = data.slice(1);
+
+        // Do a random walk
+
+        while (data.length < totalPoints) {
+
+          var prev = data.length > 0 ? data[data.length - 1] : 50,
+              y = prev + Math.random() * 10 - 5;
+
+          if (y < 0) {
+            y = 0;
+          } else if (y > 100) {
+            y = 100;
+          }
+
+          data.push(y);
+        }
+
+        // Zip the generated y values with the x values
+
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+          res.push([i, data[i]])
+        }
+
+        return res;
+      }
+
+      // Set up the control widget
+
+      var updateInterval = 1000;
+
+      var plot = $.plot("#realtime-chart", [getRandomData()], {
+        shadowSize: 0,
+        yaxis: {
+          min: 0,
+          max: 100
+        },
+        xaxis: {
+          show: true
+        },
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8'
+        },
+        series: {
+          lines: {
+            lineWidth: 1,
+            fill: true,
+            fillColor: {
+              colors: [{
+                opacity: 0.3
+              }, {
+                opacity: 0.8
+              }]
+            },
+            steps: false
+          }
+        },
+        colors: ['rgba(151,187,205,0.9)']
+      });
+
+      function update() {
+        plot.setData([getRandomData()]);
+        plot.draw();
+        setTimeout(update, updateInterval);
+      }
+
+      update();
+
+
+      var data2 = [["January", 10], ["February", 8], ["March", 4], ["April", 13], ["May", 17], ["June", 9]];
+
+      $.plot("#expenses-chart", [data2], {
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8'
+        },
+        series: {
+          bars: {
+            lineWidth: 0,
+            show: true,
+            barWidth: 0.6,
+            align: "center"
+          }
+        },
+        colors: ['#FF4136'],
+        xaxis: {
+          mode: "categories",
+          tickLength: 0
+        }
+      });
+
+
+    });
+
+  $(function () {
+      var data2 = [["January", 24], ["February", 12], ["March", 2], ["April", 5], ["May", 18], ["June", 12]];
+
+      $.plot("#income-chart", [data2], {
+        grid: {
+          borderWidth: 1,
+          borderColor: '#d5d6d8'
+        },
+        series: {
+          bars: {
+            lineWidth: 0,
+            show: true,
+            barWidth: 0.6,
+            align: "center"
+          }
+        },
+        colors: ['#40a06f'],
+        xaxis: {
+          mode: "categories",
+          tickLength: 0
+        }
+      });
+
+  });
+
+  </script>
+{% endblock %}

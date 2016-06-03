@@ -1,0 +1,112 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body.hide-left-menu #left-menu, body.page-small #left-menu {
+  margin-left: -@left-menu-width;
+}
+
+body.hide-left-menu #main-content,
+body.page-small.show-left-menu #left-menu,
+body.page-small #main-content {
+  margin-left: 0;
+}
+
+body.page-small.show-left-menu #main-content {
+  margin-left: @left-menu-width;
+}
+
+body.page-small .navbar-header, body.hide-left-menu .navbar-header {
+  display: none;
+}
+
+body.page-small.show-left-menu .navbar-header {
+  display: block;
+}
+
+.small-logo {
+  display: none;
+  font-size: large;
+  float: left;
+  padding-top: 12px;
+  margin-left: 10px;
+}
+
+body.page-small .small-logo {
+  display: block;
+}
+
+body.show-left-menu .small-logo {
+  display: none;
+}
+
+body.page-small .dropdown-menu {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav .user-dropdown>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+#main-content {
+  margin-left: 220px;
+  background-color: #eaecef;
+  border-left: 1px solid #d5d6d8;
+  min-height: 100%;
+  padding-bottom: 50px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+
+#main-content>.footer {
+  background: @panel-bg;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+select.form-control.input-sm {
+  padding-top: 2px;
+}
+
+.panel-body>h1:first-child,
+.panel-body>h2:first-child,
+.panel-body>h3:first-child,
+.panel-body>h4:first-child {
+  margin-top: 0;
+}
+
+.form-horizontal label.checkbox {
+  padding-top: 0;
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 6px;
+}

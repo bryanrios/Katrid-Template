@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Sales evolution (Bar Chart)
+        </div>
+        <div class="panel-body">
+          <canvas id="bar-chart" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Doughnut Chart
+        </div>
+        <div class="panel-body">
+          <canvas id="doughnut-chart" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Stacked Chart
+        </div>
+        <div class="panel-body">
+          <canvas id="stacked-chart" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Horizontal Bar Chart
+        </div>
+        <div class="panel-body">
+          <canvas id="horizontal-chart" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/chartjs/chartjs.min.js"></script>
+  <script>
+  $(function () {
+			    var barOptions = {
+            scaleBeginAtZero : true,
+            scaleShowGridLines : true,
+            scaleGridLineColor : "rgba(0,0,0,.05)",
+            scaleGridLineWidth : 1,
+            barShowStroke : true,
+				    barStrokeWidth : 1,
+				    barValueSpacing : 5,
+				    barDatasetSpacing : 1,
+            maintainAspectRatio: false,
+            responsive: true,
+				    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){ %><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){ %><%=datasets[i].label%><% } %></li><% } %></ul>"
+			    };
+
+			    var barData = {
+			        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+			        datasets: [
+				        {
+				            label: "Sales 1",
+                    backgroundColor: "rgba(220,220,220,0.5)",
+				            data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 56, 55, 40]
+				        },
+				        {
+				            label: "Sales 2",
+                    backgroundColor: "rgba(151,187,205,0.8)",
+				            data: [28, 48, 40, 19, 86, 27, 90, 28, 48, 40, 19, 86, 27, 90]
+				        }
+				    ]
+			    };
+
+    var dc = document.getElementById("bar-chart").getContext("2d");
+		var chart = new Chart(dc, {
+      type: 'bar',
+      data: barData,
+      options: barOptions
+    });
+
+  });
+  </script>
+
+  <script>
+  var randomScalingFactor = function() {
+      return Math.round(Math.random() * 100);
+  };
+  var randomColorFactor = function() {
+      return Math.round(Math.random() * 255);
+  };
+  var randomColor = function(opacity) {
+      return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+  };
+  var config = {
+      type: 'doughnut',
+      data: {
+          datasets: [{
+              data: [
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor()
+              ],
+              backgroundColor: [
+                  "#F7464A",
+                  "#46BFBD",
+                  "#FDB45C",
+                  "#949FB1",
+                  "rgba(151,187,205,0.8)"
+              ],
+              label: 'Dataset 1'
+          }, {
+              hidden: true,
+              data: [
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor()
+              ],
+              backgroundColor: [
+                  "#F7464A",
+                  "#46BFBD",
+                  "#FDB45C",
+                  "#949FB1",
+                  "rgba(151,187,205,0.8)"
+              ],
+              label: 'Dataset 2'
+          }, {
+              data: [
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+                  randomScalingFactor(),
+              ],
+              backgroundColor: [
+                  "#F7464A",
+                  "#46BFBD",
+                  "#FDB45C",
+                  "#949FB1",
+                  "#4D5360",
+              ],
+              label: 'Dataset 3'
+          }],
+          labels: [
+              "Red",
+              "Green",
+              "Yellow",
+              "Grey",
+              "Light Blue"
+          ]
+      },
+      options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+              position: 'top',
+          },
+          title: {
+              display: true,
+              text: 'Char Title'
+          },
+          animation: {
+              animateScale: true,
+              animateRotate: true
+          }
+      }
+  };
+  var dc = document.getElementById("doughnut-chart").getContext("2d");
+  var chart = new Chart(dc, config);
+  </script>
+
+
+  <script>
+      var randomScalingFactor = function() {
+          return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+      };
+      var randomColorFactor = function() {
+          return Math.round(Math.random() * 255);
+      };
+      var barChartData = {
+			        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+          datasets: [{
+              label: 'Sales 1',
+              backgroundColor: "rgba(220,220,220,0.7)",
+              data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+          }, {
+              label: 'Sales 2',
+              backgroundColor: "rgba(151,187,205,0.8)",
+              data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+          }, {
+              label: 'Sales 3',
+              backgroundColor: "#46BFBD",
+              data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+          }]
+      };
+          var dc = document.getElementById("stacked-chart").getContext("2d");
+          var chart = new Chart(dc, {
+              type: 'bar',
+              data: barChartData,
+              options: {
+                  title:{
+                      display:true,
+                      text:"Bar Chart - Stacked"
+                  },
+                  tooltips: {
+                      mode: 'label'
+                  },
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  scales: {
+                      xAxes: [{
+                          stacked: true,
+                      }],
+                      yAxes: [{
+                          stacked: true
+                      }]
+                  }
+              }
+          });
+  </script>
+
+
+      <script>
+        var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        var randomScalingFactor = function() {
+            return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.round(Math.random() * 100);
+        };
+        var randomColorFactor = function() {
+            return Math.round(Math.random() * 255);
+        };
+        var randomColor = function() {
+            return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',.7)';
+        };
+
+        var horizontalBarChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: 'Sales 1',
+                backgroundColor: "rgba(220,220,220,0.5)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            }, {
+                hidden: true,
+                label: 'Sales 2',
+                backgroundColor: "rgba(151,187,205,0.5)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            }, {
+                label: 'Sales 3',
+                backgroundColor: "rgba(151,187,205,0.5)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            }]
+
+        };
+
+        var dc = document.getElementById("horizontal-chart").getContext("2d");
+        window.myHorizontalBar = new Chart(dc, {
+            type: 'horizontalBar',
+            data: horizontalBarChartData,
+            options: {
+                // Elements options apply to all of the options unless overridden in a dataset
+                // In this case, we are setting the border of each horizontal bar to be 2px wide and green
+                elements: {
+                    rectangle: {
+                        borderWidth: 2,
+                        borderSkipped: 'left'
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Horizontal Bar Chart'
+                }
+            }
+        });
+
+    </script>
+
+{% endblock %}

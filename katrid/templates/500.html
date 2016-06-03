@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content container text-center error-page">
+    <h1 class="text-warning"><i class="fa fa-fw fa-bug"></i> 500</h1>
+    <h3>Internal Server Error</h3>
+    <p>Sorry, The server encountered an unexpected condition which prevented it from fulfilling the request.</p>
+    <button class="btn btn-primary font-14px" onclick="window.history.back()"><i class="fa fa-fw fa-chevron-left"></i> Back to previous page</button>
+  </div>
+{% endblock %}

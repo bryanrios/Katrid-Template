@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content container text-center error-page">
+    <h1 class="text-warning"><i class="fa fa-fw fa-bug"></i> 500</h1>
+    <h3><strong>Internal Server Error</strong></h3>
+    <p>Sorry, the server encountered an unexpected condition which prevented it from fulfilling the request.</p>
+    <h5>Debug info:</h5>
+      <pre class="col-sm-12 text-left">
+RuntimeError Exception!
+
+Traceback (most recent call last):
+  File "traceback_print_exc.py", line 20, in &lt;module&gt;
+    produce_exception()
+  File "traceback_example.py", line 16, in produce_exception
+    produce_exception(recursion_level-1)
+  File "traceback_example.py", line 16, in produce_exception
+    produce_exception(recursion_level-1)
+  File "traceback_example.py", line 18, in produce_exception
+    raise RuntimeError()
+RuntimeError
+      </pre>
+    <button class="btn font-14px margin-top-16" onclick="window.history.back()"><i class="fa fa-fw fa-chevron-left"></i> Back to previous page</button>
+  </div>
+{% endblock %}

@@ -31,12 +31,12 @@
 @brand-orange:          #FF9800;
 @brand-deep-orange:     #E64A19;
 @brand-brown:           #795548;
-@brand-grey:            #616161;
-@brand-blue-grey:       #607D8B;
+@brand-gray:            #616161;
+@brand-blue-gray:       #607D8B;
 
 @brand-primary: #2e4667;
 @brand-success: #2cc53e;
-@brand-info:            #0074D9;
+@brand-info:            @brand-blue;
 @brand-warning:         #FF851B;
 @brand-danger: #FF4136;
 
@@ -45,16 +45,16 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #f6f6f6;
 //** Global text color on `<body>`.
-@text-color: #5b5d60;
+@text-color: #585c5f;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            darken(#3276b1, 10%);
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
-@link-hover-decoration: underline;
+@link-hover-decoration: none;
 
 
 //== Typography
@@ -71,9 +71,9 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h1:            floor((@font-size-base * 2.3)); // ~36px
+@font-size-h2:            floor((@font-size-base * 1.8)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.5)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
@@ -85,7 +85,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    500;
+@headings-font-weight:    300;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -264,7 +264,8 @@
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+//@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         rgba(0,0,0,.1);
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;
@@ -722,7 +723,7 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15px;
+@panel-body-padding:          20px;
 @panel-heading-padding:       10px 15px;
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;

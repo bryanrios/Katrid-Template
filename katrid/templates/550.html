@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content container text-center error-page">
+    <h1 class="text-warning"><i class="fa fa-fw fa-lock"></i> 550</h1>
+    <h3>Permission Denied</h3>
+    <p>Sorry, you don't have enough permission to load the requested resource. Please contact the webmaster to upgrade your account profile.</p>
+    <button class="btn font-14px" onclick="window.history.back()"><i class="fa fa-fw fa-chevron-left"></i> Back to previous page</button>
+  </div>
+{% endblock %}

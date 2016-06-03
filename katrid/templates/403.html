@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content container text-center error-page">
+    <h1 class="text-warning"><i class="fa fa-fw fa-lock"></i> 403</h1>
+    <h3>Forbidden Resource</h3>
+    <p>The server understood the request, but is refusing to fulfill it. Authorization will not help and the request SHOULD NOT be repeated.</p>
+    <button class="btn btn-default font-14px" onclick="window.history.back()"><i class="fa fa-fw fa-chevron-left"></i> Back to previous page</button>
+  </div>
+{% endblock %}

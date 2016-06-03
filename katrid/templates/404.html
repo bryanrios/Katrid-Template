@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content container text-center error-page">
+    <h1 class="text-warning"><i class="fa fa-fw fa-warning"></i> 404</h1>
+    <h3>Resource Not Found</h3>
+    <p>The requested resource could not be found, check the url and try to load again.</p>
+    <button class="btn btn-primary font-14px" onclick="window.history.back()"><i class="fa fa-fw fa-chevron-left"></i> Back to previous page</button>
+  </div>
+{% endblock %}

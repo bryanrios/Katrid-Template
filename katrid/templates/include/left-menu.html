@@ -1,5 +1,5 @@
 <aside id="left-menu" class="sidebar skin">
-  <div class="logo-area">
+  <div class="logo-area animated fadeIn" style="display: none;">
     <a href="/">
       <img id="avatar" src="img/logo.png" alt="avatar">
     </a>
@@ -7,30 +7,35 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Dashboard <span
-            class="label label-danger pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="dashboard-1.html">Dashboard 1</a>
+          </li>
+          <li class="menu-item">
+            <a href="dashboard-2.html">Dashboard 2</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRM / Sales <span
-            class="label label-warning pull-right">New</span><br>
-          <small>CRM and sales management...</small>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
+          <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+          </li>
+          <li class="menu-item">
+            <a href="crm.html">CRM (Opportunities)</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> BI / Reporting <span
-            class="label label-info pull-right">New</span><br>
+            class="label label-info pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -40,8 +45,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Messages <span class="badge">10</span> <span
-            class="label label-primary pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
+            class="label label-primary pull-right animated bounceIn">New</span><br>
           <small>You got 10 new messages...</small>
         </a>
         <ul class="nav">
@@ -51,7 +56,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>
           <small>CRUD, REST and Ajax examples...</small>
         </a>
         <ul class="nav">
@@ -66,11 +71,13 @@
             <a href="forms.html">Basic Forms</a>
           </li>
           <li class="menu-item">
+            <a href="advanced-forms.html">Advanced Forms</a>
+          </li>
+          <li class="menu-item">
             <a href="xeditable-forms.html">X-Editable Forms</a>
           </li>
           <li class="menu-item">
             <a href="plugin-forms.html">Plugin Controls</a>
-          </li>
           </li>
         </ul>
       </li>
@@ -78,7 +85,13 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> Graphs</a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="flot.html">Flot</a>
+          </li>
+          <li class="menu-item">
+            <a href="chartjs.html">Chart.js</a>
+          </li>
+          <li class="menu-item">
+            <a href="easy-pie-chart.html">Easy pie chart</a>
           </li>
         </ul>
       </li>
@@ -94,10 +107,27 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> UI Elements</a>
         <ul class="nav">
           <li class="menu-item">
+            <a href="typography.html">Typography</a>
+          </li>
+          <li class="menu-item">
             <a href="buttons.html">Buttons</a>
           </li>
           <li class="menu-item">
-            <a href="buttons.html">Icons</a>
+            <a href="#">Icons</a>
+            <ul class="nav">
+              <li>
+                <a href="font-awesome.html">Font Awesome</a>
+              </li>
+              <li>
+                <a href="#">Glyph Icons</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="panels.html">Panels</a>
+          </li>
+          <li class="menu-item">
+            <a href="wells.html">Wells</a>
           </li>
           <li class="menu-item">
             <a href="buttons.html">Tree View</a>
@@ -111,7 +141,21 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> App Views</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-book"></i> App Views</a>
+        <ul class="nav">
+          <li class="menu-item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu-item">
+            <a href="article.html">Article</a>
+          </li>
+          <li class="menu-item">
+            <a href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="tables.html">Basic Tables</a>
@@ -119,26 +163,28 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Widgets</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="login.html">Login</a>
+          </li>
+          <li class="menu-item">
+            <a href="404.html">Error 404</a>
+          </li>
+          <li class="menu-item">
+            <a href="403.html">Error 403</a>
+          </li>
+          <li class="menu-item">
+            <a href="500.html">Error 500</a>
+          </li>
+          <li class="menu-item">
+            <a href="debug-500.html">Debug 500</a>
+          </li>
+          <li class="menu-item">
+            <a href="550.html">Error 550</a>
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Landing Pages</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
-      <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-table"></i> Tables</a></li>
     </ul>
   </nav>
 </aside>

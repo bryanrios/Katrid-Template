@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Easy pie chart - Samples
+        </div>
+        <div class="panel-body">
+          <ul class="list-unstyled list-inline">
+            <li>
+              <div id="large-chart" class="pie-chart" data-percent="33" data-size="180" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Large chart example
+            </li>
+            <li>
+              <div id="realtime-chart" class="pie-chart" data-percent="1" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Real-time example
+            </li>
+            <li>
+              <div id="styled-chart" class="pie-chart" data-percent="81" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Colored example
+            </li>
+          </ul>
+          <h3>More colors</h3>
+          <ul class="list-unstyled list-inline">
+            <li>
+              <div id="deep-purple-chart" class="pie-chart" data-percent="81" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Deep-Purple example
+            </li>
+            <li>
+              <div id="purple-chart" class="pie-chart" data-percent="61" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Purple example
+            </li>
+            <li>
+              <div id="brown-chart" class="pie-chart" data-percent="81" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Brown example
+            </li>
+            <li>
+              <div id="pink-chart" class="pie-chart" data-percent="81" data-size="80" data-pie-size="25">
+                <span class="percent font-lg"></span>
+              </div>
+              Pink example
+            </li>
+          </ul>
+          <p>
+            You can easily customize your own color combination using the <code>barColor</code> and <code>trackColor</code> attributed.
+          </p>
+          <p>
+            Know more about easy pie chart at: <a href="https://rendro.github.io/easy-pie-chart/" target="_blank">https://rendro.github.io/easy-pie-chart/</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/jquery.easing/jquery.easing.js"></script>
+  <script src="plugins/easy-pie-chart/jquery.easypiechart.min.js"></script>
+  <script>
+    $(function () {
+      $('#large-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#69c',
+        trackColor: '#ace',
+        scaleColor: false,
+        lineWidth: 20,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+
+      var rtc = 1;
+      var rt = $('#realtime-chart');
+      rt.easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#69c',
+        trackColor: '#ace',
+        scaleColor: false,
+        lineWidth: 8,
+        trackWidth: 5,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+
+      setTimeout(function again() {
+        rt.data('easyPieChart').update(rtc++);
+        setTimeout(again, 1000);
+      }, 1000);
+
+      $('#styled-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: '#E64A19',
+        trackColor: '#2cc53e',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+
+      $('#purple-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: 'rgba(0,0,0,.4)',
+        trackColor: '#E040FB',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+      $('#deep-purple-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: 'rgba(0,0,0,.4)',
+        trackColor: '#512DA8',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+      $('#brown-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: 'rgba(0,0,0,.4)',
+        trackColor: '#795548',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+      $('#pink-chart').easyPieChart({
+        easing: 'easeOutBounce',
+        barColor: 'rgba(0,0,0,.4)',
+        trackColor: '#C2185B',
+        scaleColor: false,
+        lineWidth: 15,
+        trackWidth: 15,
+        lineCap: 'butt',
+        onStep: function (from, to, percent) {
+          $(this.el).find('.percent').text(Math.round(percent));
+        }
+      });
+    });
+  </script>
+{% endblock %}

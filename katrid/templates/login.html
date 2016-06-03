@@ -1,0 +1,70 @@
+{% extends "page.html" %}
+{% block body_class %}page{% endblock %}
+{% block page %}
+  <div class="col-lg-12">
+    <div class="panel-body dashboard-panel hidden-xs">
+      <div>
+        <div class="pull-left">
+          <a href="index.html" class="btn btn-primary"><i class="fa fa-fw fa-chevron-left"></i> Back to Admin</a>
+        </div>
+        <div class="pull-right text-right">
+          <i class="pe pe-7s-rocket pe-4x pull-left"></i>
+          <div class="pull-right">
+            <span class="title">YOUR MESSAGE HERE</span><br>
+            <strong>DISPLAY AN IMPACT MESSAGE HERE</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container margin-top-16">
+  <form action="index.html" method="post">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="hidden-xs"><i class="fa fa-fw fa-sign-in"></i> Sign In</h4>
+          <span class="visible-xs">Sign In</span>
+        </div>
+        <div class="panel-body">
+          <div>
+            <div class="form-group">
+              <label class="control-label" for="id-username">Username</label>
+              <input id="id-username" class="form-control" placeholder="email@example.com" type="email" required>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="id-password">Password</label>
+              <input id="id-password" class="form-control" type="password" required>
+              <a href="#">Forgot password?</a>
+            </div>
+              <label class="checkbox">
+                <input type="checkbox">
+                Keep me connected
+                <i></i>
+              </label>
+            <div class="text-right">
+              <button class="btn btn-primary font-14px">Sign in</button>
+            </div>
+            <hr>
+            <button class="btn btn-default btn-block font-14px">Register Now</button>
+            <div class="text-center form-group">
+              - Or -
+            </div>
+            <button class="btn btn-indigo btn-block font-14px"><i class="fa fa-fw fa-facebook-official"></i> Connect using <strong>Facebook</strong></button>
+            <button class="btn btn-danger btn-block font-14px"><i class="fa fa-fw fa-google"></i> Connect using <strong>Google</strong></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-offset-4 col-md-4">
+      <img class="login-logo pull-right" src="img/logo.png">
+      <strong>Katrid Theme</strong> - Responsive WebApp<br>
+      2016 Copyright My Company
+    </div>
+    </div>
+    </form>
+  </div>
+{% endblock %}

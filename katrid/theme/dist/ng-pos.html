@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="posApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Point of Sales Template (Google Chrome Only)</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme1.css">
+  <link href="plugins/ng-pos/pos.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/angular-cookies.min.js"></script>
+  <script src="js/angular/angular-sanitize.min.js"></script>
+  <script src="js/angular/angular-route.min.js"></script>
+  <script src="plugins/ng-pos/test/products.js"></script>
+  <script src="plugins/ng-pos/pos.js"></script>
+</head>
+<body class="pos-body">
+
+<div class="pos-main" ng-controller="PosController" ng-init="addPage();initList();">
+  <div>
+    <nav>
+      <ul class="nav navbar-nav pull-right">
+        <li>
+          <a href="#" ng-click="addPage()"><i class="fa fa-plus-square fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#" ng-click="removePage()"><i class="fa fa-minus-square fa-2x"></i></a>
+        </li>
+        <button class="btn btn-info">Change User</button>
+      </ul>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" ng-repeat="tab in pages" ng-class="{active: $index===pageIndex}">
+          <a href="#" ng-click="selPage($index)" aria-controls="home" role="tab" data-toggle="tab">
+            {{ tab.name }} <span class="label label-primary">{{ $index+1 }}</span></a>
+        </li>
+      </ul>
+      </nav>
+    </div>
+
+  <table style="height: 100%; width: 100%;">
+    <tr>
+      <td style="width: 1px;">
+  <table class="pos-left-side">
+    <tbody>
+      <tr>
+        <td class="pos-order">
+
+
+          <div class="pos-print">
+            <ul class="list-unstyled">
+              <li ng-repeat="product in page.items" class="pos-print-item animated fadeIn" ng-class="{selected: $index===page.printItemIndex}" ng-click="printItemClick($index)">
+                <span class="product-name">{{ product.name }}</span>
+                <span class="label label-primary product-price">$ {{ product.qty * product.value | number:2 }}</span>
+                <ul class="info-list list-unstyled">
+                  <li>
+                    <em class="product-qty">{{ product.qty }}</em>
+                    <span class="text-muted">UN &times; R$ {{ product.value | number:2 }}</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          <div class="pos-print-summary">
+            <span class="pos-print-total" animate-on-change="page.total">
+              $ <span style="font-size: 30px">{{ page.total | number: 2 }}</span>
+            </span>
+          </div>
+
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="pos-vpad">
+          <div class="well">
+            <table>
+              <tr>
+                <td style="vertical-align: top;width: 165px;">
+                  <button class="btn btn-default pos-vpad-btn btn-block" style="border-top-left-radius: 4px;"><i class="fa fa-user fa-2x"></i> Client</button>
+                  <button id="btn-payment" class="btn btn-default btn-lg pos-vpad-btn btn-block" style="height: 162px; margin:0;">
+                    <i class="fa fa-chevron-circle-right fa-5x"></i><br>
+                    Checkout / <br>
+                    Payment <i class="fa fa-dollar"></i>
+                  </button>
+                </td>
+                <td style="vertical-align: text-top;">
+                  <div class="pos-vpad-btns">
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(1)">
+                      1
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(2)">
+                      2
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(3)">
+                      3
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default" style="border-top-right-radius: 4px;" ng-class="{active: vpadFn==='qty'}" ng-click="vpadFn='qty'">
+                      Qtd
+                    </button>
+                    <br>
+
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(4)">
+                      4
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(5)">
+                      5
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(6)">
+                      6
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default" ng-class="{active: vpadFn==='disc'}" ng-click="vpadFn='disc'">
+                      Desc
+                    </button>
+                    <br>
+
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(7)">
+                      7
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(8)">
+                      8
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(9)">
+                      9
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default" ng-class="{active: vpadFn==='price'}" ng-click="vpadFn='price'">
+                      Preço
+                    </button>
+                    <br>
+
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg">
+                      +/-
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg" ng-click="vpadClick(0)">
+                      0
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default pos-vpad-btn-lg">
+                      .
+                    </button>
+                    <button class="btn btn-default pos-vpad-btn pos-vpad-btn-default" style="border-bottom-right-radius: 4px;" ng-click="vpadBack(0)">
+                      <img style="width: 24px; height: 24px;" src="plugins/ng-pos/backspace.png">
+                    </button>
+                </div>
+              </td>
+            </tr>
+          </table>
+         </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </td>
+      <td class="pos-products">
+        <div style="height: 100%;width: 100%;overflow-y: auto;">
+            <div class="col-sm-12 pos-search-bar">
+              <div class="col-sm-4">
+                <a href="#"><i class="fa fa-home fa-4x"></i></a>
+              </div>
+
+            <div class="col-sm-6 pull-right">
+            <input id="input-search" class="form-control input-lg" type="search" placeholder="Product Search..." ng-model="searchValue" ng-change="search()" autofocus autocomplete="on">
+            </div>
+          </div>
+          <div class="col-sm-12 pos-product-list" style=" padding-bottom: 100px;">
+            <div class="pos-list-item" ng-class="{promo: product.id.toString()[0]==='1'}" ng-repeat="product in products" ng-click="itemClick(product)">
+              <div>
+              <img ng-src="{{ product.img }}" style="max-width: 98px; max-height: 98px;  ">
+                </div>
+              <span class="product">{{ product.name }}</span>
+              <span class="label label-primary price label-price animated bounceIn">$ {{ product.value }}</span>
+              <span class="label label-default price promo animated bounceIn" ng-show="product.id.toString()[0]==='1'">10% VISA DISCOUNT</span>
+            </div>
+
+            <img id="logo" src="plugins/ng-pos/logo.png">
+          </div>
+
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</body>
+</html>
