@@ -1,53 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="col-lg-12 page-heading bg-white">
-    <h2><i class="pe pe-fw pe-7s-rocket"></i>Sales Opportunities</h2>
-    <ol class="breadcrumb">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">CRM</a>
-      </li>
-      <li>Opportunities</li>
-    </ol>
+  <div class="panel">
+    <div class="page-heading bg-white">
+      <h2><i class="pe pe-fw pe-7s-rocket"></i>Sales Opportunities</h2>
+      <ol class="breadcrumb">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">CRM</a>
+        </li>
+        <li>Opportunities</li>
+      </ol>
+    </div>
   </div>
 
   <div class="content">
 
-  <div class="kanban col-sm-12">
-    <div class="kanban-group col-sm-2">
-      <div class="kanban-heading">
-        <div class="btn-group pull-right">
-          <button class="btn dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu animated flipInX">
-            <li>
-              <a href="#">Create new opportunity</a>
-            </li>
-            <li>
-              <a href="#">Action 2</a>
-            </li>
-            <li>
-              <a href="#">Action 3</a>
-            </li>
-          </ul>
-        </div>
-        <h4><i class="pe pe-fw pe-7s-call"></i> New Opportunity</h4>
-        <p class="help-block">My help message...</p>
-      </div>
-      <div class="kanban-items">
-
-        <!-- kanban item -->
-        <div class="kanban-item bg-light-green">
+    <div class="kanban col-sm-12">
+      <div class="kanban-group col-sm-2">
+        <div class="kanban-heading">
           <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu animated flipInX">
               <li>
-                <a href="#">Move to next level</a>
+                <a href="#">Create new opportunity</a>
               </li>
               <li>
                 <a href="#">Action 2</a>
@@ -57,19 +36,157 @@
               </li>
             </ul>
           </div>
-          <strong class="kanban-item-title">My test opportunity.</strong>
-          <br><small>More information</small>
+          <h4><i class="pe pe-fw pe-7s-call"></i> New Opportunity</h4>
+          <p class="help-block">My help message...</p>
         </div>
-        <!-- end kanban item -->
+        <div class="kanban-items">
 
-        <div class="kanban-item bg-deep-purple">
+          <!-- kanban item -->
+          <div class="kanban-item bg-light-green">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">My test opportunity.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+          <!-- end kanban item -->
+
+          <div class="kanban-item bg-deep-purple">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">My 2nd opportunity.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+
+          <div class="kanban-item bg-light-blue">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">My 3rd opportunity.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+
+          <div class="kanban-item bg-blue-gray">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">New one.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+
+          <div class="kanban-item bg-red">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">More opportunity.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+
+          <div class="kanban-item bg-danger">
+            <div class="btn-group pull-right">
+              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu animated flipInX">
+                <li>
+                  <a href="#">Move to next level</a>
+                </li>
+                <li>
+                  <a href="#">Action 2</a>
+                </li>
+                <li>
+                  <a href="#">Action 3</a>
+                </li>
+              </ul>
+            </div>
+            <strong class="kanban-item-title">My 3rd opportunity.</strong>
+            <br>
+            <small>More information</small>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="kanban-group col-sm-2">
+        <div class="kanban-heading">
           <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu animated flipInX">
               <li>
-                <a href="#">Move to next level</a>
+                <a href="#">Create new opportunity</a>
               </li>
               <li>
                 <a href="#">Action 2</a>
@@ -79,18 +196,23 @@
               </li>
             </ul>
           </div>
-          <strong class="kanban-item-title">My 2nd opportunity.</strong>
-          <br><small>More information</small>
+          <h4><i class="pe pe-fw pe-7s-filter"></i> Qualified</h4>
+          <p class="help-block">Be patient...</p>
         </div>
+        <div class="kanban-items">
 
-        <div class="kanban-item bg-light-blue">
+        </div>
+      </div>
+
+      <div class="panel kanban-group col-sm-2">
+        <div class="kanban-heading">
           <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu animated flipInX">
               <li>
-                <a href="#">Move to next level</a>
+                <a href="#">Create new opportunity</a>
               </li>
               <li>
                 <a href="#">Action 2</a>
@@ -100,18 +222,23 @@
               </li>
             </ul>
           </div>
-          <strong class="kanban-item-title">My 3rd opportunity.</strong>
-          <br><small>More information</small>
+          <h4><i class="pe pe-fw pe-7s-flag"></i> Almost</h4>
+          <p class="help-block">Almost there...</p>
         </div>
+        <div class="kanban-items">
 
-        <div class="kanban-item bg-blue-gray">
+        </div>
+      </div>
+
+      <div class="kanban-group col-sm-2">
+        <div class="kanban-heading">
           <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu animated flipInX">
               <li>
-                <a href="#">Move to next level</a>
+                <a href="#">Create new opportunity</a>
               </li>
               <li>
                 <a href="#">Action 2</a>
@@ -121,164 +248,45 @@
               </li>
             </ul>
           </div>
-          <strong class="kanban-item-title">New one.</strong>
-          <br><small>More information</small>
+          <h4><i class="pe pe-fw pe-7s-cup"></i>Won</h4>
+          <p class="help-block">Wow! we won!</p>
         </div>
+        <div class="kanban-items">
 
-        <div class="kanban-item bg-red">
-          <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu animated flipInX">
-              <li>
-                <a href="#">Move to next level</a>
-              </li>
-              <li>
-                <a href="#">Action 2</a>
-              </li>
-              <li>
-                <a href="#">Action 3</a>
-              </li>
-            </ul>
-          </div>
-          <strong class="kanban-item-title">More opportunity.</strong>
-          <br><small>More information</small>
         </div>
-
-        <div class="kanban-item bg-danger">
-          <div class="btn-group pull-right">
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu animated flipInX">
-              <li>
-                <a href="#">Move to next level</a>
-              </li>
-              <li>
-                <a href="#">Action 2</a>
-              </li>
-              <li>
-                <a href="#">Action 3</a>
-              </li>
-            </ul>
-          </div>
-          <strong class="kanban-item-title">My 3rd opportunity.</strong>
-          <br><small>More information</small>
-        </div>
-
       </div>
-    </div>
 
-    <div class="kanban-group col-sm-2">
-      <div class="kanban-heading">
-        <div class="btn-group pull-right">
-          <button class="btn dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu animated flipInX">
-            <li>
-              <a href="#">Create new opportunity</a>
-            </li>
-            <li>
-              <a href="#">Action 2</a>
-            </li>
-            <li>
-              <a href="#">Action 3</a>
-            </li>
-          </ul>
-        </div>
-        <h4><i class="pe pe-fw pe-7s-filter"></i> Qualified</h4>
-        <p class="help-block">Be patient...</p>
+      <div class="kanban-add-group" title="Click here to add new group">
+        <i class="fa fa-fw fa-chevron-right fa-2x"></i>
+        <div class="clearfix"></div>
+        <span class="title">Add New Group</span>
       </div>
-      <div class="kanban-items">
-
-      </div>
-    </div>
-
-    <div class="panel kanban-group col-sm-2">
-      <div class="kanban-heading">
-        <div class="btn-group pull-right">
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu animated flipInX">
-            <li>
-              <a href="#">Create new opportunity</a>
-            </li>
-            <li>
-              <a href="#">Action 2</a>
-            </li>
-            <li>
-              <a href="#">Action 3</a>
-            </li>
-          </ul>
-        </div>
-        <h4><i class="pe pe-fw pe-7s-flag"></i> Almost</h4>
-        <p class="help-block">Almost there...</p>
-      </div>
-      <div class="kanban-items">
-
-      </div>
-    </div>
-
-    <div class="kanban-group col-sm-2">
-      <div class="kanban-heading">
-        <div class="btn-group pull-right">
-          <button class="btn dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu animated flipInX">
-            <li>
-              <a href="#">Create new opportunity</a>
-            </li>
-            <li>
-              <a href="#">Action 2</a>
-            </li>
-            <li>
-              <a href="#">Action 3</a>
-            </li>
-          </ul>
-        </div>
-        <h4><i class="pe pe-fw pe-7s-cup"></i>Won</h4>
-        <p class="help-block">Wow! we won!</p>
-      </div>
-      <div class="kanban-items">
-
-      </div>
-    </div>
-
-    <div class="kanban-add-group" title="Click here to add new group">
-      <i class="fa fa-fw fa-chevron-right fa-2x"></i>
-      <div class="clearfix"></div>
-      <span class="title">Add New Group</span>
     </div>
   </div>
-</div>
 {% endblock %}
 {% block additional_scripts %}
-<script>
-$(function () {
-  /*$('.kanban-item').draggable({
-    revert: 'invalid',
-    distance: 20
-  });*/
+  <script>
+    $(function () {
+      /*$('.kanban-item').draggable({
+       revert: 'invalid',
+       distance: 20
+       });*/
 
-  var sel = $('.kanban-group>.kanban-items');
+      var sel = $('.kanban-group>.kanban-items');
 
-  /*sel.droppable({
-    tolerance: 'pointer',
-    accept: '.kanban-item',
-    drop: function(event, ui) {
-      var el = $(ui.draggable);
-      el.appendTo();
-    }
-  }).sortable();
-  sel.disableSelection();*/
-  console.log(sel);
-  sel.sortable({
-    connectWith: '.kanban-items',
-  }).disableSelection();
-});
-</script>
+      /*sel.droppable({
+       tolerance: 'pointer',
+       accept: '.kanban-item',
+       drop: function(event, ui) {
+       var el = $(ui.draggable);
+       el.appendTo();
+       }
+       }).sortable();
+       sel.disableSelection();*/
+      console.log(sel);
+      sel.sortable({
+        connectWith: '.kanban-items',
+      }).disableSelection();
+    });
+  </script>
 {% endblock %}

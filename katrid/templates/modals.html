@@ -1,0 +1,357 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+  <div class="panel page-heading">
+    <h2>Modals</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">UI Elements</a>
+      </li>
+      <li>Modals &amp; Dialogs</li>
+    </ol>
+  </div>
+
+  <div class="content">
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Bootstrap Modal
+          </div>
+          <div class="panel-body">
+
+            <p>Click the button bellow to test the bootstrap modal dialog component.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch Modal Example</button>
+
+            <hr>
+
+            <p>The next example will launch a modal dialog with a html form.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myFormDialog">Launch Modal Form</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myFormDialog-lg">Large Modal</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myFormDialog-sm">Small Modal</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Modal Helpers
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal-primary">Primary</button>
+            <button class="btn btn-success" data-toggle="modal" data-target="#modal-success">Success</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#modal-info">Info</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">Warning</button>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">Danger</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Sweet Alert
+          </div>
+          <div class="panel-body">
+            <p>
+              Sweet alert is an amazing javascript alert replacement. (Visit sweet alert at <a target="_blank"
+                                                                                               href="http://t4t5.github.io/sweetalert/">http://t4t5.github.io/sweetalert/</a>)
+            </p>
+            <button id="default-sweet-alert" class="btn btn-default">Default</button>
+            <button id="success-sweet-alert" class="btn btn-success">Success</button>
+            <button id="warning-sweet-alert" class="btn btn-warning">Warning</button>
+            <button id="autoclose-sweet-alert" class="btn btn-primary">Auto Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="myFormDialog" tabindex="-1" role="dialog">
+    <form>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contact Details</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input class="form-control" placeholder="Contact name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Email" type="email">
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <select class="form-control">
+                    <option>Choose an option</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <select class="form-control">
+                    <option>Anoter option</option>
+                    <option>Another option 1</option>
+                    <option>Another option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </form><!-- /.form -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="myFormDialog-lg" tabindex="-1" role="dialog">
+    <form>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contact Details</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <input class="form-control" placeholder="Contact name">
+                </div>
+                <div class="col-sm-6">
+                  <input class="form-control" placeholder="Email" type="email">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <select class="form-control">
+                    <option>Choose an option</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <select class="form-control">
+                    <option>Anoter option</option>
+                    <option>Another option 1</option>
+                    <option>Another option 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </form><!-- /.form -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="myFormDialog-sm" tabindex="-1" role="dialog">
+    <form>
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Contact Details</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <input class="form-control" placeholder="Contact name">
+            </div>
+            <div class="form-group">
+              <input class="form-control" placeholder="Email" type="email">
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option>Choose an option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option>Anoter option</option>
+                <option>Another option 1</option>
+                <option>Another option 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </form><!-- /.form -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade modal-primary" id="modal-primary" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal Primary</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal-primary helper.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade modal-success" id="modal-success" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"><i class="fa fa-fw fa-check"></i> Modal Success</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal-success helper.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade modal-info" id="modal-info" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"><i class="fa fa-fw fa-info"></i> Modal Info</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal-info helper.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade modal-warning" id="modal-warning" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"><i class="fa fa-fw fa-warning"></i> Modal Warning</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal-warning helper.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade modal-danger" id="modal-danger" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"><i class="fa fa-fw fa-warning"></i> Modal Danger</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the modal-danger helper.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="plugins/sweetalert/sweetalert.min.js"></script>
+
+  <script>
+    $(function () {
+      $('#default-sweet-alert').click(function () {
+        swal("Here's a message!", "It's pretty, isn't it?");
+      });
+      $('#success-sweet-alert').click(function () {
+        swal("Good job!", "You clicked the button!", "success");
+      });
+      $('#warning-sweet-alert').click(function () {
+        swal({
+          title: "Are you sure?",
+          text: "You will not be able to recover this imaginary file!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#DD6B55",
+          confirmButtonText: "Yes, delete it!",
+          closeOnConfirm: false
+        }, function () {
+          swal("Deleted!", "Your imaginary file has been deleted.", "success");
+        });
+      });
+      $('#autoclose-sweet-alert').click(function () {
+        swal({title: "Auto close alert!", text: "I will close in 2 seconds.", timer: 2000, showConfirmButton: false});
+      });
+
+    });
+  </script>
+
+{% endblock %}

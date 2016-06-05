@@ -1,0 +1,494 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <!-- you can replace it by the chosen icheck skin -->
+  <link href="plugins/icheck/skins/all.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+  <div class="panel page-heading">
+    <h2>Components</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Forms</a>
+      </li>
+      <li>Components</li>
+    </ol>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Bootstrap Controls
+          </div>
+
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="input-1-1" class="control-label">Standard input text form control</label>
+                <input id="input-1-1" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="input-1-2" class="control-label">Small input text form control</label>
+                <input id="input-1-2" type="text" class="form-control input-sm">
+              </div>
+              <div class="form-group">
+                <label for="input-1-3" class="control-label">Large input text form control</label>
+                <input id="input-1-3" type="text" class="form-control input-lg">
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <label for="input-1-4">Standard select control</label>
+                <select id="input-1-4" class="form-control">
+                  <option>Choose an option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="input-1-5">Small select control</label>
+                <select id="input-1-5" class="form-control input-sm">
+                  <option>Choose an option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="input-1-6">Large select control</label>
+                <select id="input-1-6" class="form-control input-lg">
+                  <option>Choose an option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="input-1-7">Multiple select</label>
+                <select id="input-1-7" class="form-control" multiple>
+                  <option value="us">United States</option>
+                  <option value="us">Brazil</option>
+                  <option value="ar">Argentina</option>
+                  <option value="pt">Portugal</option>
+                  <option value="cn">China</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="input-1-8">Textarea control</label>
+                <textarea id="input-1-8" class="form-control">
+
+                </textarea>
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <label>Bootstrap Checkbox</label>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                    Option 1
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                    Option 2
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                    Option 3
+                  </label>
+                </div>
+
+                <label>Inline Checkbox</label>
+                <div class="form-group">
+                  <label class="checkbox-inline">
+                    <input type="checkbox"> Option 1
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox"> Option 2
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox"> Option 3
+                  </label>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <label>Radio Buttons</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="input-1-9"> Option 1
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="input-1-9"> Option 2
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="input-1-9"> Option 3
+                  </label>
+                </div>
+              </div>
+
+              <label>Inline Radio Buttons</label>
+              <div class="form-group">
+                <label class="radio-inline">
+                  <input type="radio" name="input-1-10"> Option 1
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="input-1-10"> Option 2
+                </label>
+                <label class="checkbox-inline">
+                  <input type="radio" name="input-1-10"> Option 3
+                </label>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default data-panel">
+          <div class="panel-heading">
+            Additional Controls
+          </div>
+          <div class="panel-body">
+            <form>
+
+              <div class="form-group">
+                <label>Checkbox</label>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Option 1
+                  <i></i>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Option 2
+                  <i></i>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  Option 3
+                  <i></i>
+                </label>
+              </div>
+
+              <label>Inline checkboxes</label>
+              <div class="form-group">
+                <label class="checkbox checkbox-inline">
+                  <input type="checkbox">
+                  Option 1
+                  <i></i>
+                </label>
+                <label class="checkbox checkbox-inline">
+                  <input type="checkbox">
+                  Option 2
+                  <i></i>
+                </label>
+                <label class="checkbox checkbox-inline">
+                  <input type="checkbox">
+                  Option 3
+                  <i></i>
+                </label>
+
+              </div>
+
+              <hr>
+              <div class="form-group">
+                <label>Radio Buttons</label>
+                <label class="radio">
+                  <input type="radio" name="input-2-2">
+                  Option 1
+                  <i></i>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="input-2-2">
+                  Option 2
+                  <i></i>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="input-2-2">
+                  Option 3
+                  <i></i>
+                </label>
+              </div>
+
+              <label>Inline checkboxes</label>
+              <div class="form-group">
+                <label class="radio radio-inline">
+                  <input type="radio" name="input-2-3">
+                  Option 1
+                  <i></i>
+                </label>
+                <label class="radio radio-inline">
+                  <input type="radio" name="input-2-3">
+                  Option 2
+                  <i></i>
+                </label>
+                <label class="radio radio-inline">
+                  <input type="radio" name="input-2-3">
+                  Option 3
+                  <i></i>
+                </label>
+
+              </div>
+
+              <label>Rate This</label>
+              <div class="form-group">
+                <span class="pull-left">Stars (using <code>.fa .fa-star</code>)</span>
+                <div class="rating">
+                  <input type="radio" id="star5" name="rating" value="5"/>
+                  <label for="star5">
+                    <i class="fa fa-star"></i>
+                  </label>
+                  <input type="radio" id="star4" name="rating" value="4"/>
+                  <label for="star4">
+                    <i class="fa fa-star"></i>
+                  </label>
+                  <input type="radio" id="star3" name="rating" value="3"/>
+                  <label for="star3">
+                    <i class="fa fa-star"></i>
+                  </label>
+                  <input type="radio" id="star2" name="rating" value="2"/>
+                  <label for="star2">
+                    <i class="fa fa-star"></i>
+                  </label>
+                  <input type="radio" id="star1" name="rating" value="1"/>
+                  <label for="star1">
+                    <i class="fa fa-star"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group">
+                <span class="pull-left">Numbers</span>
+                <div class="rating rating-success">
+                  <input type="radio" id="rating-2-10" name="rating-2" value="10"/>
+                  <label for="rating-2-10">
+                    <strong>10</strong>
+                  </label>
+                  <input type="radio" id="rating-2-9" name="rating-2" value="9"/>
+                  <label for="rating-2-9">
+                    9
+                  </label>
+                  <input type="radio" id="rating-2-8" name="rating-2" value="8"/>
+                  <label for="rating-2-8">
+                    8
+                  </label>
+                  <input type="radio" id="rating-2-7" name="rating-2" value="7"/>
+                  <label for="rating-2-7">
+                    7
+                  </label>
+                  <input type="radio" id="rating-2-6" name="rating-2" value="6"/>
+                  <label for="rating-2-6">
+                    6
+                  </label>
+                  <input type="radio" id="rating-2-1" name="rating-2" value="5"/>
+                  <label for="rating-2-1">
+                    5
+                  </label>
+                  <input type="radio" id="rating-2-2" name="rating-2" value="4"/>
+                  <label for="rating-2-2">
+                    4
+                  </label>
+                  <input type="radio" id="rating-2-3" name="rating-2" value="3"/>
+                  <label for="rating-2-3">
+                    3
+                  </label>
+                  <input type="radio" id="rating-2-4" name="rating-2" value="2"/>
+                  <label for="rating-2-4">
+                    2
+                  </label>
+                  <input type="radio" id="rating-2-5" name="rating-2" value="1"/>
+                  <label for="rating-2-5">
+                    <strong>1</strong>
+                  </label>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group">
+                <span class="pull-left">Font-awesome (using <code>.fa .fa-asterisk</code>)</span>
+                <div class="rating rating-primary">
+                  <input type="radio" id="rating-3-7" name="rating-3" value="7"/>
+                  <label for="rating-3-7">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-6" name="rating-3" value="6"/>
+                  <label for="rating-3-6">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-5" name="rating-3" value="5"/>
+                  <label for="rating-3-5">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-4" name="rating-3" value="4"/>
+                  <label for="rating-3-4">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-3" name="rating-3" value="3"/>
+                  <label for="rating-3-3">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-2" name="rating-3" value="2"/>
+                  <label for="rating-3-2">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                  <input type="radio" id="rating-3-1" name="rating-3" value="1"/>
+                  <label for="rating-3-1">
+                    <i class="fa fa-asterisk"></i>
+                  </label>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Optional Plugin Controls
+          </div>
+          <div class="panel-body">
+            <h4>iCheck</h4>
+            <p>Amazing checkbox and radio button skins.</p>
+            <div class="row">
+              <div class="col-sm-4">
+                <label>
+                  <input type="checkbox" class="icheck" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck">
+                  Option 3
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <label>
+                  <input type="checkbox" class="icheck-red" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck-red">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck-red">
+                  Option 3
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <label>
+                  <input type="checkbox" class="icheck-flat" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck-flat">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="checkbox" class="icheck-flat">
+                  Option 3
+                </label>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <label>
+                  <input type="radio" class="icheck" name="icheck-1" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck" name="icheck-1">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck" name="icheck-1">
+                  Option 3
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <label>
+                  <input type="radio" class="icheck-red" name="icheck-2" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck-red" name="icheck-2">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck-red" name="icheck-2">
+                  Option 3
+                </label>
+              </div>
+              <div class="col-sm-4">
+                <label>
+                  <input type="radio" class="icheck-flat" name="icheck-3" checked>
+                  Option 1
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck-flat" name="icheck-3">
+                  Option 2
+                </label><br>
+                <label>
+                  <input type="radio" class="icheck-flat" name="icheck-3">
+                  Option 3
+                </label>
+              </div>
+            </div>
+
+            <div class="callout callout-info">
+              <p>Know more about iCheck plugin at: <a href="http://icheck.fronteed.com/">http://icheck.fronteed.com/</a></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/icheck/icheck.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.icheck').iCheck({
+        checkboxClass: 'icheckbox_square-blue',
+        radioClass: 'iradio_square-blue'
+      });
+      $('.icheck-red').iCheck({
+        checkboxClass: 'icheckbox_square-red',
+        radioClass: 'iradio_square-red'
+      });
+      $('.icheck-flat').iCheck({
+        checkboxClass: 'icheckbox_flat-green',
+        radioClass: 'iradio_flat-green'
+      });
+    });
+  </script>
+{% endblock %}

@@ -14,7 +14,7 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-red:             #D32F2F;
+@brand-red:             #d1504c;
 @brand-pink:            #C2185B;
 @brand-purple:          #E040FB;
 @brand-deep-purple:     #512DA8;
@@ -24,7 +24,7 @@
 @brand-cyan:            #0097A7;
 @brand-teal:            #009688;
 @brand-green:           #388E3C;
-@brand-light-green:     #8BC34A;
+@brand-light-green:     #5cb85c;
 @brand-lime:            #AFB42B;
 @brand-yellow:          #FFEB3B;
 @brand-amber:           #FFA000;
@@ -33,12 +33,14 @@
 @brand-brown:           #795548;
 @brand-gray:            #616161;
 @brand-blue-gray:       #607D8B;
+@brand-dark: #373737;
 
 @brand-primary: #2e4667;
-@brand-success: #2cc53e;
-@brand-info:            @brand-blue;
+//@brand-success: #2cc53e;
+@brand-success: #5cb85c;
+@brand-info: rgb(132, 200, 231);
 @brand-warning:         #FF851B;
-@brand-danger: #FF4136;
+@brand-danger: #d1504c;
 
 //== Scaffolding
 //
@@ -121,9 +123,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        2px;
-@border-radius-large:       2px;
-@border-radius-small:       2px;
+@border-radius-base:        3px;
+@border-radius-large:       3px;
+@border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -219,7 +221,7 @@
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus: #aeaeae;
+@input-border-focus: @brand-cyan;
 
 //** Placeholder text color
 @input-color-placeholder:        #999;
@@ -264,8 +266,7 @@
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
-//@dropdown-link-hover-bg:         #f5f5f5;
-@dropdown-link-hover-bg:         rgba(0,0,0,.1);
+@dropdown-link-hover-bg:         #f5f5f5;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;

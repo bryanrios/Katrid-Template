@@ -12,7 +12,7 @@ $(document).ready(function () {
     '<button class="btn btn-default btn-block btn-demo-skin" data-value="classic">Classic</button>' +
     '<button class="btn btn-primary btn-block btn-demo-skin" data-value="navy">Navy</button>' +
     '<button class="btn btn-info btn-block btn-demo-skin" data-value="blue">Blue</button>' +
-    '<button class="btn btn-default btn-block btn-demo-skin" data-value="gray">Gray</button>' +
+    '<button class="btn btn-dark btn-block btn-demo-skin" data-value="gray">Gray</button>' +
     '<button class="btn btn-danger btn-block btn-demo-skin" data-value="red">Red</button>' +
     '</div>');
   $('.btn-demo-skin').click(function () {

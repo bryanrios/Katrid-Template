@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="col-lg-12 page-heading bg-white">
+  <div class="panel page-heading">
     <h2>FAQ</h2>
     <ol class="breadcrumb">
       <li>
@@ -15,70 +15,148 @@
 
   <div class="content row">
 
-  <div class="col-sm-12">
-    <form>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <input class="form-control" placeholder="Search...">
+    <div class="col-lg-12">
+      <form>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <input class="form-control" placeholder="Search...">
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
-
-  <div class="col-sm-3">
-    <div class="list-group">
-      <a href="#" class="list-group-item">
-        <i class="fa fa-fw fa-chevron-right"></i> Software Questions
-      </a>
-      <a href="#" class="list-group-item">
-        Accounting Questions
-      </a>
-      <a href="#" class="list-group-item">
-        Human Resources Questions
-      </a>
+      </form>
     </div>
-  </div>
 
-  <div class="col-sm-9">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4>Questions</h4>
-        <small>Commonly asked questions.</small>
-      </div>
+    <div class="col-lg-2 hidden-md">
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit?</h5>
+          Software
         </a>
         <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet?</h5>
+          Accounting
         </a>
         <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet, consectetur?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum?</h5>
-        </a>
-        <a href="#" class="list-group-item">
-          <h5>Lorem ipsum dolor sit amet?</h5>
+          Human Resources
         </a>
       </div>
     </div>
-  </div>
+
+    <div class="col-lg-10">
+      <div class="panel panel-default">
+        <div class="panel-heading bg-white">
+          <h4>Questions <br><small>Commonly asked questions.</small></h4>
+        </div>
+        <div id="faq" class="panel-group" role="tablist">
+          <div class="panel-body">
+            <a href="#q1" data-toggle="collapse">
+              Lorem ipsum dolor sit?
+            </a>
+            <div id="q1" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque ipsa ipsam laborum libero nam
+              quidem repudiandae vero voluptatum! Ab aperiam culpa exercitationem hic placeat ratione temporibus. Ipsum
+              labore, obcaecati!
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q2" data-toggle="collapse">
+              Lorem ipsum dolor sit amet?
+            </a>
+            <div id="q2" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error magni maxime nam odit pariatur totam
+              velit, vero! Aliquam consequatur delectus dolorum harum molestiae numquam perferendis placeat qui
+              reiciendis, unde.
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q3" data-toggle="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+            </a>
+            <div id="q3" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta est eum eveniet minus necessitatibus, sit
+              ut! Beatae commodi culpa cupiditate debitis, deserunt iste magni natus neque quaerat quisquam sapiente
+              tempora.
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q4" data-toggle="collapse">
+              Lorem ipsum dolor sit amet, consectetur?
+            </a>
+            <div id="q4" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut beatae culpa debitis dolore eos fuga
+              laborum necessitatibus numquam officiis quaerat quos repellat similique sint, tempora, totam unde, velit
+              voluptate!
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q5" data-toggle="collapse">
+              Lorem ipsum dolor sit amet?
+            </a>
+            <div id="q5" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex maxime nesciunt provident
+              repellat. Aliquid aperiam asperiores aspernatur at beatae, deserunt eligendi est, iure pariatur
+              perspiciatis, placeat sit sunt voluptatum!
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q6" data-toggle="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae?
+            </a>
+            <div id="q6" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias cum dignissimos est et magnam qui quod,
+              velit? Ea eos in ipsa magnam magni nihil officia quasi suscipit vero vitae?
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q7" data-toggle="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing?
+            </a>
+            <div id="q7" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam architecto cum cumque, debitis
+              deleniti dignissimos dolorem ducimus eaque eius eveniet ipsam necessitatibus officia porro quibusdam quos
+              reiciendis totam, veritatis?
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q8" data-toggle="collapse">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+            </a>
+            <div id="q8" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet delectus deserunt, eaque earum
+              esse exercitationem harum laboriosam laborum modi nisi pariatur praesentium quam quis ratione, sed, sit
+              voluptas voluptatem?
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q9" data-toggle="collapse">
+              Lorem ipsum?
+            </a>
+            <div id="q9" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, animi architecto blanditiis
+              cupiditate delectus ducimus et expedita laborum magnam maiores molestiae natus nostrum quia quis sed
+              soluta tempora temporibus!
+            </div>
+          </div>
+          <div class="panel-body">
+            <a href="#q10" data-toggle="collapse">
+              Lorem ipsum dolor sit amet?
+            </a>
+            <div id="q10" class="panel-collapse collapse">
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium at, corporis est excepturi
+              explicabo qui voluptatum? Amet distinctio, dolorum et fugit minima minus neque nobis non pariatur quod,
+              repellendus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 

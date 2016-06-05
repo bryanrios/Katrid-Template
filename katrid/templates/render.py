@@ -31,6 +31,11 @@ templates = [
     'wells.html',
     'font-awesome.html',
     'faq.html',
+    'components.html',
+    'callouts.html',
+    'modals.html',
+    'general.html',
+    'form-elements.html',
 ]
 
 for tmp in templates:

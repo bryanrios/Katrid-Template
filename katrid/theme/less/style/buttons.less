@@ -1,52 +1,84 @@
-// Aditional buttons
+// Outline buttons
 // --------------------------------------------------
 
-// Danger and error appear as red
+.btn-outline-variant (@brand-color) {
+  background: transparent;
+  border-color: @brand-color;
+  color: @brand-color;
+
+  &:hover {
+    background-color: @brand-color;
+    border-color: @brand-color;
+    color: #ffffff;
+  }
+}
+
+.btn-primary-outline {
+  .btn-outline-variant(@brand-primary);
+}
+.btn-success-outline {
+  .btn-outline-variant(@brand-success);
+}
+.btn-info-outline {
+  .btn-outline-variant(@brand-info);
+}
+.btn-warning-outline {
+  .btn-outline-variant(@brand-warning);
+}
+.btn-danger-outline {
+  .btn-outline-variant(@brand-danger);
+}
+.btn-dark-outline {
+  .btn-outline-variant(@brand-dark);
+}
+
+// Aditional buttons
+// --------------------------------------------------
+.btn-dark {
+  .button-variant(@btn-primary-color; @brand-dark; @brand-dark);
+}
 .btn-deep-purple {
-  .button-variant(@btn-primary-color; @brand-deep-purple; darken(@brand-deep-purple, 5%));
+  .button-variant(@btn-primary-color; @brand-deep-purple; @brand-deep-purple);
 }
 .btn-deep-orange {
-  .button-variant(@btn-primary-color; @brand-deep-orange; darken(@brand-deep-orange, 5%));
+  .button-variant(@btn-primary-color; @brand-deep-orange; @brand-deep-orange);
 }
 .btn-pink {
-  .button-variant(@btn-primary-color; @brand-pink; darken(@brand-pink, 5%));
+  .button-variant(@btn-primary-color; @brand-pink; @brand-pink);
 }
 .btn-purple {
-  .button-variant(@btn-primary-color; @brand-purple; darken(@brand-purple, 5%));
+  .button-variant(@btn-primary-color; @brand-purple; @brand-purple);
 }
 .btn-blue {
-  .button-variant(@btn-primary-color; @brand-blue; darken(@brand-blue, 5%));
+  .button-variant(@btn-primary-color; @brand-blue; @brand-blue);
 }
 .btn-indigo {
-  .button-variant(@btn-primary-color; @brand-indigo; darken(@brand-indigo, 5%));
+  .button-variant(@btn-primary-color; @brand-indigo; @brand-indigo);
 }
 .btn-cyan {
-  .button-variant(@btn-primary-color; @brand-cyan; darken(@brand-cyan, 5%));
+  .button-variant(@btn-primary-color; @brand-cyan; @brand-cyan);
 }
 .btn-teal {
-  .button-variant(@btn-primary-color; @brand-teal; darken(@brand-teal, 5%));
+  .button-variant(@btn-primary-color; @brand-teal; @brand-teal);
 }
 .btn-yellow {
-  .button-variant(@btn-default-color; @brand-yellow; darken(@brand-yellow, 5%));
-}
-.btn-amber {
-  .button-variant(@btn-default-color; @brand-amber; darken(@brand-amber, 5%));
+  .button-variant(@btn-default-color; @brand-yellow; @brand-yellow);
 }
 .btn-brown {
-  .button-variant(@btn-primary-color; @brand-brown; darken(@brand-brown, 5%));
+  .button-variant(@btn-primary-color; @brand-brown; @brand-brown);
 }
 .btn-gray {
-  .button-variant(@btn-primary-color; @brand-gray; darken(@brand-gray, 5%));
+  .button-variant(@btn-primary-color; @brand-gray; @brand-gray);
 }
 .btn-orange {
-  .button-variant(@btn-primary-color; @brand-orange; darken(@brand-orange, 5%));
+  .button-variant(@btn-primary-color; @brand-orange; @brand-orange);
 }
 .btn-lime {
-  .button-variant(@btn-primary-color; @brand-lime; darken(@brand-lime, 5%));
+  .button-variant(@btn-primary-color; @brand-lime; @brand-lime);
 }
 .btn-light-green {
-  .button-variant(@btn-primary-color; @brand-light-green; darken(@brand-light-green, 5%));
+  .button-variant(@btn-primary-color; @brand-light-green; @brand-light-green);
 }
 .btn-blue-gray {
-  .button-variant(@btn-primary-color; @brand-blue-gray; darken(@brand-blue-gray, 5%));
+  .button-variant(@btn-primary-color; @brand-blue-gray; @brand-blue-gray);
 }

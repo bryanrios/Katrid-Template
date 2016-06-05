@@ -5,16 +5,36 @@ body {
 }
 
 .skin(@bg-color) {
+  .navbar {
+    border: none;
+  }
+
   .navbar.navbar-inverse {
     background: @bg-color;
     border: none;
     color: #ffffff;
+
+    .navbar-search-control {
+      background: rgba(0,0,0,.2);
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+    }
   }
 
   .navbar-header {
     width: 220px;
     border-right: none;
-    background: rgba(255, 255, 255, .1);
+    background: lighten(@bg-color, 8%);
+    border-color: transparent;
+
+    >a, >a.navbar-brand:focus {
+      transition: all 300ms;
+      color: lighten(@bg-color, 70%);
+    }
+    >a.navbar-brand:hover {
+      color: #ffffff;
+    }
   }
 
   #left-menu.skin .menu-item>a {
@@ -37,13 +57,6 @@ body {
     color: #ffffff;
   }
 
-  .navbar .navbar-search-control {
-    background: rgba(0,0,0,.2);
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-  }
-
   &.bg-skin {
     background: @bg-color;
   }
@@ -59,8 +72,8 @@ body {
   }
 }
 
-.navbar.navbar-inverse .navbar-search-control:focus {
-  border: none;
+.navbar-inverse .navbar-search-control:focus {
+  border: transparent;
   outline: none;
 }
 .navbar-button>i.fa {
@@ -88,7 +101,7 @@ body {
 }
 
 .blue-skin {
-  .skin(#3292d3);
+  .skin(darken(#3292d3, 10%));
 }
 
 .red-skin {

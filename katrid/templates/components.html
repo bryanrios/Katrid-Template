@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="panel page-heading">
+    <h2>Components</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">UI Elements</a>
+      </li>
+      <li>Components</li>
+    </ol>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Tooltips
+          </div>
+          <div class="panel-body text-center">
+
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"
+                    title="Tooltip on left">Tooltip on left
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top"
+                    title="Tooltip on top">Tooltip on top
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                    title="Tooltip on bottom">Tooltip on bottom
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"
+                    title="Tooltip on right">Tooltip on right
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Popover
+          </div>
+          <div class="panel-body text-center">
+
+            <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left"
+                    data-title="Popover on left" data-content="Lorem ipsum dolor sit amet, consectetur.">Tooltip on left
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="popover" data-placement="top"
+                    data-title="Tooltip on top" data-content="Lorem ipsum dolor sit amet, consectetur.">Tooltip on top
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom"
+                    data-title="Tooltip on bottom" data-content="Lorem ipsum dolor sit amet, consectetur.">Tooltip on
+              bottom
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right"
+                    data-title="Tooltip on right" data-content="Lorem ipsum dolor sit amet, consectetur.">Tooltip on
+              right
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a data-toggle="tab" href="#tab-home">Home</a>
+          </li>
+          <li role="presentation">
+            <a data-toggle="tab" href="#tab-profile">Profile</a>
+          </li>
+          <li role="presentation">
+            <a data-toggle="tab" href="#tab-messages">Messages</a>
+          </li>
+          <li role="presentation">
+            <a data-toggle="tab" href="#tab-settings">Settings</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tab-home">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit.</strong>
+              <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis deserunt, est, eum id, ipsam labore
+            laborum nobis nostrum numquam perferendis reprehenderit sed sequi sit sunt tempore vel voluptate voluptates!
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane active" id="tab-profile">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit.</strong>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur eligendi laboriosam
+              perspiciatis saepe ullam unde! Commodi iusto nesciunt odio! Consequatur, dicta dolorum exercitationem itaque
+              magni officia quibusdam saepe voluptas.
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane active" id="tab-messages">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit amet.</strong>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis debitis doloribus, dolorum est eum ipsum
+              itaque mollitia numquam perferendis voluptatibus? Nihil quos veniam vitae. Laborum, magni sed. Maxime quas,
+              veniam.
+              </p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane active" id="tab-settings">
+            <div class="panel-body">
+              <strong>Lorem ipsum dolor sit amet.</strong>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid cumque ducimus, ea eius error impedit,
+              maiores nostrum quod sed tenetur veniam? Accusamus dolor eos est eum illo, obcaecati provident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Additional Colors
+          </div>
+          <div class="panel-body">
+            <div class="form-group child-margin">
+              <button type="button" class="btn btn-lg btn-blue">Blue</button>
+              <button type="button" class="btn btn-lg btn-indigo">Indigo</button>
+              <button type="button" class="btn btn-lg btn-deep-purple">Deep Purple</button>
+              <button type="button" class="btn btn-lg btn-cyan">Cyan</button>
+              <button type="button" class="btn btn-lg btn-teal">Teal</button>
+              <button type="button" class="btn btn-lg btn-blue-gray">Blue Gray</button>
+              <button type="button" class="btn btn-lg btn-gray">Gray</button>
+              <button type="button" class="btn btn-lg btn-lime">Lime</button>
+              <button type="button" class="btn btn-lg btn-light-green">Light Green</button>
+              <button type="button" class="btn btn-lg btn-brown">Brown</button>
+              <button type="button" class="btn btn-lg btn-pink">Pink</button>
+              <button type="button" class="btn btn-lg btn-purple">Purple</button>
+              <button type="button" class="btn btn-lg btn-deep-orange">Deep Orange</button>
+              <button type="button" class="btn btn-lg btn-orange">Orange</button>
+              <button type="button" class="btn btn-lg btn-yellow">Yellow</button>
+              <button type="button" class="btn btn-lg btn-amber">Amber</button>
+            </div>
+            <div class="form-group child-margin">
+              <button type="button" class="btn btn-blue">Blue</button>
+              <button type="button" class="btn btn-indigo">Indigo</button>
+              <button type="button" class="btn btn-deep-purple">Deep Purple</button>
+              <button type="button" class="btn btn-cyan">Cyan</button>
+              <button type="button" class="btn btn-teal">Teal</button>
+              <button type="button" class="btn btn-blue-gray">Blue Gray</button>
+              <button type="button" class="btn btn-gray">Gray</button>
+              <button type="button" class="btn btn-lime">Lime</button>
+              <button type="button" class="btn btn-light-green">Light Green</button>
+              <button type="button" class="btn btn-brown">Brown</button>
+              <button type="button" class="btn btn-pink">Pink</button>
+              <button type="button" class="btn btn-purple">Purple</button>
+              <button type="button" class="btn btn-deep-orange">Deep Orange</button>
+              <button type="button" class="btn btn-orange">Orange</button>
+              <button type="button" class="btn btn-yellow">Yellow</button>
+              <button type="button" class="btn btn-amber">Amber</button>
+            </div>
+            <div class="form-group margin-child">
+              <button type="button" class="btn btn-sm btn-blue">Blue</button>
+              <button type="button" class="btn btn-sm btn-indigo">Indigo</button>
+              <button type="button" class="btn btn-sm btn-deep-purple">Deep Purple</button>
+              <button type="button" class="btn btn-sm btn-cyan">Cyan</button>
+              <button type="button" class="btn btn-sm btn-teal">Teal</button>
+              <button type="button" class="btn btn-sm btn-blue-gray">Blue Gray</button>
+              <button type="button" class="btn btn-sm btn-gray">Gray</button>
+              <button type="button" class="btn btn-sm btn-lime">Lime</button>
+              <button type="button" class="btn btn-sm btn-light-green">Light Green</button>
+              <button type="button" class="btn btn-sm btn-brown">Brown</button>
+              <button type="button" class="btn btn-sm btn-pink">Pink</button>
+              <button type="button" class="btn btn-sm btn-purple">Purple</button>
+              <button type="button" class="btn btn-sm btn-deep-orange">Deep Orange</button>
+              <button type="button" class="btn btn-sm btn-orange">Orange</button>
+              <button type="button" class="btn btn-sm btn-yellow">Yellow</button>
+              <button type="button" class="btn btn-sm btn-amber">Amber</button>
+            </div>
+            <div class="form-group child-margin">
+              <button type="button" class="btn btn-xs btn-blue">Blue</button>
+              <button type="button" class="btn btn-xs btn-indigo">Indigo</button>
+              <button type="button" class="btn btn-xs btn-deep-purple">Deep Purple</button>
+              <button type="button" class="btn btn-xs btn-cyan">Cyan</button>
+              <button type="button" class="btn btn-xs btn-teal">Teal</button>
+              <button type="button" class="btn btn-xs btn-blue-gray">Blue Gray</button>
+              <button type="button" class="btn btn-xs btn-gray">Gray</button>
+              <button type="button" class="btn btn-xs btn-lime">Lime</button>
+              <button type="button" class="btn btn-xs btn-light-green">Light Green</button>
+              <button type="button" class="btn btn-xs btn-brown">Brown</button>
+              <button type="button" class="btn btn-xs btn-pink">Pink</button>
+              <button type="button" class="btn btn-xs btn-purple">Purple</button>
+              <button type="button" class="btn btn-xs btn-deep-orange">Deep Orange</button>
+              <button type="button" class="btn btn-xs btn-orange">Orange</button>
+              <button type="button" class="btn btn-xs btn-yellow">Yellow</button>
+              <button type="button" class="btn btn-xs btn-amber">Amber</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+      $('[data-toggle="popover"]').popover({container: 'body'});
+    });
+  </script>
+{% endblock %}
