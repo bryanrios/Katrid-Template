@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <!-- bootstrap-markdown -->
+  <link href="plugins/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css">
+
+  <!-- summernote -->
+  <link href="plugins/summernote/summernote.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+  <div class="panel page-heading">
+    <h2>Web Editors</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">UI Elements</a>
+      </li>
+      <li>Web Editors</li>
+    </ol>
+  </div>
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Bootstrap Markdown <small>http://www.codingdrama.com/bootstrap-markdown/</small></h5>
+          </div>
+          <div class="panel-body">
+            <textarea id="id-bs-markdown"></textarea>
+            <a class="btn btn-default" href="http://www.codingdrama.com/bootstrap-markdown/" target="_blank">Know More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Summernote <small>http://summernote.org/</small></h5>
+          </div>
+          <div class="panel-body">
+            <textarea id="id-summernote"></textarea>
+            <a class="btn btn-default" href="http://summernote.org/" target="_blank">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+
+  <!-- summernote -->
+  <script src="plugins/summernote/summernote.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('#id-summernote').summernote({
+      height: 97
+    });
+  });
+  </script>
+
+  <!-- bootstrap-markdown -->
+  <script src="plugins/bootstrap-markdown/js/bootstrap-markdown.min.js"></script>
+  <script>
+    $(document).ready(function () {
+          $('#id-bs-markdown').markdown();
+        }
+    );
+  </script>
+{% endblock %}

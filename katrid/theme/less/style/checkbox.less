@@ -25,11 +25,6 @@ label.checkbox input[type=checkbox] {
 label.checkbox > i {
   border-color: #BDBDBD;
   border-radius: 1px;
-  transition: border-color .3s;
-  -o-transition: border-color .3s;
-  -ms-transition: border-color .3s;
-  -moz-transition: border-color .3s;
-  -webkit-transition: border-color .3s;
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -52,11 +47,6 @@ label.checkbox > i {
 label.radio > i {
   border-color: #BDBDBD;
   border-radius: 50%;
-  transition: border-color .3s;
-  -o-transition: border-color .3s;
-  -ms-transition: border-color .3s;
-  -moz-transition: border-color .3s;
-  -webkit-transition: border-color .3s;
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -83,7 +73,7 @@ label.radio > input:checked + i,
 label.radio > input:focus + i,
 label.radio:hover > input + i
 {
-  border-color: @brand-primary;
+  border-color: @brand-blue;
 }
 
 label.checkbox > input:checked + i:after,
@@ -97,9 +87,8 @@ label.radio > input + i:after {
 }
 
 label.checkbox > i:after {
-  transition: opacity 300ms;
   position: absolute;
-  color: @brand-primary;
+  color: @brand-blue;
   content: '\f00c';
   top: -1px;
   left: 1px;
@@ -110,9 +99,8 @@ label.checkbox > i:after {
 }
 
 label.radio > i:after {
-  transition: opacity 300ms;
   position: absolute;
-  background-color: @brand-primary;
+  background-color: @brand-blue;
   content: ' ';
   border-radius: 50%;
   top: 3px;
@@ -121,9 +109,17 @@ label.radio > i:after {
   height: 11px;
 }
 
+.radio.radio-inline + .radio-inline {
+  margin-top: 3px;
+}
+
 .table .action-checkbox, .table .action-checkbox-column {
   vertical-align: middle;
   width: 30px;
+}
+
+.table .action-checkbox>.checkbox, .table .action-checkbox-column>.checkbox {
+  min-height: 20px;
 }
 
 .table.table-bordered .action-checkbox-column, .table.table-bordered .action-checkbox {

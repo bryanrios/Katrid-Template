@@ -1,28 +1,9 @@
-var _loadDatabase = function() {
-  var db = openDatabase('ng-pos', '2.0', 'POS Database', 1024 * 1024 * 10);
-  window.db = db;
 
-  var loadDemo = function (tx) {
-    demo_data = JSON.parse(demo_data);
-    for (var i=0;i<demo_data.length;i++) {
-      var obj = demo_data[i];
-      tx.executeSql('insert into pos_item (name, img, value) values (?, ?, ?)', [obj.name, obj.img, obj.value]);
-    }
-  };
-
-  db.transaction(function(tx) {
-    tx.executeSql('CREATE TABLE if not exists pos_item (id integer PRIMARY KEY AUTOINCREMENT, name VARCHAR(128), code VARCHAR(48), unit VARCHAR(32), value DOUBLE, img varchar(128))');
-    tx.executeSql('CREATE TABLE if not exists pos_client (id integer PRIMARY KEY AUTOINCREMENT, name VARCHAR(128), code VARCHAR(48))');
-    tx.executeSql('CREATE TABLE if not exists pos_trans (id integer PRIMARY KEY AUTOINCREMENT, client_id INTEGER, value DOUBLE, timestamp DOUBLE, payment_type VARCHAR(32))');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS pos_trans_item (id integer PRIMARY KEY AUTOINCREMENT, trans_id integer, value DOUBLE, qty DOUBLE, total DOUBLE)');
-    tx.executeSql('CREATE TABLE if not exists pos_test (id integer PRIMARY KEY AUTOINCREMENT, name varchar(32))');
-    tx.executeSql("select max(id) as id from pos_item", [], function(tx, results) { if (!results.rows[0].id) loadDemo(tx); });
-  });
-
+var findProduct = function (s) {
+  var r = [];
+  for (var i=0;i<demo_data.length;i++) r.push({ id: i, name: demo_data[i].name, img: demo_data[i].img, value: demo_data[i].value });
+  return r;
 };
-
-_loadDatabase();
-
 
 var posApp = angular.module('posApp', ['ngRoute', 'ngCookies', 'ngSanitize'], function ($routeProvider, $locationProvider, $httpProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -80,32 +61,19 @@ posApp.controller('PosController', function ($scope, $rootScope, $location) {
   $scope.products = ['test', 'test2'];
 
   $scope.initList = function () {
-    window.db.transaction(function (tx) {
-      tx.executeSql('select id, name, value, img from pos_item limit 100', [], function(tx, results) {
-        $scope.$apply(function () {
-        $scope.products = [];
-        rows = results.rows;
-        for (var i=0;i<rows.length;i++) $scope.products.push(rows[i]);
-        });
-      });
-    });
+    var results = findProduct('');
+    $scope.products = [];
+    var rows = results;
+    for (var i=0;i<rows.length;i++) $scope.products.push(rows[i]);
   };
 
   $scope.search = function() {
     var s = $scope.searchValue;
 
     var fn = function() {
-    window.db.transaction(function (tx) {
-      var q = "select id, name, value, img from pos_item where name like '%" + s + "%' limit 32";
-      tx.executeSql(q, [], function(tx, results) {
-        console.log(results.rows);
-        $scope.$apply(function () {
-        $scope.products = [];
-        rows = results.rows;
-        for (var i=0;i<rows.length;i++) $scope.products.push(rows[i]);
-        });
-      });
-    })
+      $scope.products = [];
+      rows = findProduct(s);
+      for (var i=0;i<rows.length;i++) $scope.products.push(rows[i]);
     };
 
     clearTimeout(tm);

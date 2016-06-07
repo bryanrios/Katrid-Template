@@ -1,337 +1,1084 @@
 {% extends "base.html" %}
+{% block extra_head %}
+  <link href="plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet" type="text/css">
+  <link href="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
+  <link href="plugins/nouislider/nouislider.css" rel="stylesheet" type="text/css">
+  <link href="plugins/chosen/chosen.min.css" rel="stylesheet" type="text/css">
+  <link href="plugins/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+{% endblock %}
 {% block content %}
+  <div class="panel page-heading">
+    <h2>Plugin Controls</h2>
+    <ol class="breadcrumb">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Forms</a>
+      </li>
+      <li>Plugin Controls</li>
+    </ol>
+  </div>
+
   <div class="content">
 
-  <div class="panel panel-default data-panel">
-    <div class="panel-body">
-      <h2>jQuery-ui</h2>
-      <h3>Slider</h3>
-      <div class="form-group">
-        <div class="col-sm-4">
-          <div id="jq-slider"></div>
-        </div>
+    <div class="row">
 
-        <div class="col-sm-4">
-          <div id="jq-slider-2"></div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider - slider-primary</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4 slider-primary">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4 slider-primary">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4 slider-primary">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider - slider-success</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4 slider-success">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4 slider-success">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4 slider-success">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider - slider-warning</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4 slider-warning">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4 slider-warning">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4 slider-warning">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider - slider-info</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4 slider-info">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4 slider-info">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4 slider-info">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>RangeSlider - slider-danger</h3>
-
-      <div class="form-group">
-        <div class="col-sm-4 slider-danger">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
-        </div>
-
-        <div class="col-sm-4 slider-danger">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450">
-        </div>
-
-        <div class="col-sm-4 slider-danger">
-          <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
-                 data-slider-to="450" data-slider-grid="true">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="col-md-6">
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      Input Widgets
-    </div>
-    <div class="panel-body">
-
-      <h3>Autocomplete</h3>
-      <div class="row">
-        <div class="col-md-12">
-          <label>Tags</label>
-          <input id="tags" type="text" class="form-control">
-        </div>
-      </div>
-      <div class="clearfix"></div>
-
-      <h3>Datepicker</h3>
-      <div class="row">
-        <div class="form-group">
-          <div class="col-md-4">
-            <input type="text" class="datepicker form-control">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Bootstrap Awesome Checkbox
+              <small>http://awesome-bootstrap-checkbox.okendoken.com/demo/index.html</small>
+            </h5>
           </div>
-          <div class="col-md-6">
-            <div class="input-daterange input-group">
-              <input type="text" class="form-control" name="start">
-              <span class="input-group-addon">to</span>
-              <input type="text" class="form-control" name="end">
+          <div class="panel-body">
+            <p>Add the css file reference in the html head section<br> <code>&lt;link href="plugin/awesome-checkbox"
+              rel="stylesheet" type="text/css"&gt;</code></p>
+            <div class="checkbox checkbox-default">
+              <input id="checkbox-1" type="checkbox" checked>
+              <label for="checkbox-1">Default</label>
+            </div>
+            <div class="checkbox checkbox-primary">
+              <input id="checkbox-2" type="checkbox" checked>
+              <label for="checkbox-2">Primary</label>
+            </div>
+            <div class="checkbox checkbox-success">
+              <input id="checkbox-3" type="checkbox" checked>
+              <label for="checkbox-3">Success</label>
+            </div>
+            <div class="checkbox checkbox-info">
+              <input id="checkbox-4" type="checkbox" checked>
+              <label for="checkbox-4">Info</label>
+            </div>
+            <div class="checkbox checkbox-warning">
+              <input id="checkbox-5" type="checkbox" checked>
+              <label for="checkbox-5">Warning</label>
+            </div>
+            <div class="checkbox checkbox-danger">
+              <input id="checkbox-6" type="checkbox" checked>
+              <label for="checkbox-6">Danger</label>
             </div>
           </div>
-          <div class="col-md-6">
-            <div id="inline-datepicker"></div>
-          </div>
         </div>
-      </div>
-
-    </div>
-  </div>
       </div>
       <div class="col-md-6">
-  <div class="panel panel-default data-panel">
-    <div class="panel-heading">
-      Masked Input
-    </div>
-    <div class="panel-body">
-      <div class="form-group">
-        <label>Date</label>
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder="-">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Bootstrap TouchSpin
+              <small>http://www.virtuosoft.eu/code/bootstrap-touchspin/</small>
+            </h5>
+          </div>
+          <div class="panel-body">
+            <p>Add the css and javascript file references in the html head section<br>
+              <code>&lt;link href="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet"
+                type="text/css"&gt;</code><br>
+              <code>&lt;script
+                href="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"&gt;&lt;script&gt;</code>
+            </p>
+            <h4>Examples</h4>
+            <div class="form-group">
+              <input id="touchspin-demo1" type="text" value="" name="touchspin-demo1">
+            </div>
+            <div class="form-group">
+              <input id="touchspin-demo2" type="text" value="" name="touchspin-demo2">
+            </div>
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <label>Phone</label>
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" class="form-control" data-mask="(999)999-9999" placeholder="Phone number">
+
+      <div class="clearfix"></div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>noUiSlider
+              <small>http://refreshless.com/nouislider/</small>
+            </h5>
+          </div>
+          <div class="panel-body">
+            <h3>noUiSlider</h3>
+            <p>noUiSlider is a range slider without bloat. It offers a ton off features, and it is as small, lightweight
+              and minimal as possible, which is great for mobile use on the many supported devices, including iPhone,
+              iPad, Android devices & Windows (Phone) 8 desktops, tablets and all-in-ones. It works on desktops too, of
+              course!</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="margin-bottom-16">
+                  <div id="nouislider-1"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="margin-bottom-16">
+                      <div id="nouislider-2" class="slider-danger"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="margin-bottom-16">
+                      <div id="nouislider-3" class="slider-primary"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="margin-bottom-16">
+                      <div id="nouislider-4" class="slider-success"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="margin-bottom-16">
+                      <div id="nouislider-5" class="slider-warning"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <label>Credit Card</label>
-        <div class="row">
-          <div class="col-md-6">
-            <input type="text" class="form-control" data-mask="9999-9999-9999-9999" data-mask-placeholder="*"
-                   placeholder="Credit Card Number">
+
+      <div class="col-md-6">
+
+        <div class="panel panel-default data-panel">
+          <div class="panel-heading">
+            More Sliders
+          </div>
+          <div class="panel-body">
+            <h3>jQuery-ui Slider</h3>
+            <div class="form-group">
+              <div class="col-md-6">
+                <div id="jq-slider"></div>
+              </div>
+
+              <div class="col-md-6">
+                <div id="jq-slider-2"></div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+
+            <h3>Ion.RangeSlider
+              <small>http://ionden.com/a/plugins/ion.rangeSlider/en.html</small>
+            </h3>
+
+            <div class="form-group">
+              <div class="col-md-6">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>RangeSlider - slider-primary</h3>
+
+            <div class="form-group">
+              <div class="col-md-6 slider-primary">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6 slider-primary">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>RangeSlider - slider-success</h3>
+
+            <div class="form-group">
+              <div class="col-md-6 slider-success">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6 slider-success">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>RangeSlider - slider-warning</h3>
+
+            <div class="form-group">
+              <div class="col-md-6 slider-warning">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6 slider-warning">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>RangeSlider - slider-info</h3>
+
+            <div class="form-group">
+              <div class="col-md-6 slider-info">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6 slider-info">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>RangeSlider - slider-danger</h3>
+
+            <div class="form-group">
+              <div class="col-md-6 slider-danger">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="100" data-slider-value="50">
+              </div>
+
+              <div class="col-md-6 slider-danger">
+                <input id="jq-slider-3" class="slider" data-slider-min="0" data-slider-max="1000" data-slider-from="250"
+                       data-slider-to="450" data-slider-grid="true">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
           </div>
         </div>
       </div>
+
+      <div class="col-md-6">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Input Widgets
+          </div>
+          <div class="panel-body">
+
+            <h3>Autocomplete</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <label>Tags</label>
+                <input id="tags" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <h3>Datepicker</h3>
+            <div class="row">
+              <div class="form-group">
+                <div class="col-md-4">
+                  <input type="text" class="datepicker form-control">
+                </div>
+                <div class="col-md-6">
+                  <div class="input-daterange input-group">
+                    <input type="text" class="form-control" name="start">
+                    <span class="input-group-addon">to</span>
+                    <input type="text" class="form-control" name="end">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="inline-datepicker"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default data-panel">
+          <div class="panel-heading">
+            Masked Input
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label>Date</label>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" data-mask="99/99/9999" data-mask-placeholder="-">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" data-mask="(999)999-9999" placeholder="Phone number">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Credit Card</label>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" data-mask="9999-9999-9999-9999" data-mask-placeholder="*"
+                         placeholder="Credit Card Number">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Select2 Plugin
+              <small>https://select2.github.io/</small>
+            </h5>
+          </div>
+          <div class="panel-body">
+            <h3>Select</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <select id="id-select2-1" class="form-control">
+                  <option>Choose an option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+            </div>
+            <h3>Select Multiple</h3>
+            <div class="row">
+              <div class="col-md-12">
+                <select class="form-control select2" multiple>
+                  <option>Choose an option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Chosen
+              <small>https://harvesthq.github.io/chosen/</small>
+            </h5>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <h3>Select Element</h3>
+              <select data-placeholder="Choose a Country..." class="chosen col-md-12">
+                <option value=""></option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Aland Islands">Aland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote D'ivoire">Cote D'ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curacao">Curacao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">French Southern Territories</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-bissau">Guinea-bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macao">Macao</option>
+                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of
+                </option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn">Pitcairn</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da
+                  Cunha
+                </option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich
+                  Islands
+                </option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-leste">Timor-leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <h3>Select Multiple</h3>
+              <select data-placeholder="Choose a Country..." class="chosen col-md-12" multiple>
+                <option value=""></option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Aland Islands">Aland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote D'ivoire">Cote D'ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curacao">Curacao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">French Southern Territories</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-bissau">Guinea-bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macao">Macao</option>
+                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of
+                </option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn">Pitcairn</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da
+                  Cunha
+                </option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich
+                  Islands
+                </option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-leste">Timor-leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>Bootstrap Multiselect
+              <small>http://davidstutz.github.io/bootstrap-multiselect/</small>
+            </h5>
+          </div>
+          <div class="panel-body">
+            <select id="bs-multiselect" multiple>
+              <option value="cheese">Cheese</option>
+              <option value="tomatoes">Tomatoes</option>
+              <option value="mozarella">Mozzarella</option>
+              <option value="mushrooms">Mushrooms</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="onions">Onions</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h5>jQuery Knob <small>http://anthonyterrien.com/knob/</small></h5>
+          </div>
+          <div class="panel-body">
+            <input type="text" value="25" class="dial" data-width="100">
+            <input type="text" value="50" class="dial" data-width="125" data-fgcolor="#FF851B">
+            <input type="text" value="75" class="dial" data-width="150" data-fgColor="#d1504c">
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
-  </div>
-
-    <div class="col-md-6">
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      Select Element
-    </div>
-    <div class="panel-body">
-      <div class="row">
-        <div class="col-md-6">
-          <select id="id-select-1" class="form-control">
-            <option>Choose an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-      </div>
-      <h3>Select Multiple</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <select id="id-select-1" class="form-control" multiple>
-            <option>Choose an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-      </div>
-      <h3>Select2 Plugin</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <select id="id-select2-1" class="form-control">
-            <option>Choose an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-      </div>
-      <h3>Select2 Multiple</h3>
-      <div class="row">
-        <div class="col-md-6">
-          <select class="form-control select2" multiple>
-            <option>Choose an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-      </div>
-
-  </div>
-</div>
 {% endblock %}
 {% block additional_scripts %}
-<script>
-  $(document).ready(function () {
-    // auto complete
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $("#tags").autocomplete({
-      source: availableTags
+  <script src="plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+  <script src="plugins/nouislider/nouislider.min.js"></script>
+  <script src="plugins/bootstrap-multiselect/js/bootstrap-multiselect.min.js"></script>
+  <script src="plugins/jquery.knob/jquery.knob.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // auto complete
+      var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $("#tags").autocomplete({
+        source: availableTags
+      });
     });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('#id-select2-1').select2();
+      $('.select2').select2();
+
+      // jquery.maskedinput
+      $('[data-mask]').each(function (idx, el) {
+        el = $(el);
+        var placeholder = el.data('mask-placeholder');
+        console.log(placeholder);
+        el.mask(el.data('mask'), {placeholder: placeholder});
+      });
+
+      $('.datepicker').datepicker({
+        autoclose: true
+      });
+
+      $('#jq-slider').slider();
+      $('#jq-slider-2').slider({range: true, min: 0, max: 500, values: [75, 300]});
+      $('.slider').each(function (idx, el) {
+        el = $(el);
+        var min = el.data('slider-min'), max = el.data('slider-max'), from = el.data('slider-value'), to = el.data('slider-to'), grid = el.data('slider-grid');
+        if (!from) from = el.data('slider-from');
+        var cfg = {min: min, max: max, from: from};
+        if (to) {
+          cfg.to = to;
+          cfg.type = 'double';
+        }
+        if (grid) cfg.grid = true;
+        el.ionRangeSlider(cfg);
+      });
+
+      $('.input-daterange').datepicker({});
+      $('#inline-datepicker').datepicker({});
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("input[name='touchspin-demo1']").TouchSpin();
+      $("input[name='touchspin-demo2']").TouchSpin({
+        verticalbuttons: true
+      });
+    });
+  </script>
+
+  <script>
+    $(function () {
+      var el = document.getElementById('nouislider-1');
+      noUiSlider.create(el, {
+        start: 50,
+        connect: 'upper',
+        range: {
+          min: 0,
+          max: 100
+        }
+      });
+      el = document.getElementById('nouislider-2');
+      noUiSlider.create(el, {
+        start: [50, 75],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+          min: 0,
+          max: 100
+        }
+      });
+      el = document.getElementById('nouislider-3');
+      noUiSlider.create(el, {
+        start: [50, 75],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+          min: 0,
+          max: 100
+        }
+      });
+      el = document.getElementById('nouislider-4');
+      noUiSlider.create(el, {
+        start: [40, 75],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+          min: 0,
+          max: 100
+        }
+      });
+      el = document.getElementById('nouislider-5');
+      noUiSlider.create(el, {
+        start: [50, 85],
+        behaviour: 'drag',
+        connect: true,
+        range: {
+          min: 0,
+          max: 100
+        }
+      });
+    });
+  </script>
+
+  <script src="plugins/chosen/chosen.jquery.min.js"></script>
+
+  <script>
+    $(function () {
+      $('.chosen').chosen();
+    });
+  </script>
+
+  <script>
+  $(function () {
+    $('#bs-multiselect').multiselect();
   });
-</script>
+  </script>
 
-<script>
-  $(document).ready(function () {
-    $('#id-select2-1').select2();
-    $('.select2').select2();
-
-    // jquery.maskedinput
-    $('[data-mask]').each(function (idx, el) {
-      el = $(el);
-      var placeholder = el.data('mask-placeholder');
-      console.log(placeholder);
-      el.mask(el.data('mask'), {placeholder: placeholder});
-    });
-
-    $('.datepicker').datepicker({
-      autoclose: true
-    });
-
-    $('#jq-slider').slider();
-    $('#jq-slider-2').slider({range: true, min: 0, max: 500, values: [75, 300]});
-    $('.slider').each(function (idx, el) {
-      el = $(el);
-      var min = el.data('slider-min'), max = el.data('slider-max'), from = el.data('slider-value'), to = el.data('slider-to'), grid = el.data('slider-grid');
-      if (!from) from = el.data('slider-from');
-      var cfg = {min: min, max: max, from: from};
-      if (to) {
-        cfg.to = to;
-        cfg.type = 'double';
-      }
-      if (grid) cfg.grid = true;
-      el.ionRangeSlider(cfg);
-    });
-
-    $('.input-daterange').datepicker({});
-    $('#inline-datepicker').datepicker({});
-  });
-</script>
+  <script>
+  $(function() {
+    $('.dial').knob();
+  })
+  </script>
 
 {% endblock %}

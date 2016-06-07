@@ -36,6 +36,11 @@ templates = [
     'modals.html',
     'general.html',
     'form-elements.html',
+    'data-tables.html',
+    'web-editors.html',
+    'ck-editor.html',
+    'grid.html',
+    'tree-view.html',
 ]
 
 for tmp in templates:

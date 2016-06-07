@@ -7,7 +7,7 @@ body {
 #left-menu .logo-area {
   background: #ffffff;
 }
-.navbar-inverse .navbar-search-control:focus {
+.navbar-skin .navbar-search-control:focus {
   border: transparent;
   outline: none;
 }
@@ -17,27 +17,18 @@ body {
   padding: 10px;
   border-radius: 4px;
 }
-.navbar.navbar-inverse li.border-right {
+.navbar.navbar-skin li.border-right {
   border-right: none;
 }
-.navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-brand {
-  color: #ffffff;
-}
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-  background: rgba(0, 0, 0, 0.2);
-}
-.gray-skin .navbar {
+.gray-skin #navbar-nav.navbar {
   border: none;
 }
-.gray-skin .navbar.navbar-inverse {
+.gray-skin #navbar-nav.navbar-skin {
   background: #2d2d2d;
   border: none;
   color: #ffffff;
 }
-.gray-skin .navbar.navbar-inverse .navbar-search-control {
+.gray-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -78,15 +69,24 @@ body {
 .gray-skin.bg-skin {
   background: #2d2d2d;
 }
-.blue-skin .navbar {
+.gray-skin .navbar-skin .navbar-nav > li > a,
+.gray-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.gray-skin .navbar-skin .navbar-nav > .open > a,
+.gray-skin .navbar-skin .navbar-nav > .open > a:hover,
+.gray-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.blue-skin #navbar-nav.navbar {
   border: none;
 }
-.blue-skin .navbar.navbar-inverse {
+.blue-skin #navbar-nav.navbar-skin {
   background: #2576ad;
   border: none;
   color: #ffffff;
 }
-.blue-skin .navbar.navbar-inverse .navbar-search-control {
+.blue-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -127,15 +127,24 @@ body {
 .blue-skin.bg-skin {
   background: #2576ad;
 }
-.red-skin .navbar {
+.blue-skin .navbar-skin .navbar-nav > li > a,
+.blue-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.blue-skin .navbar-skin .navbar-nav > .open > a,
+.blue-skin .navbar-skin .navbar-nav > .open > a:hover,
+.blue-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.red-skin #navbar-nav.navbar {
   border: none;
 }
-.red-skin .navbar.navbar-inverse {
+.red-skin #navbar-nav.navbar-skin {
   background: #e64b3b;
   border: none;
   color: #ffffff;
 }
-.red-skin .navbar.navbar-inverse .navbar-search-control {
+.red-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -176,15 +185,24 @@ body {
 .red-skin.bg-skin {
   background: #e64b3b;
 }
-.navy-skin .navbar {
+.red-skin .navbar-skin .navbar-nav > li > a,
+.red-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.red-skin .navbar-skin .navbar-nav > .open > a,
+.red-skin .navbar-skin .navbar-nav > .open > a:hover,
+.red-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.navy-skin #navbar-nav.navbar {
   border: none;
 }
-.navy-skin .navbar.navbar-inverse {
+.navy-skin #navbar-nav.navbar-skin {
   background: #143c58;
   border: none;
   color: #ffffff;
 }
-.navy-skin .navbar.navbar-inverse .navbar-search-control {
+.navy-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -225,15 +243,24 @@ body {
 .navy-skin.bg-skin {
   background: #143c58;
 }
-.deep-purple-skin .navbar {
+.navy-skin .navbar-skin .navbar-nav > li > a,
+.navy-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.navy-skin .navbar-skin .navbar-nav > .open > a,
+.navy-skin .navbar-skin .navbar-nav > .open > a:hover,
+.navy-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.deep-purple-skin #navbar-nav.navbar {
   border: none;
 }
-.deep-purple-skin .navbar.navbar-inverse {
+.deep-purple-skin #navbar-nav.navbar-skin {
   background: #512DA8;
   border: none;
   color: #ffffff;
 }
-.deep-purple-skin .navbar.navbar-inverse .navbar-search-control {
+.deep-purple-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -274,15 +301,24 @@ body {
 .deep-purple-skin.bg-skin {
   background: #512DA8;
 }
-.purple-skin .navbar {
+.deep-purple-skin .navbar-skin .navbar-nav > li > a,
+.deep-purple-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.deep-purple-skin .navbar-skin .navbar-nav > .open > a,
+.deep-purple-skin .navbar-skin .navbar-nav > .open > a:hover,
+.deep-purple-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.purple-skin #navbar-nav.navbar {
   border: none;
 }
-.purple-skin .navbar.navbar-inverse {
+.purple-skin #navbar-nav.navbar-skin {
   background: #E040FB;
   border: none;
   color: #ffffff;
 }
-.purple-skin .navbar.navbar-inverse .navbar-search-control {
+.purple-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -323,15 +359,24 @@ body {
 .purple-skin.bg-skin {
   background: #E040FB;
 }
-.indigo-skin .navbar {
+.purple-skin .navbar-skin .navbar-nav > li > a,
+.purple-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.purple-skin .navbar-skin .navbar-nav > .open > a,
+.purple-skin .navbar-skin .navbar-nav > .open > a:hover,
+.purple-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
+}
+.indigo-skin #navbar-nav.navbar {
   border: none;
 }
-.indigo-skin .navbar.navbar-inverse {
+.indigo-skin #navbar-nav.navbar-skin {
   background: #303F9F;
   border: none;
   color: #ffffff;
 }
-.indigo-skin .navbar.navbar-inverse .navbar-search-control {
+.indigo-skin #navbar-nav.navbar-skin .navbar-search-control {
   background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border: none;
@@ -371,5 +416,14 @@ body {
 }
 .indigo-skin.bg-skin {
   background: #303F9F;
+}
+.indigo-skin .navbar-skin .navbar-nav > li > a,
+.indigo-skin .navbar-skin .navbar-brand {
+  color: #ffffff;
+}
+.indigo-skin .navbar-skin .navbar-nav > .open > a,
+.indigo-skin .navbar-skin .navbar-nav > .open > a:hover,
+.indigo-skin .navbar-skin .navbar-nav > .open > a:focus {
+  color: #ffffff;
 }
 /*# sourceMappingURL=skins.css.map */

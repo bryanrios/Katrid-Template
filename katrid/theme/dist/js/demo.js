@@ -5,8 +5,8 @@ $(document).ready(function () {
   });
 
   $('#demo-settings').append('<div id="demo-choices" class="animated fadeIn">' +
-    '<div class="checkbox"><label><input id="demo-highlight-selection" type="checkbox"> Highlight dropdown menu selection</label></div>' +
-    '<div class="checkbox"><label><input id="demo-show-logo" type="checkbox" checked> Display logo area</label></div>' +
+    '<div class="checkbox"><label><input id="demo-show-logo" type="checkbox"> Display logo area</label></div>' +
+    '<div class="checkbox"><label><input id="demo-left-navbar-skin" type="checkbox" checked> Apply to navbar menu</label></div>' +
     '<div class="checkbox"><label><input id="demo-left-menu-skin" type="checkbox" checked> Apply to left side menu</label></div>' +
     '<h4>Available Skins</h4>' +
     '<button class="btn btn-default btn-block btn-demo-skin" data-value="classic">Classic</button>' +
@@ -22,19 +22,15 @@ $(document).ready(function () {
     body.removeClass('gray-skin');
     body.removeClass('red-skin');
     var v = $(this).data('value');
-    if (v === 'classic') {
-      $('nav.navbar-inverse').removeClass('navbar-inverse').addClass('navbar-default');
-    }
-    else {
-      $('nav.navbar').addClass('navbar-inverse');
+    if (v !== 'classic') {
       body.addClass(v + '-skin');
       body.addClass('skin');
     }
   });
 
-  $('#demo-highlight-selection').change(function () {
-    if (this.checked) $('body').addClass('highlight-selection');
-    else $('body').removeClass('highlight-selection');
+  $('#demo-left-navbar-skin').change(function () {
+    if (this.checked) $('#navbar-nav').addClass('navbar-skin');
+    else $('#navbar-nav').removeClass('navbar-skin');
   });
 
   $('#demo-left-menu-skin').change(function () {

@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
   color: #585c5f;
@@ -1269,7 +1269,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 13px;
+  font-size: 14px;
 }
 h6,
 .h6 {
@@ -2497,7 +2497,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: 500;
+  font-weight: 300;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -2506,7 +2506,7 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   margin-top: 1px \9;
   line-height: normal;
 }
@@ -2546,24 +2546,19 @@ select.form-control {
   font-size: 13px;
   line-height: 1.42857143;
   color: #555555;
+  font-weight: 400;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  border-radius: 1px;
 }
 .form-control:hover {
   border-color: #adadad;
 }
 .form-control:focus {
   outline: 0;
-  border-color: #51a7e8;
+  border-color: #0097A7;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
 }
 .form-control::-moz-placeholder {
   color: #999;
@@ -2711,7 +2706,7 @@ fieldset[disabled] .checkbox label {
   padding: 6px 6px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 select.input-sm {
   height: 25px;
@@ -2726,7 +2721,7 @@ select[multiple].input-sm {
   padding: 6px 6px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 .form-group-sm select.form-control {
   height: 25px;
@@ -2748,7 +2743,7 @@ select[multiple].input-sm {
   padding: 10px 10px;
   font-size: 17px;
   line-height: 1.3333333;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 select.input-lg {
   height: 43px;
@@ -2763,7 +2758,7 @@ select[multiple].input-lg {
   padding: 10px 10px;
   font-size: 17px;
   line-height: 1.3333333;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 .form-group-lg select.form-control {
   height: 43px;
@@ -2826,13 +2821,9 @@ select[multiple].input-lg {
 }
 .has-success .form-control {
   border-color: #3c763d;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-success .form-control:focus {
-  border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  border-color: #3c763d;
 }
 .has-success .input-group-addon {
   color: #3c763d;
@@ -2856,13 +2847,9 @@ select[multiple].input-lg {
 }
 .has-warning .form-control {
   border-color: #8a6d3b;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-warning .form-control:focus {
-  border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  border-color: #8a6d3b;
 }
 .has-warning .input-group-addon {
   color: #8a6d3b;
@@ -2886,13 +2873,9 @@ select[multiple].input-lg {
 }
 .has-error .form-control {
   border-color: #a94442;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-error .form-control:focus {
-  border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  border-color: #a94442;
 }
 .has-error .input-group-addon {
   color: #a94442;
@@ -3014,7 +2997,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.42857143;
   border-radius: 3px;
   -webkit-user-select: none;
@@ -3808,7 +3791,7 @@ tbody.collapse.in {
   padding: 10px 10px;
   font-size: 17px;
   line-height: 1.3333333;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -3831,7 +3814,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
   padding: 6px 6px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 1px;
 }
 select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
@@ -3864,7 +3847,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
-  padding: 8px 10px;
+  padding: 7px 10px;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4924,6 +4907,7 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
+  padding-left: 20px;
   color: inherit;
   background-color: #eeeeee;
 }
@@ -4934,7 +4918,7 @@ a.badge:focus {
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -4992,8 +4976,6 @@ a.thumbnail.active {
 .alert {
   padding: 15px;
   margin-bottom: 18px;
-  border: 1px solid transparent;
-  border-radius: 3px;
 }
 .alert h4 {
   margin-top: 0;
@@ -5947,7 +5929,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6065,7 +6047,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;

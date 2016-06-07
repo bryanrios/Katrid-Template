@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="posApp">
+<html ng-app="posApp">
 <head>
   <meta charset="UTF-8">
   <title>AngularJS Point of Sales Template (Google Chrome Only)</title>
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/theme1.css">
+  <link rel="stylesheet" href="css/skins.css">
   <link href="plugins/ng-pos/pos.css" rel="stylesheet">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -54,7 +54,7 @@
             <ul class="list-unstyled">
               <li ng-repeat="product in page.items" class="pos-print-item animated fadeIn" ng-class="{selected: $index===page.printItemIndex}" ng-click="printItemClick($index)">
                 <span class="product-name">{{ product.name }}</span>
-                <span class="label label-primary product-price">$ {{ product.qty * product.value | number:2 }}</span>
+                <span class="label label-default product-price">$ {{ product.qty * product.value | number:2 }}</span>
                 <ul class="info-list list-unstyled">
                   <li>
                     <em class="product-qty">{{ product.qty }}</em>
@@ -170,7 +170,7 @@
                 </div>
               <span class="product">{{ product.name }}</span>
               <span class="label label-primary price label-price animated bounceIn">$ {{ product.value }}</span>
-              <span class="label label-default price promo animated bounceIn" ng-show="product.id.toString()[0]==='1'">10% VISA DISCOUNT</span>
+              <span class="label label-info price promo animated bounceIn" ng-show="product.id.toString()[0]==='1'">10% VISA DISCOUNT</span>
             </div>
 
             <img id="logo" src="plugins/ng-pos/logo.png">

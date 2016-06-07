@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
+  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
 
   <title>Theme Template for Bootstrap</title>
 
@@ -51,7 +52,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-inverse">
+<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -111,7 +112,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -124,8 +125,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
+            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
@@ -138,8 +139,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
+            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,7 +151,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn">New</span><br>
+            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
           <small>You got 10 new messages...</small>
         </a>
         <ul class="nav">
@@ -160,7 +161,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRUD, REST and Ajax examples...</small>
         </a>
         <ul class="nav">
@@ -182,6 +183,12 @@
           </li>
           <li class="menu-item">
             <a href="plugin-forms.html">Plugin Controls</a>
+          </li>
+          <li class="menu-item">
+            <a href="web-editors.html">Web Editors</a>
+          </li>
+          <li class="menu-item">
+            <a href="ck-editor.html">CK Editor</a>
           </li>
         </ul>
       </li>
@@ -205,10 +212,13 @@
           <li class="menu-item">
             <a href="tables.html">Basic Tables</a>
           </li>
+          <li class="menu-item">
+            <a href="data-tables.html">Data Tables</a>
+          </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> UI Elements</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-object-group"></i> UI Elements</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="typography.html">Typography</a>
@@ -240,6 +250,9 @@
             <a href="general.html">General Elements</a>
           </li>
           <li class="menu-item">
+            <a href="tree-view.html">Tree View</a>
+          </li>
+          <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
@@ -249,12 +262,12 @@
             <a href="buttons.html">JQuery UI</a>
           </li>
           <li class="menu-item">
-            <a href="typography.html">Typography</a>
+            <a href="grid.html">Grid System</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-book"></i> App Views</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="blog.html">Blog</a>
@@ -317,352 +330,15 @@
   </div>
 
   <div class="content">
-    <div class="panel panel-default data-panel">
-      <div class="panel-body">
 
-        <h3>.table .table-striped</h3>
+    <div class="row">
+      <div class="col-md-6">
 
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th class="action-checkbox-column">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </th>
-            <th>First Name</th>
-            <th>Last name</th>
-            <th>User Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
+        <div class="panel panel-default data-panel">
+          <div class="panel-heading">Table</div>
 
-        <h3>.table .table-condensed</h3>
+          <div class="panel-body">
 
-        <table class="table table-condensed">
-          <thead>
-          <tr>
-            <th class="action-checkbox-column">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </th>
-            <th>First Name</th>
-            <th>Last name</th>
-            <th>User Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
-
-        <h3>.table .table-bordered</h3>
-
-        <table class="table table-bordered">
-          <thead>
-          <tr>
-            <th class="action-checkbox-column">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </th>
-            <th>First Name</th>
-            <th>Last name</th>
-            <th>User Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
-
-        <h3>.table .table-bordered .table-hover .table-selection</h3>
-
-        <table class="table table-bordered table-hover table-selection">
-          <thead>
-          <tr>
-            <th class="action-checkbox-column">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </th>
-            <th>First Name</th>
-            <th>Last name</th>
-            <th>User Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
-
-        <h3>Contextual classes</h3>
-
-        <table class="table table-hover">
-          <thead>
-          <tr>
-            <th class="action-checkbox-column">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </th>
-            <th>Column heading</th>
-            <th>Column heading</th>
-            <th>Column heading</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr class="active">
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr class="success">
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr class="warning">
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr class="danger">
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr>
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          <tr class="info">
-            <td class="action-checkbox">
-              <label class="checkbox">
-                <input type="checkbox">
-                <i></i>
-              </label>
-            </td>
-            <td>Column content</td>
-            <td>Column content</td>
-            <td>Column content</td>
-          </tr>
-          </tbody>
-        </table>
-
-      </div>
-    </div>
-
-    <div class="panel panel-default data-panel">
-
-      <div class="panel-body">
-
-        <div class="page-header">
-          <h1>Tables</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
             <table class="table">
               <thead>
               <tr>
@@ -694,7 +370,15 @@
               </tbody>
             </table>
           </div>
-          <div class="col-md-6">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Table Striped
+          </div>
+          <div class="panel-body">
             <table class="table table-striped">
               <thead>
               <tr>
@@ -727,9 +411,14 @@
             </table>
           </div>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-md-6">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Table Bordered
+          </div>
+          <div class="panel-body">
             <table class="table table-bordered">
               <thead>
               <tr>
@@ -765,7 +454,15 @@
               </tbody>
             </table>
           </div>
-          <div class="col-md-6">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Table Condensed
+          </div>
+          <div class="panel-body">
             <table class="table table-condensed">
               <thead>
               <tr>
@@ -795,10 +492,431 @@
               </tr>
               </tbody>
             </table>
+
           </div>
         </div>
       </div>
+
     </div>
+
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+
+        <div class="panel-heading">
+          Table Condensed
+        </div>
+        <div class="panel-body">
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+
+
+      <div class="panel panel-default data-panel">
+        <div class="panel-heading">
+          Table Striped
+        </div>
+        <div class="panel-body">
+
+          <h4>.table .table-striped</h4>
+
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th class="action-checkbox-column">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>User Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel panel-heading">
+          Table Condensed
+        </div>
+        <div class="panel-body">
+
+          <table class="table table-condensed">
+            <thead>
+            <tr>
+              <th class="action-checkbox-column">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>User Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Table Bordered
+        </div>
+        <div class="panel-body">
+
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th class="action-checkbox-column">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>User Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Table Bordered + Hover + Selection
+        </div>
+
+        <div class="panel-body">
+
+          <table class="table table-bordered table-hover table-selection">
+            <thead>
+            <tr>
+              <th class="action-checkbox-column">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </th>
+              <th>First Name</th>
+              <th>Last name</th>
+              <th>User Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Contextual classes
+        </div>
+        <div class="panel-body">
+
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th class="action-checkbox-column">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </th>
+              <th>Column heading</th>
+              <th>Column heading</th>
+              <th>Column heading</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="active">
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="success">
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="warning">
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="danger">
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="info">
+              <td class="action-checkbox">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <i></i>
+                </label>
+              </td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 <footer class="footer">

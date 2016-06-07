@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
+  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
 
   <title>Theme Template for Bootstrap</title>
 
@@ -51,7 +52,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-inverse">
+<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -111,7 +112,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -124,8 +125,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
+            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
@@ -138,8 +139,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
+            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,7 +151,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn">New</span><br>
+            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
           <small>You got 10 new messages...</small>
         </a>
         <ul class="nav">
@@ -160,7 +161,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRUD, REST and Ajax examples...</small>
         </a>
         <ul class="nav">
@@ -182,6 +183,12 @@
           </li>
           <li class="menu-item">
             <a href="plugin-forms.html">Plugin Controls</a>
+          </li>
+          <li class="menu-item">
+            <a href="web-editors.html">Web Editors</a>
+          </li>
+          <li class="menu-item">
+            <a href="ck-editor.html">CK Editor</a>
           </li>
         </ul>
       </li>
@@ -205,10 +212,13 @@
           <li class="menu-item">
             <a href="tables.html">Basic Tables</a>
           </li>
+          <li class="menu-item">
+            <a href="data-tables.html">Data Tables</a>
+          </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> UI Elements</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-object-group"></i> UI Elements</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="typography.html">Typography</a>
@@ -240,6 +250,9 @@
             <a href="general.html">General Elements</a>
           </li>
           <li class="menu-item">
+            <a href="tree-view.html">Tree View</a>
+          </li>
+          <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
@@ -249,12 +262,12 @@
             <a href="buttons.html">JQuery UI</a>
           </li>
           <li class="menu-item">
-            <a href="typography.html">Typography</a>
+            <a href="grid.html">Grid System</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-book"></i> App Views</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="blog.html">Blog</a>

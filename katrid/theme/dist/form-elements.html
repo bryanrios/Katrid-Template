@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
+  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
 
   <title>Theme Template for Bootstrap</title>
 
@@ -54,7 +55,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-inverse">
+<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -114,7 +115,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -127,8 +128,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
+            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
@@ -141,8 +142,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
+            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -153,7 +154,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn">New</span><br>
+            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
           <small>You got 10 new messages...</small>
         </a>
         <ul class="nav">
@@ -163,7 +164,7 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
           <small>CRUD, REST and Ajax examples...</small>
         </a>
         <ul class="nav">
@@ -185,6 +186,12 @@
           </li>
           <li class="menu-item">
             <a href="plugin-forms.html">Plugin Controls</a>
+          </li>
+          <li class="menu-item">
+            <a href="web-editors.html">Web Editors</a>
+          </li>
+          <li class="menu-item">
+            <a href="ck-editor.html">CK Editor</a>
           </li>
         </ul>
       </li>
@@ -208,10 +215,13 @@
           <li class="menu-item">
             <a href="tables.html">Basic Tables</a>
           </li>
+          <li class="menu-item">
+            <a href="data-tables.html">Data Tables</a>
+          </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> UI Elements</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-object-group"></i> UI Elements</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="typography.html">Typography</a>
@@ -243,6 +253,9 @@
             <a href="general.html">General Elements</a>
           </li>
           <li class="menu-item">
+            <a href="tree-view.html">Tree View</a>
+          </li>
+          <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
@@ -252,12 +265,12 @@
             <a href="buttons.html">JQuery UI</a>
           </li>
           <li class="menu-item">
-            <a href="typography.html">Typography</a>
+            <a href="grid.html">Grid System</a>
           </li>
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-book"></i> App Views</a>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
             <a href="blog.html">Blog</a>
@@ -329,6 +342,7 @@
 
           <div class="panel-body">
             <form>
+              <h4>Control sizing</h4>
               <div class="form-group">
                 <label for="input-1-1" class="control-label">Standard input text form control</label>
                 <input id="input-1-1" type="text" class="form-control">
@@ -340,6 +354,21 @@
               <div class="form-group">
                 <label for="input-1-3" class="control-label">Large input text form control</label>
                 <input id="input-1-3" type="text" class="form-control input-lg">
+              </div>
+
+              <h4>Column sizing</h4>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input placeholder="col-sm-3" class="form-control">
+                  </div>
+                  <div class="col-sm-4">
+                    <input placeholder="col-sm-4" class="form-control">
+                  </div>
+                  <div class="col-sm-5">
+                    <input placeholder="col-sm-5" class="form-control">
+                  </div>
+                </div>
               </div>
 
               <hr>
@@ -455,9 +484,179 @@
                 <label class="radio-inline">
                   <input type="radio" name="input-1-10"> Option 2
                 </label>
-                <label class="checkbox-inline">
+                <label class="radio-inline">
                   <input type="radio" name="input-1-10"> Option 3
                 </label>
+              </div>
+
+              <hr>
+              <h4>Validation states</h4>
+
+              <div class="form-group has-success">
+                <label for="input-vs-1" class="control-label">Input with success</label>
+                <input id="input-vs-1" class="form-control">
+              </div>
+              <div class="form-group has-warning">
+                <label for="input-vs-2" class="control-label">Input with warning</label>
+                <input id="input-vs-2" class="form-control">
+              </div>
+              <div class="form-group has-error">
+                <label for="input-vs-3" class="control-label">Input with error</label>
+                <input id="input-vs-3" class="form-control">
+              </div>
+
+              <div class="has-success">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxSuccess" value="option1"> Checkbox with
+                  success </label></div>
+              </div>
+
+              <div class="has-warning">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxWarning" value="option1"> Checkbox with
+                  warning </label></div>
+              </div>
+
+              <div class="has-error">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxError" value="option1"> Checkbox with
+                  error </label></div>
+              </div>
+
+              <h4>With optional icons</h4>
+
+              <div class="form-group has-success has-feedback"><label class="control-label" for="inputSuccess2">Input
+                with success</label> <input type="text" class="form-control" id="inputSuccess2"
+                                            aria-describedby="inputSuccess2Status"> <span
+                  class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                  id="inputSuccess2Status" class="sr-only">(success)</span></div>
+              <div class="form-group has-warning has-feedback"><label class="control-label" for="inputWarning2">Input
+                with warning</label> <input type="text" class="form-control" id="inputWarning2"
+                                            aria-describedby="inputWarning2Status"> <span
+                  class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span> <span
+                  id="inputWarning2Status" class="sr-only">(warning)</span></div>
+              <div class="form-group has-error has-feedback"><label class="control-label" for="inputError2">Input with
+                error</label> <input type="text" class="form-control" id="inputError2"
+                                     aria-describedby="inputError2Status"> <span
+                  class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span> <span
+                  id="inputError2Status" class="sr-only">(error)</span></div>
+              <div class="form-group has-success has-feedback"><label class="control-label" for="inputGroupSuccess1">Input
+                group with success</label>
+                <div class="input-group"><span class="input-group-addon">@</span> <input type="text"
+                                                                                         class="form-control"
+                                                                                         id="inputGroupSuccess1"
+                                                                                         aria-describedby="inputGroupSuccess1Status">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                    id="inputGroupSuccess1Status" class="sr-only">(success)</span></div>
+
+              <hr>
+              <h4>Button addons</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group"><span class="input-group-btn"> <button class="btn btn-default" type="button">Go!</button> </span>
+                    <input type="text" class="form-control" placeholder="Search for..."></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group"><input type="text" class="form-control" placeholder="Search for..."> <span
+                      class="input-group-btn"> <button class="btn btn-default" type="button">Go!</button> </span></div>
+                </div>
+              </div>
+              <h4>Button with dropdowns</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group"><input type="text" class="form-control"
+                                                  aria-label="Text input with dropdown button">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4>Segmented buttons</h4>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default">Action</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false"><span class="caret"></span> <span
+                          class="sr-only">Toggle Dropdown</span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group"><input type="text" class="form-control"
+                                                  aria-label="Text input with segmented button dropdown">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default">Action</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false"><span class="caret"></span> <span
+                          class="sr-only">Toggle Dropdown</span></button>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4>Multiple buttons</h4>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default" aria-label="Bold"><span
+                          class="glyphicon glyphicon-bold"></span></button>
+                      <button type="button" class="btn btn-default" aria-label="Italic"><span
+                          class="glyphicon glyphicon-italic"></span></button>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with multiple buttons"></div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group"><input type="text" class="form-control"
+                                                  aria-label="Text input with multiple buttons">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default" aria-label="Help"><span
+                          class="glyphicon glyphicon-question-sign"></span></button>
+                      <button type="button" class="btn btn-default">Action</button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </form>
@@ -765,9 +964,10 @@
             </div>
 
             <div class="callout callout-info">
-              <p>Know more about iCheck plugin at: <a href="http://icheck.fronteed.com/">http://icheck.fronteed.com/</a></p>
+              <p>Know more about iCheck plugin at: <a href="http://icheck.fronteed.com/">http://icheck.fronteed.com/</a>
+              </p>
             </div>
-            
+
           </div>
         </div>
       </div>
