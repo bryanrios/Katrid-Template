@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $('#demo-settings>span.demo').click(function () {
-    console.log('test');
     $('#demo-settings').toggleClass('active');
   });
 

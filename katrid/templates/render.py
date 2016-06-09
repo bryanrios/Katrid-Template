@@ -1,4 +1,5 @@
 import os
+import sys
 from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('./'))
@@ -54,7 +55,7 @@ docs = [
 
 for tmp in templates:
     t = env.get_template(tmp)
-    s = t.render(googleanalytics=True)
+    s = t.render(googleanalytics='googleanalytics' in sys.argv)
     f = open('output/' + tmp, 'w')
     f.write(s)
 
