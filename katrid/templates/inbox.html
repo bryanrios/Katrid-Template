@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+
+      {% include "include/left-mail-menu.html" %}
+
+      <div class="col-lg-10">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="margin-bottom-16">
+              <h3><i class="fa fa-inbox"></i> Inbox (32)</h3>
+              <div class="form-group">
+                <div class="input-group">
+                <input class="form-control" role="search" placeholder="Search...">
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                  </div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-default" data-toggle="tooltip" data-title="Mark as important"><i class="fa fa-fw fa-exclamation"></i>
+                </button>
+                <button class="btn btn-default" data-toggle="tooltip" data-title="Delete selection"><i class="fa fa-fw fa-trash"></i></button>
+                <div class="btn-group">
+                  <button class="btn btn-default" data-toggle="dropdown">Move To <span class="caret"></span></button>
+                  <ul class="dropdown-menu animated flipInX">
+                    <li><a href="#">Mark as TODO</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-default" data-toggle="dropdown">
+                  <i class="fa fa-fw fa-tag"></i> <span class="caret"></span></button>
+                <ul class="dropdown-menu animated flipInX">
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">New Opportunity</a></li>
+                  <li><a href="#">Qualified</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Stock</a></li>
+                  <li><a href="#">Low Stock</a></li>
+                  <li><a href="#">Old Stock</a></li>
+                </ul>
+              </div>
+              <div class="pull-right">
+                <span><strong>1-100</strong> of <strong>1,000</strong></span>
+                <div class="btn-group">
+                  <button class="btn btn-default"><i class="fa fa-fw fa-chevron-left"></i></button>
+                  <button class="btn btn-default"><i class="fa fa-fw fa-chevron-right"></i></button>
+                </div>
+                <button class="btn btn-default">
+                  <i class="fa fa-fw fa-gear"></i>
+                  <span class="caret"></span>
+                </button>
+              </div>
+            </div>
+            <table class="table table-hover table-selection nav-mails">
+              <tbody>
+              <tr class="active font-600">
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>John Smith</td>
+                <td><label class="label label-default">Custom Label</label> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ab deserunt fugit ipsum pariatur sed veniam.
+                </td>
+                <td class="text-right">03:50 PM</td>
+              </tr>
+              <tr class="active font-600">
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Sales Manager</td>
+                <td><label class="label label-warning">Sales</label> <label class="label label-info">Qualified</label>
+                  New sale opportunity!
+                </td>
+                <td class="text-right">03:49 PM</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Contact 2</td>
+                <td><label class="label label-warning">Sales</label> Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </td>
+                <td class="text-right">03:48 PM</td>
+              </tr>
+              <tr class="danger">
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Low Stock</td>
+                <td><label class="label label-danger">Low Stock</label> Low stock status notification!</td>
+                <td class="text-right">03:47 PM</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Purchases Manager</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nobis perspiciatis!</td>
+                <td class="text-right">03:47 PM</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>New Customer</td>
+                <td><label class="label label-success">Won</label> Wow!!! We won a customer, lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit.
+                </td>
+                <td class="text-right">03:39 PM</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Contact 8</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum delectus deserunt dolore dolores
+                  explicabo facilis similique!
+                </td>
+                <td class="text-right">08:02 AM</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Stock Manager</td>
+                <td><label class="label label-danger">Old Stock</label> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto cupiditate eaque id
+                  pariatur porro repudiandae, vel.
+                </td>
+                <td class="text-right">Jun 6</td>
+              </tr>
+              <tr>
+                <td class="action-checkbox">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>New Contact</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolor excepturi fugit incidunt
+                  laudantium magni maxime provident quae quas rerum?
+                </td>
+                <td class="text-right">Jun 5</td>
+              </tr>
+              </tbody>
+            </table>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block startup_code %}
+  <script>
+    $('.action-checkbox input').change(function () {
+      if (this.checked) $(this).closest('tr').addClass('selected');
+      else $(this).closest('tr').removeClass('selected');
+    });
+  </script>
+
+  <script>
+  $('table.nav-mails tr').click(function () {
+    window.location.href = 'view-email.html';
+  });
+  </script>
+{% endblock %}

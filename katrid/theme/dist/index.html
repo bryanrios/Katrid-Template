@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -52,7 +51,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -71,7 +70,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -112,7 +111,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -126,12 +125,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -140,7 +139,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,26 +149,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -229,11 +233,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -249,18 +253,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -280,14 +284,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -322,25 +326,51 @@
       <!-- dashboard widgets -->
       <div class="col-sm-12">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-line-chart"></i> Real-time Sales</h4>
-          </div>
           <div class="panel-body">
-            <div class="col-md-9" id="realtime-chart" style="height: 180px;"></div>
+            <div class="col-md-2">
+              <h4>Recent Activities</h4>
+              <ul class="media-list">
+                <li class="media">
+                  <div class="media-object pull-left">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <div class="media-body">New message from customer<br>
+                    <small class="font-xs"><a href="#">Inbox</a> - 03:56 pm</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-object pull-left">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="media-body">New won opportunity<br>
+                    <small class="font-xs"><a href="#">Sales Manager</a> - 03:53 pm</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-object pull-left">
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="media-body">New purchase order<br>
+                    <small class="font-xs"><a href="#">Purchase Manager</a> - 01:12 pm</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-7" id="realtime-chart" style="height: 180px;"></div>
             <div class="col-md-3">
               <div class="row">
                 <h5><strong>Last 24 hours</strong></h5>
                 <span class="col-md-6"><i class="fa fa-fw fa-shopping-cart"></i> Sales:</span>
                 <strong class="col-md-6 animated bounceIn">
-                  <span class="text-primary font-300">1,000</span>
-                  <span class="text-danger"> (<i class="fa fa-arrow-down"></i>100)</span>
+                  <label class="label label-primary">1,000</label>
+                  <label class="label label-danger"> (<i class="fa fa-arrow-down"></i>100)</label>
                 </strong>
               </div>
               <div class="row">
                 <span class="col-md-6"><i class="fa fa-fw fa-dollar"></i> Amount:</span>
                 <strong class="col-md-6 animated bounceIn">
-                  <span class="text- text-primary font-300">$15,790.10</span>
-                  <span class="text- text-success"> (<i class="fa fa-arrow-up"></i>702.02)</span>
+                  <label class="label label-primary">$15,790.10</label>
+                  <label class="label label-danger"> (<i class="fa fa-arrow-up"></i>702.02)</label>
                 </strong>
               </div>
               <div class="row">
@@ -350,15 +380,15 @@
                 <h5><strong>Last 30 days</strong></h5>
                 <span class="col-md-6"><i class="fa fa-fw fa-shopping-cart"></i> Sales:</span>
                 <strong class="col-md-6 animated bounceIn">
-                  <span class="text-primary font-300">27,000</span>
-                  <span class="text-danger"> (<i class="fa fa-arrow-down"></i>2,780)</span>
+                  <label class="label label-primary">27,000</label>
+                  <label class="label label-danger"> (<i class="fa fa-arrow-down"></i>2,780)</label>
                 </strong>
               </div>
               <div class="row">
                 <span class="col-md-6"><i class="fa fa-fw fa-dollar"></i> Amount:</span>
                 <strong class="col-md-6 animated bounceIn">
-                  <span class="text-primary font-300">$415,790.10</span>
-                  <span class="text-success"> (<i class="fa fa-arrow-up"></i>80,189.00)</span>
+                  <label class="label label-primary">$415,790.10</label>
+                  <label class="label label-danger"> (<i class="fa fa-arrow-up"></i>80,189.00)</label>
                 </strong>
               </div>
             </div>
@@ -387,24 +417,46 @@
         <div class="panel panel-default dashboard-panel">
           <div class="panel-heading">Stock status</div>
           <div class="panel-body">
+            <label class="label label-danger pull-right">Low Stock</label>
             <a href="#">Product 1</a>
-            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-danger" style="width: 10%" aria-valuenow="10" aria-valuemax="100" aria-valuemin="0">
+            <div class="progress progress-xs animated bounceIn">
+              <div class="progress-bar progress-bar-danger" style="width: 10%" aria-valuenow="10" aria-valuemax="100"
+                   aria-valuemin="0">
 
-            </div></div>
+
+              </div>
+            </div>
             <a href="#">Product 2</a>
-            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-danger" style="width: 20%" aria-valuenow="10" aria-valuemax="100" aria-valuemin="0">
-
-            </div></div>
+            <div class="progress progress-xs animated bounceIn">
+              <div class="progress-bar progress-bar-danger" style="width: 20%" aria-valuenow="10" aria-valuemax="100"
+                   aria-valuemin="0">
+              </div>
+            </div>
+            <label class="label label-warning pull-right">Warning</label>
             <a href="#">Product 3</a>
-            <div class="progress animated bounceIn"><div class="progress-bar progress-bar-warning" style="width: 18%" aria-valuenow="18" aria-valuemax="100" aria-valuemin="0">
-            </div></div>
+            <div class="progress progress-xs animated bounceIn">
+              <div class="progress-bar progress-bar-warning" style="width: 18%" aria-valuenow="18" aria-valuemax="100"
+                   aria-valuemin="0">
+              </div>
+            </div>
             <a href="#">Product 4</a>
-            <div class="progress"><div class="progress-bar progress-bar-info" style="width: 40%" aria-valuenow="40" aria-valuemax="100" aria-valuemin="0">
-            </div></div>
-            <a href="#">Product 5 (with %)</a>
-            <div class="progress"><div class="progress-bar progress-bar-success" style="width: 83%" aria-valuenow="83" aria-valuemax="100" aria-valuemin="0">
-              83%
-            </div></div>
+            <div class="progress progress-xs">
+              <div class="progress-bar progress-bar-info" style="width: 40%" aria-valuenow="40" aria-valuemax="100"
+                   aria-valuemin="0">
+              </div>
+            </div>
+            <a href="#">Product 5</a>
+            <div class="progress progress-xs">
+              <div class="progress-bar progress-bar-success" style="width: 83%" aria-valuenow="83" aria-valuemax="100"
+                   aria-valuemin="0">
+              </div>
+            </div>
+            <a href="#">Product 6</a>
+            <div class="progress progress-xs">
+              <div class="progress-bar progress-bar-success" style="width: 88%" aria-valuenow="88" aria-valuemax="100"
+                   aria-valuemin="0">
+              </div>
+            </div>
             <div>
               <button class="btn btn-default btn-block">More products <i class="fa fa-fw fa-arrow-right"></i></button>
             </div>
@@ -425,9 +477,9 @@
                   <label class="checkbox"><input type="checkbox"><i></i></label>
                 </span>
                 <p class="todo-task-description">
-                <strong class="text-muted">Task #103</strong> - Check products stock status [<a href="#">Details</a>]
-                <span class="text-muted">Task description.</span>
-                <span class="text-muted">Today</span>
+                  <strong class="text-muted">Task #103</strong> - Check products stock status [<a href="#">Details</a>]
+                  <span class="text-muted">Task description.</span>
+                  <span class="text-muted">Today</span>
                 </p>
               </li>
               <!-- end to do item -->
@@ -437,9 +489,9 @@
                   <label class="checkbox"><input type="checkbox"><i></i></label>
                 </span>
                 <p class="todo-task-description">
-                <strong class="text-muted">Task #106</strong> - Write and send new client quotations [<a href="#">Details</a>]
-                <span class="text-muted">Build a new fresh company website.</span>
-                <span class="text-muted">Today</span>
+                  <strong class="text-muted">Task #106</strong> - Write and send new client quotations [<a href="#">Details</a>]
+                  <span class="text-muted">Build a new fresh company website.</span>
+                  <span class="text-muted">Today</span>
                 </p>
               </li>
 
@@ -448,9 +500,9 @@
                   <label class="checkbox"><input type="checkbox"><i></i></label>
                 </span>
                 <p class="todo-task-description">
-                <strong class="text-muted">Task #104</strong> - Build a new company website [<a href="#">Details</a>]
-                <span class="text-muted">Build a new fresh company website.</span>
-                <span class="text-muted">Today</span>
+                  <strong class="text-muted">Task #104</strong> - Build a new company website [<a href="#">Details</a>]
+                  <span class="text-muted">Build a new fresh company website.</span>
+                  <span class="text-muted">Today</span>
                 </p>
               </li>
 
@@ -459,9 +511,10 @@
                   <label class="checkbox"><input type="checkbox"><i></i></label>
                 </span>
                 <p class="todo-task-description">
-                <strong class="text-muted">Task #107</strong> - Check orders report and call clients on phone [<a href="#">Details</a>]
-                <span class="text-muted">Build a new fresh company website.</span>
-                <span class="text-muted">Today</span>
+                  <strong class="text-muted">Task #107</strong> - Check orders report and call clients on phone [<a
+                    href="#">Details</a>]
+                  <span class="text-muted">Build a new fresh company website.</span>
+                  <span class="text-muted">Today</span>
                 </p>
               </li>
             </ul>
@@ -579,6 +632,11 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->
@@ -804,7 +862,7 @@ $( document ).ready(function() {
 
     });
 
-  $(function () {
+    $(function () {
       var data2 = [["January", 24], ["February", 12], ["March", 2], ["April", 5], ["May", 18], ["June", 12]];
 
       $.plot("#income-chart", [data2], {
@@ -827,7 +885,7 @@ $( document ).ready(function() {
         }
       });
 
-  });
+    });
 
   </script>
 

@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block extra_head %}
+  <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
+{% endblock %}
 {% block content %}
   <div class="panel page-heading">
     <h2>General Elements</h2>
@@ -94,7 +97,8 @@
             </div>
             <div class="alert alert-success alert-inverse">
               <button class="close" data-dismiss="alert">&times;</button>
-              <i class="fa fa-fw fa-check"></i><strong> Success Inverse</strong> Lorem ipsum dolor sit amet, consectetur
+              <i class="fa fa-fw fa-check"></i><strong> Success Inverse</strong> Lorem ipsum dolor sit amet,
+              consectetur
               adipisicing elit. Beatae deserunt dolorum ea enim excepturi, fugiat ipsam labore laudantium magnam minus
               nihil non omnis rem tempore ut vel, voluptas voluptate voluptatum?
             </div>
@@ -106,13 +110,12 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-12">
-        <h3>Labels &amp; Badges</h3>
       </div>
 
       <div class="col-md-6">
+
+
         <div class="panel panel-default">
           <div class="panel-heading">
             Labels
@@ -142,9 +145,7 @@
 
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             Badges
@@ -183,18 +184,50 @@
 
           </div>
         </div>
+
+        <div class="jumbotron"><h1>Jumbotron</h1>
+          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured
+            content or information.
+          </p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+
       </div>
 
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
-            Jumbotron
+            Progress Bar
           </div>
           <div class="panel-body">
-            <div class="jumbotron"><h1>Hello, world!</h1>
-              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-                content or information.</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p></div>
+            <label>Extra Small Progress Bar</label>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-deep-purple" role="progressbar" style="width: 20%;"></div>
+            </div>
+            <label>Small Progress Bar</label>
+            <div class="progress progress-sm">
+              <div class="progress-bar bg-deep-orange" role="progressbar" style="width: 40%;"></div>
+            </div>
+            <label>Standard Progress Bar</label>
+            <div class="progress">
+              <div class="progress-bar bg-cyan" role="progressbar" style="width: 60%;"></div>
+            </div>
+            <h3>Animated</h3>
+            <div class="progress progress-striped active">
+              <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%;"></div>
+            </div>
+            <div class="progress progress-striped active">
+              <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+            </div>
+            <h3>Stacked Progress</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar bg-blue-gray" role="progressbar" style="width: 20%;"></div>
+              <div class="progress-bar" role="progressbar" style="width: 47%;"></div>
+              <div class="progress-bar bg-deep-orange" role="progressbar" style="width: 22%;"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -202,14 +235,144 @@
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h5>Toastr <small>http://codeseven.github.io/toastr/</small></h5>
+            <h5>Toastr Notifications
+              <small>http://codeseven.github.io/toastr/</small>
+            </h5>
           </div>
           <div class="panel-body">
-            test
+            <button id="toastr-info" class="btn btn-info">Info</button>
+            <button id="toastr-success" class="btn btn-success">Success</button>
+            <button id="toastr-warning" class="btn btn-warning">Warning</button>
+            <button id="toastr-danger" class="btn btn-danger">Error</button>
+            <h3>With Progressbar</h3>
+            <button id="toastr-info-2" class="btn btn-info">Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Pagination
+          </div>
+          <div class="panel-body text-center">
+            <div class="form-group">
+              <ul class="pagination pagination-lg">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <ul class="pagination">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <ul class="pagination pagination-sm">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group text-center">
+              <ul class="pager">
+                <li class="previous">
+                  <a href="javascript:void(0);"><i class="fa fa-fw fa-arrow-left"></i> Older</a>
+                </li>
+                <li class="next">
+                  <a href="javascript:void(0);">Newer <i class="fa fa-fw fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+
   </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/toastr/toastr.min.js"></script>
+  <script>
+    $(function () {
+      $('#toastr-info').click(function () {
+        toastr.info('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-success').click(function () {
+        toastr.success('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-warning').click(function () {
+        toastr.warning('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-danger').click(function () {
+        toastr.error('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-info-2').click(function () {
+        toastr.options = {
+          progressBar: true
+        };
+        toastr.info('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+        toastr.options = {};
+      });
+    });
+  </script>
 {% endblock %}

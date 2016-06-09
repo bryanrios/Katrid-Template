@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -46,13 +45,15 @@
 
   <!-- extra head -->
   
+  <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+
   <!-- end extra head -->
 </head>
 
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -71,7 +72,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -112,7 +113,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -126,12 +127,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -140,7 +141,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,26 +151,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -229,11 +235,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -249,18 +255,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -280,14 +286,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -327,15 +333,17 @@
         </ol>
         <div class="pull-right">
             <span>
-              1 / 100
+              1 - 100 of <strong>1,000</strong>
             </span>
         </div>
         <p class="help-block">Form help text (leave a useful message here)</p>
       </div>
       <div>
         <button class="btn btn-primary" type="button">Create New</button>
-        <button class="btn btn-default" type="button">Cancel</button>
-        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-trash-o"></i> Delete</button>
+        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-remove text-danger"></i> Cancel</button>
+        <button id="id-btn-delete" class="btn btn-danger-outline" type="button"><i class="fa fa-fw fa-trash-o"></i>
+          Delete
+        </button>
 
         <div class="btn-group">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
@@ -375,13 +383,13 @@
         Boxed CRUD Form
       </div>
       <div class="panel-body">
-          <div class="data-panel">
+                <div class="data-panel">
 
           <form class="form-horizontal" novalidate>
 
             <div class="row hidden-xs">
               <div class="col-sm-12">
-                <div class="status-field bg-deep-purple pull-right">
+                <div class="status-field status-field-sm bg-deep-purple pull-right">
                   <ul class="steps">
                     <li>
                       Registered
@@ -564,33 +572,31 @@
   <div class="container">
     <div class="panel panel-default data-panel">
       <div class="panel-heading">
-        Vertical CRUD Form
+
+        Vertical Label
+
+        <div class="status-field status-field-sm pull-right">
+          <ul class="steps">
+            <li class="active">
+              Registered
+              <span class="arrow"></span>
+            </li>
+            <li class="active">
+              Confirmed
+              <span class="arrow"></span>
+            </li>
+            <li>
+              Approved
+              <span class="arrow"></span>
+            </li>
+          </ul>
+        </div>
+
       </div>
       <div class="panel-body">
         <div>
 
           <form novalidate>
-
-            <div class="row hidden-xs">
-              <div class="col-sm-12">
-                <div class="status-field bg-deep-purple pull-right">
-                  <ul class="steps">
-                    <li>
-                      Registered
-                      <span class="arrow"></span>
-                    </li>
-                    <li class="active">
-                      Confirmed
-                      <span class="arrow"></span>
-                    </li>
-                    <li>
-                      Approved
-                      <span class="arrow"></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             <div class="row">
               <div>
@@ -1022,6 +1028,11 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->
@@ -1041,7 +1052,7 @@ $( document ).ready(function() {
 
             <div class="row hidden-xs">
               <div class="col-sm-12">
-                <div class="status-field bg-deep-purple pull-right">
+                <div class="status-field status-field-sm bg-deep-purple pull-right">
                   <ul class="steps">
                     <li>
                       Registered
@@ -1218,6 +1229,23 @@ $( document ).ready(function() {
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+  <script src="plugins/sweetalert/sweetalert.min.js"></script>
+  <script>
+    $('#id-btn-delete').click(function () {
+      swal({
+        title: "Are you sure?",
+        text: "You will not be able to recover this record!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, delete it!",
+        closeOnConfirm: false
+      }, function () {
+        swal("Deleted!", "Record has been deleted.", "success");
+      });
+    });
+  </script>
 
 <!-- end additional scripts -->
 

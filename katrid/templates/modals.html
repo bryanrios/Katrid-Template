@@ -53,6 +53,19 @@
             <button class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">Danger</button>
           </div>
         </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Animated
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-default" data-toggle="modal" data-target="#flipx-animate">Flip In X</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#flipy-animate">Flip In Y</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#bouncein-animate">Bounce In</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#fadein-animate">Fade In</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#rubber-animate">Rubber Band</button>
+          </div>
+        </div>
       </div>
 
       <div class="col-md-6">
@@ -305,6 +318,101 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <div class="modal" id="flipx-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated flipInX">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="flipy-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated flipInY">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="bouncein-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated bounceIn">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="rubber-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated rubberBand">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="fadein-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <div class="modal fade modal-danger" id="modal-danger" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -325,7 +433,6 @@
   </div><!-- /.modal -->
 
   <script src="plugins/sweetalert/sweetalert.min.js"></script>
-
   <script>
     $(function () {
       $('#default-sweet-alert').click(function () {

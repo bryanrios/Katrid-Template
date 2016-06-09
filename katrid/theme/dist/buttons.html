@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -52,7 +51,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -71,7 +70,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -112,7 +111,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -126,12 +125,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -140,7 +139,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,26 +149,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -229,11 +233,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -249,18 +253,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -280,14 +284,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -354,18 +358,144 @@
             <div class="form-group child-margin">
               <p>Large button. <code>.btn-lg</code></p>
               <button type="button" class="btn btn-lg btn-default">Default</button>
+              <button type="button" class="btn btn-lg btn-primary">Primary</button>
             </div>
             <div class="form-group child-margin">
               <p>Small button. <code>.btn-sm</code></p>
               <button type="button" class="btn btn-sm btn-default">Default</button>
+              <button type="button" class="btn btn-sm btn-primary">Primary</button>
             </div>
             <div class="form-group child-margin">
               <p>X-Small button. <code>.btn-xs</code></p>
               <button type="button" class="btn btn-xs btn-default">Default</button>
+              <button type="button" class="btn btn-xs btn-primary">Primary</button>
             </div>
 
           </div>
         </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Block Button
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-primary btn-block">Block Button</button>
+            <button class="btn btn-block btn-primary-outline">Button Outline</button>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Button Dropdown
+          </div>
+          <div class="panel-body child-margin">
+            <p>Large button dropdown</p>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <p>Default size button dropdown</p>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Action <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <p>Small button dropdown</p>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default btn-sm dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-primary btn-sm dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <p>Extra small button dropdown</p>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default btn-xs dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <p>Animated Dropdown <code>.animated .flipInX</code></p>
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span
+                  class="caret"></span></button>
+              <ul class="dropdown-menu animated flipInX">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
@@ -375,7 +505,6 @@
             Outline Buttons
           </div>
           <div class="panel-body">
-
 
             <div class="form-group child-margin">
               <p>Default button size. <code>.btn .btn-&lt;color-brand&gt;-outline</code></p>
@@ -389,10 +518,44 @@
 
           </div>
         </div>
-      </div>
 
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Rounded Buttons
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <a class="btn btn-default btn-round">Default</a>
+              <a class="btn btn-primary btn-round">Primary</a>
+              <a class="btn btn-dark btn-round">Dark</a>
+              <a class="btn btn-success btn-round">Success</a>
+              <a class="btn btn-info btn-round">Info</a>
+              <a class="btn btn-warning btn-round">Warning</a>
+              <a class="btn btn-danger btn-round">Danger</a>
+            </div>
+            <p>Large button <code>.btn-round .btn-lg</code></p>
+            <a class="btn btn-default btn-lg btn-round">Default</a>
+            <a class="btn btn-primary btn-lg btn-round">Primary</a>
+            <p>Small button <code>.btn-round .btn-sm</code></p>
+            <a class="btn btn-default btn-sm btn-round">Default</a>
+            <a class="btn btn-primary btn-sm btn-round">Primary</a>
+            <p>Extra Small button <code>.btn-round .btn-xs</code></p>
+            <a class="btn btn-default btn-xs btn-round">Default</a>
+            <a class="btn btn-primary btn-xs btn-round">Primary</a>
+            <hr>
+            <h3>Outline</h3>
+            <div class="form-group">
+              <a class="btn btn-primary-outline btn-round">Primary</a>
+              <a class="btn btn-dark-outline btn-round">Dark</a>
+              <a class="btn btn-success-outline btn-round">Success</a>
+              <a class="btn btn-info-outline btn-round">Info</a>
+              <a class="btn btn-warning-outline btn-round">Warning</a>
+              <a class="btn btn-danger-outline btn-round">Danger</a>
+            </div>
+          </div>
 
-      <div class="col-md-12">
+        </div>
+
         <div class="panel panel-default">
           <div class="panel-heading">
             Additional Colors
@@ -419,7 +582,9 @@
 
           </div>
         </div>
+
       </div>
+
     </div>
   </div>
 
@@ -509,6 +674,11 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->

@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -54,7 +53,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -73,7 +72,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -114,7 +113,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -128,12 +127,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -142,7 +141,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -152,26 +151,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -231,11 +235,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -251,18 +255,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -282,14 +286,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -366,6 +370,19 @@
             <button class="btn btn-info" data-toggle="modal" data-target="#modal-info">Info</button>
             <button class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">Warning</button>
             <button class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">Danger</button>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Animated
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-default" data-toggle="modal" data-target="#flipx-animate">Flip In X</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#flipy-animate">Flip In Y</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#bouncein-animate">Bounce In</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#fadein-animate">Fade In</button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#rubber-animate">Rubber Band</button>
           </div>
         </div>
       </div>
@@ -477,6 +494,11 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->
@@ -709,6 +731,101 @@ $( document ).ready(function() {
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <div class="modal" id="flipx-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated flipInX">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="flipy-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated flipInY">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="bouncein-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated bounceIn">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="rubber-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated rubberBand">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal" id="fadein-animate" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content animated fadeIn">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <div class="modal fade modal-danger" id="modal-danger" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -729,7 +846,6 @@ $( document ).ready(function() {
   </div><!-- /.modal -->
 
   <script src="plugins/sweetalert/sweetalert.min.js"></script>
-
   <script>
     $(function () {
       $('#default-sweet-alert').click(function () {

@@ -83,3 +83,41 @@
 .status-field.bg-deep-orange ul.steps > li.active > .arrow::before {
   border-left: 14px solid @brand-deep-orange;
 }
+
+.panel-heading .status-field-sm {
+  margin-top: -10px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  border: transparent;
+}
+
+.status-field-sm>ul.steps>li {
+  height: 38px;
+  line-height: 37px;
+}
+
+.status-field-sm ul.steps > li > .arrow {
+  top: 0;
+  border: 19px solid transparent;
+  border-right: 0;
+  border-left: 14px solid #ffffff;
+}
+.status-field-sm ul.steps > li > .arrow::before {
+  position: absolute;
+  top: -20px;
+  right: 1px;
+  display: block;
+  border: 19px solid transparent;
+  border-right: 0;
+  border-left: 20px solid @wizard-bg-color;
+  content: "";
+}
+
+.panel-heading .status-field-sm ul.steps > li > .arrow::before {
+  top: -19px;
+}
+
+.panel-heading .status-field>ul.steps>li,
+.panel-heading .status-field>ul.steps>li:first-child {
+  border: 0;
+}

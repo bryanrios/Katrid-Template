@@ -29,8 +29,8 @@ $(document).ready(function () {
   });
 
   $('#demo-left-navbar-skin').change(function () {
-    if (this.checked) $('#navbar-nav').addClass('navbar-skin');
-    else $('#navbar-nav').removeClass('navbar-skin');
+    if (this.checked) $('#header').addClass('navbar-skin');
+    else $('#header').removeClass('navbar-skin');
   });
 
   $('#demo-left-menu-skin').change(function () {

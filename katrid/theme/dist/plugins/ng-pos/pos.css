@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -251,6 +255,7 @@ nav {
   border-radius: 2px;
   font-size: 16px;
   font-weight: 400;
+  opacity: .85;
 }
 
 .pos-list-item .qty {

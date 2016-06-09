@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block extra_head %}
+  <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+{% endblock %}
 {% block content %}
   <div class="data-heading panel panel-default">
     <div class="panel-body">
@@ -11,15 +14,17 @@
         </ol>
         <div class="pull-right">
             <span>
-              1 / 100
+              1 - 100 of <strong>1,000</strong>
             </span>
         </div>
         <p class="help-block">Form help text (leave a useful message here)</p>
       </div>
       <div>
         <button class="btn btn-primary" type="button">Create New</button>
-        <button class="btn btn-default" type="button">Cancel</button>
-        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-trash-o"></i> Delete</button>
+        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-remove text-danger"></i> Cancel</button>
+        <button id="id-btn-delete" class="btn btn-danger-outline" type="button"><i class="fa fa-fw fa-trash-o"></i>
+          Delete
+        </button>
 
         <div class="btn-group">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
@@ -59,7 +64,7 @@
         Boxed CRUD Form
       </div>
       <div class="panel-body">
-  {% include "include/horz-advanced-form.html" %}
+        {% include "include/horz-advanced-form.html" %}
       </div>
     </div>
 
@@ -74,33 +79,31 @@
   <div class="container">
     <div class="panel panel-default data-panel">
       <div class="panel-heading">
-        Vertical CRUD Form
+
+        Vertical Label
+
+        <div class="status-field status-field-sm pull-right">
+          <ul class="steps">
+            <li class="active">
+              Registered
+              <span class="arrow"></span>
+            </li>
+            <li class="active">
+              Confirmed
+              <span class="arrow"></span>
+            </li>
+            <li>
+              Approved
+              <span class="arrow"></span>
+            </li>
+          </ul>
+        </div>
+
       </div>
       <div class="panel-body">
         <div>
 
           <form novalidate>
-
-            <div class="row hidden-xs">
-              <div class="col-sm-12">
-                <div class="status-field bg-deep-purple pull-right">
-                  <ul class="steps">
-                    <li>
-                      Registered
-                      <span class="arrow"></span>
-                    </li>
-                    <li class="active">
-                      Confirmed
-                      <span class="arrow"></span>
-                    </li>
-                    <li>
-                      Approved
-                      <span class="arrow"></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             <div class="row">
               <div>
@@ -465,4 +468,21 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+  <script src="plugins/sweetalert/sweetalert.min.js"></script>
+  <script>
+    $('#id-btn-delete').click(function () {
+      swal({
+        title: "Are you sure?",
+        text: "You will not be able to recover this record!",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Yes, delete it!",
+        closeOnConfirm: false
+      }, function () {
+        swal("Deleted!", "Record has been deleted.", "success");
+      });
+    });
+  </script>
 {% endblock %}

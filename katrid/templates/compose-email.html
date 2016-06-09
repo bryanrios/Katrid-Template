@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <!-- summernote -->
+  <link href="plugins/summernote/summernote.css" rel="stylesheet" type="text/css">
+{% endblock %}
+{% block content %}
+
+  <div class="content">
+  <div class="row">
+
+    {% include "include/left-mail-menu.html" %}
+
+    <div class="col-lg-10">
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h3>Compose Message</h3>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="To:">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject:">
+          </div>
+          <hr>
+          <textarea id="id-summernote">
+            <h3>Marketing Campaign</h3>
+            <p>Dear ${user.name},<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, explicabo, nostrum. Dolore eum maiores nemo? Architecto at atque corporis earum, ex incidunt magnam modi omnis placeat quasi quia ratione repellat.
+            </p>
+            <p>Regardless,<br>
+              My Company.
+            </p>
+          </textarea>
+        </div>
+        <div class="panel-footer text-right">
+          <button class="btn btn-primary">Send</button>
+          <button class="btn btn-default">Discard</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <!-- summernote -->
+  <script src="plugins/summernote/summernote.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#id-summernote').summernote({
+        height: 300
+      });
+    });
+  </script>
+{% endblock %}

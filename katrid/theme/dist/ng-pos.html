@@ -2,13 +2,14 @@
 <html ng-app="posApp">
 <head>
   <meta charset="UTF-8">
-  <title>AngularJS Point of Sales Template (Google Chrome Only)</title>
+  <title>AngularJS Point of Sales Template</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/skins.css">
   <link href="plugins/ng-pos/pos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/angular/angular.min.js"></script>
@@ -64,7 +65,7 @@
               </li>
             </ul>
           <div class="pos-print-summary">
-            <span class="pos-print-total" animate-on-change="page.total">
+            <span class="pos-print-total">
               $ <span style="font-size: 30px">{{ page.total | number: 2 }}</span>
             </span>
           </div>
@@ -164,13 +165,13 @@
             </div>
           </div>
           <div class="col-sm-12 pos-product-list" style=" padding-bottom: 100px;">
-            <div class="pos-list-item" ng-class="{promo: product.id.toString()[0]==='1'}" ng-repeat="product in products" ng-click="itemClick(product)">
+            <div class="pos-list-item animated fadeIn" ng-class="{promo: product.id.toString()[0]==='1'}" ng-repeat="product in products" ng-click="itemClick(product)">
               <div>
               <img ng-src="{{ product.img }}" style="max-width: 98px; max-height: 98px;  ">
                 </div>
               <span class="product">{{ product.name }}</span>
-              <span class="label label-primary price label-price animated bounceIn">$ {{ product.value }}</span>
-              <span class="label label-info price promo animated bounceIn" ng-show="product.id.toString()[0]==='1'">10% VISA DISCOUNT</span>
+              <span class="label label-primary price label-price">$ {{ product.value }}</span>
+              <span class="label label-info price promo" ng-show="product.id.toString()[0]==='1'">10% VISA DISCOUNT</span>
             </div>
 
             <img id="logo" src="plugins/ng-pos/logo.png">

@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -52,7 +51,7 @@
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -71,7 +70,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -112,7 +111,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -126,12 +125,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -140,7 +139,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,26 +149,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -229,11 +233,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -249,18 +253,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -280,14 +284,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -317,81 +321,50 @@
 <div id="main-content" role="main">
 
   <div class="content">
-    <div class="row">
 
-      <!-- dashboard highlight panels -->
-      <div class="dashboard-header col-sm-12">
+    <!-- dashboard highlight panels -->
+    <div class="dashboard-header row">
 
-        <div class="panel-default col-sm-2">
-          <div class="panel-body dashboard-panel">
-            <div id="pie-chart-0" class="pie-chart" data-percent="28" data-size="80" data-pie-size="25">
-              <span class="percent font-lg"></span>
-            </div>
-            <div class="pull-right text-right">
-              <span class="title">Dashboard Panel</span><br>
-              <strong>TEST GAUGE</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel-default col-sm-2">
-          <div class="panel-body dashboard-panel">
-            <i class="pe pe-7s-rocket pe-4x pull-right"></i>
-            <div class="pull-right text-right">
-              <span class="title">Dashboard Panel</span><br>
-              <strong>TEST LAUNCH</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-deep-purple col-sm-2">
-          <div class="panel-body dashboard-panel">
-            <i class="pe pe-7s-rocket pe-4x pull-right"></i>
-            <div class="pull-right text-right">
-              <span class="title">Dashboard Panel</span><br>
-              <strong>TEST LAUNCH</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-green col-sm-2">
-          <div class="panel-body dashboard-panel">
-            <div class="pull-right text-right">
-              <span class="title pull-right">Green Example</span>
-              <h1>$100.00</h1>
-            </div>
-            <i class="pe-7s-cash pe-4x"></i>
-          </div>
-        </div>
-        <div class="bg-light-blue col-sm-2">
-          <div class="panel-body dashboard-panel">
-            <div class="pull-right text-right">
-              <span class="title">Last Sale Value</span><br>
-              <strong>$1,000.00</strong>
-            </div>
-            <i class="pe pe-7s-search pe-4x"></i>
-          </div>
-        </div>
-        <div class="bg-red col-sm-2 animated bounceIn">
-          <div class="panel-body dashboard-panel">
-            <div class="pull-right text-right">
-              <span class="title">Stock Alert</span><br>
-              <strong>Item stock alert!</strong>
-            </div>
-            <i class="pe pe-7s-alarm pe-4x"></i>
+      <div class="panel-default col-lg-2">
+        <div class="panel-body dashboard-panel">
+          <i class="pe pe-7s-rocket pe-4x pull-right"></i>
+          <div class="pull-right text-right">
+            <span class="title">Dashboard Panel</span><br>
+            <strong>TEST LAUNCH</strong>
           </div>
         </div>
       </div>
 
+      <div class="col-lg-offset-8 col-lg-2">
+        <div class="panel panel-default">
+          <div class="panel-heading bg-white text-uppercase">
+            <label class="label label-info pull-right">Status</label>
+            <span>Email Campaigns</span>
+          </div>
+          <div class="panel-body dashboard-panel">
+            <div class="pull-left">
+              <span class="title">Still sending...</span><br>
+            </div>
+            <div id="pie-chart-0" class="pie-chart pull-right" data-percent="28" data-size="60" data-pie-size="25">
+              <span class="percent font-lg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
       <!-- dashboard widgets -->
       <div class="col-md-2">
         <div class="panel panel-default">
-          <div class="panel-heading">
-            Easy Pie Chart
-          </div>
           <div class="panel-body">
+            <p><i class="fa fa-fw fa-envelope"></i> You have 32 new messages.<a class="btn btn-success btn-block" href="inbox.html" data-toggle="tooltip" data-title="Go to my inbox">Inbox</a></p>
+            <hr>
+            <h3>Recent Activies</h3>
             <p>
-              This is a easy pie chart widget. You can customize your own chart following the easypiechart documentation.
+              This is a easy pie chart widget. You can customize your own chart following the easypiechart
+              documentation.
               <br>
             </p>
             <div id="pie-chart-1" class="pie-chart" data-percent="28" data-size="100" data-pie-size="25">
@@ -401,7 +374,8 @@
               <span class="percent font-lg"></span>
             </div>
             <p>
-              Click here and go to <a href="https://rendro.github.io/easy-pie-chart/" target="_blank">Easy pie chart website.</a>
+              Click here and go to <a href="https://rendro.github.io/easy-pie-chart/" target="_blank">Easy pie chart
+              website.</a>
             </p>
             <hr>
             <p>
@@ -429,7 +403,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="panel panel-default">
           <div class="panel-heading">
             Expenses by month
@@ -439,7 +413,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="panel panel-default">
           <div class="panel-heading">
             Revenue by month
@@ -538,6 +512,11 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->

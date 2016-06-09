@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!--link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css"-->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,900,500italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700" rel="stylesheet" type="text/css">
 
   <title>Theme Template for Bootstrap</title>
 
@@ -46,13 +45,15 @@
 
   <!-- extra head -->
   
+  <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
+
   <!-- end extra head -->
 </head>
 
 <body role="document" class="navy-skin bg-skin">
 
 <!-- Fixed navbar -->
-<nav id="navbar-nav" class="navbar navbar-default navbar-skin">
+<nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
@@ -71,7 +72,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."> <i class="fa fa-fw fa-search"></i></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -112,7 +113,7 @@
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn text-uppercase">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
@@ -126,12 +127,12 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-warning pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="ng-pos.html" target="_blank">Point of Sales (Chrome)</a>
+            <a href="ng-pos.html" target="_blank">Point of Sales</a>
           </li>
           <li class="menu-item">
             <a href="crm.html">CRM (Opportunities)</a>
@@ -140,7 +141,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-print"></i> BI / Reporting <span
-            class="label label-info pull-right animated bounceIn text-uppercase">New</span><br>
+            class="label label-success pull-right animated bounceIn">New</span><br>
           <small>Reports and more...</small>
         </a>
         <ul class="nav">
@@ -150,26 +151,31 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="label label-primary pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>You got 10 new messages...</small>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+          <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="inbox.html">Inbox</a>
           </li>
-        </ul>
-      </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn text-uppercase">New</span><br>
-          <small>CRUD, REST and Ajax examples...</small>
-        </a>
-        <ul class="nav">
           <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
+            <a href="compose-email.html">Compose Email</a>
+          </li>
+          <li class="menu-item">
+            <a href="view-email.html">Email View</a>
           </li>
         </ul>
       </li>
+
+
+
+
+
+
+
+
+
+
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -229,11 +235,11 @@
           <li class="menu-item">
             <a href="#">Icons</a>
             <ul class="nav">
-              <li>
+              <li class="menu-item">
                 <a href="font-awesome.html">Font Awesome</a>
               </li>
-              <li>
-                <a href="#">Glyph Icons</a>
+              <li class="menu-item">
+                <a href="glyphicons.html">Glyph Icons</a>
               </li>
             </ul>
           </li>
@@ -249,18 +255,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-          <li class="menu-item">
-            <a href="tree-view.html">Tree View</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-          <li class="menu-item">
-            <a href="buttons.html">JQuery UI</a>
-          </li>
+
+
+
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -280,14 +286,14 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>
-        <ul class="nav">
-          <li class="menu-item">
-            <a href="tables.html">Basic Tables</a>
-          </li>
-        </ul>
-      </li>
+
+
+
+
+
+
+
+
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
@@ -410,7 +416,8 @@
             </div>
             <div class="alert alert-success alert-inverse">
               <button class="close" data-dismiss="alert">&times;</button>
-              <i class="fa fa-fw fa-check"></i><strong> Success Inverse</strong> Lorem ipsum dolor sit amet, consectetur
+              <i class="fa fa-fw fa-check"></i><strong> Success Inverse</strong> Lorem ipsum dolor sit amet,
+              consectetur
               adipisicing elit. Beatae deserunt dolorum ea enim excepturi, fugiat ipsam labore laudantium magnam minus
               nihil non omnis rem tempore ut vel, voluptas voluptate voluptatum?
             </div>
@@ -422,13 +429,12 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-12">
-        <h3>Labels &amp; Badges</h3>
       </div>
 
       <div class="col-md-6">
+
+
         <div class="panel panel-default">
           <div class="panel-heading">
             Labels
@@ -458,9 +464,7 @@
 
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             Badges
@@ -499,18 +503,50 @@
 
           </div>
         </div>
+
+        <div class="jumbotron"><h1>Jumbotron</h1>
+          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured
+            content or information.
+          </p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+
       </div>
 
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
-            Jumbotron
+            Progress Bar
           </div>
           <div class="panel-body">
-            <div class="jumbotron"><h1>Hello, world!</h1>
-              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-                content or information.</p>
-              <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p></div>
+            <label>Extra Small Progress Bar</label>
+            <div class="progress progress-xs">
+              <div class="progress-bar bg-deep-purple" role="progressbar" style="width: 20%;"></div>
+            </div>
+            <label>Small Progress Bar</label>
+            <div class="progress progress-sm">
+              <div class="progress-bar bg-deep-orange" role="progressbar" style="width: 40%;"></div>
+            </div>
+            <label>Standard Progress Bar</label>
+            <div class="progress">
+              <div class="progress-bar bg-cyan" role="progressbar" style="width: 60%;"></div>
+            </div>
+            <h3>Animated</h3>
+            <div class="progress progress-striped active">
+              <div class="progress-bar bg-cyan" role="progressbar" style="width: 70%;"></div>
+            </div>
+            <div class="progress progress-striped active">
+              <div class="progress-bar" role="progressbar" style="width: 80%;"></div>
+            </div>
+            <h3>Stacked Progress</h3>
+            <div class="progress progress-striped">
+              <div class="progress-bar bg-blue-gray" role="progressbar" style="width: 20%;"></div>
+              <div class="progress-bar" role="progressbar" style="width: 47%;"></div>
+              <div class="progress-bar bg-deep-orange" role="progressbar" style="width: 22%;"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -518,15 +554,119 @@
       <div class="col-md-6">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h5>Toastr <small>http://codeseven.github.io/toastr/</small></h5>
+            <h5>Toastr Notifications
+              <small>http://codeseven.github.io/toastr/</small>
+            </h5>
           </div>
           <div class="panel-body">
-            test
+            <button id="toastr-info" class="btn btn-info">Info</button>
+            <button id="toastr-success" class="btn btn-success">Success</button>
+            <button id="toastr-warning" class="btn btn-warning">Warning</button>
+            <button id="toastr-danger" class="btn btn-danger">Error</button>
+            <h3>With Progressbar</h3>
+            <button id="toastr-info-2" class="btn btn-info">Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            Pagination
+          </div>
+          <div class="panel-body text-center">
+            <div class="form-group">
+              <ul class="pagination pagination-lg">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <ul class="pagination">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <ul class="pagination pagination-sm">
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="active">
+                  <a href="javascript:void(0);">1</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">2</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">3</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">4</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">5</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"><i class="fa fa-chevron-right"></i></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-group text-center">
+              <ul class="pager">
+                <li class="previous">
+                  <a href="javascript:void(0);"><i class="fa fa-fw fa-arrow-left"></i> Older</a>
+                </li>
+                <li class="next">
+                  <a href="javascript:void(0);">Newer <i class="fa fa-fw fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+
   </div>
 
 <footer class="footer">
@@ -615,9 +755,39 @@ $( document ).ready(function() {
 
 
 
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+  });
+</script>
 
 
 <!-- additional scripts -->
+
+  <script src="plugins/toastr/toastr.min.js"></script>
+  <script>
+    $(function () {
+      $('#toastr-info').click(function () {
+        toastr.info('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-success').click(function () {
+        toastr.success('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-warning').click(function () {
+        toastr.warning('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-danger').click(function () {
+        toastr.error('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+      });
+      $('#toastr-info-2').click(function () {
+        toastr.options = {
+          progressBar: true
+        };
+        toastr.info('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
+        toastr.options = {};
+      });
+    });
+  </script>
 
 <!-- end additional scripts -->
 

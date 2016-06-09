@@ -8,6 +8,10 @@
   background: rgba(0,0,0,.1) !important;
 }
 
+#header {
+  border-radius: 0;
+}
+
 .user-avatar {
   height: 30px;
   margin-left: 10px;
@@ -158,7 +162,6 @@
 .navbar-search i.fa {
   padding: 10px;
   width: auto;
-  background: rgba(0,0,0,.2);
   border-radius: 4px;
 }
 
@@ -173,4 +176,34 @@
 
 .nav-tabs {
   border-bottom: none;
+}
+
+.nav-pills > li > a {
+  color: #727272;
+}
+
+.nav-folders > li.active > a,
+.nav-folders > li.active > a:hover,
+.nav-folders > li > a:hover {
+  background-color: #ffffff;
+  color: @text-color;
+}
+
+.nav-mails {
+  cursor: pointer;
+}
+
+.list-view-item {
+  width: 220px;
+  margin-right: 10px;
+  float: left;
+}
+
+.list-view-item a .fa {
+  font-size: 70px;
+  color: @text-muted;
+}
+
+.list-view-item a .panel-body {
+  text-align: center;
 }

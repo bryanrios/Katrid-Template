@@ -2,6 +2,7 @@ import os
 from jinja2 import Environment, FileSystemLoader
 
 env = Environment(loader=FileSystemLoader('./'))
+env_docs = Environment(loader=FileSystemLoader('./documentation/'))
 
 templates = [
     'forms.html',
@@ -41,6 +42,14 @@ templates = [
     'ck-editor.html',
     'grid.html',
     'tree-view.html',
+    'inbox.html',
+    'compose-email.html',
+    'view-email.html',
+    'glyphicons.html',
+]
+
+docs = [
+    'index.html'
 ]
 
 for tmp in templates:
@@ -49,4 +58,11 @@ for tmp in templates:
     f = open('output/' + tmp, 'w')
     f.write(s)
 
+for tmp in docs:
+    t = env_docs.get_template(tmp)
+    s = t.render()
+    f = open('output/documentation/' + tmp, 'w')
+    f.write(s)
+
 os.system('mv output/*.html ../theme/dist/')
+os.system('mv output/documentation/*.html ../theme/documentation')

@@ -13,7 +13,7 @@
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: @padding-base-vertical @padding-base-horizontal;
+      padding: @padding-base-vertical (@padding-base-horizontal + 2);
       line-height: @line-height-base;
       text-decoration: none;
       color: @pagination-color;
@@ -80,10 +80,10 @@
 
 // Large
 .pagination-lg {
-  .pagination-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+  .pagination-size(@padding-large-vertical; 17px; @font-size-large; @line-height-large; @border-radius-large);
 }
 
 // Small
 .pagination-sm {
-  .pagination-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+  .pagination-size(@padding-small-vertical; 10px; @font-size-small; @line-height-small; @border-radius-small);
 }

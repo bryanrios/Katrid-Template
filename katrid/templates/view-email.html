@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content">
+
+    <div class="row">
+
+      {% include "include/left-mail-menu.html" %}
+
+      <div class="col-lg-10">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <div class="btn-group">
+                <button class="btn btn-default">
+                  <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-default">
+                  <i class="fa fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-default" title="Print message"><i class="fa fa-print"></i></button>
+                <button class="btn btn-default" title="New Window"><i class="fa fa-external-link"></i></button>
+              </div>
+            </div>
+            <h4>
+              <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong>
+            </h4>
+            <hr>
+            <div class="btn-group pull-right">
+              <button class="btn btn-default" title="Reply">
+                <i class="fa fa-reply"></i>
+              </button>
+              <button class="btn btn-default" title="Send to trash">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+            <h5>John Smith &lt;<a href="#" title="Go to John Smith profile">johnsmith@example.com</a>&gt;
+              <br>
+              <small>03:54 PM</small>
+            </h5>
+            <hr>
+            <div class="mail-message-body font-300">
+              <p>Hello My Company,</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>A, animi commodi consequatur
+                consequuntur deserunt facere fugiat fugit harum impedit, </strong>ipsa magnam, nihil nisi odio omnis
+                porro
+                quas sapiente totam veniam!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="text-danger">A ab accusantium aspernatur blanditiis cumque distinctio doloremque dolores dolorum eaque ex, explicabo facilis </span>magnam
+                maxime nam nisi, non optio quidem quisquam quod tempora totam unde vero vitae! A aliquid atque,
+                blanditiis
+                corporis debitis deserunt ea eaque eius eum exercitationem fugit itaque libero, magnam necessitatibus
+                numquam officiis praesentium reprehenderit sunt suscipit tempore? Animi delectus dicta dolores dolorum,
+                et
+                fugiat laboriosam magnam magni modi nemo numquam perspiciatis porro quidem repellat vitae. Alias animi
+                architecto at, commodi debitis dolorem eligendi error illum ipsa ipsum iste labore laudantium nobis
+                omnis,
+                tempora vero voluptate! Beatae dolor, ducimus eaque earum error excepturi magni nobis quis quos rerum
+                sint
+                soluta, tempora temporibus! At, cum dolores doloribus fuga maxime nobis quisquam sequi tenetur totam
+                vitae
+                voluptas voluptate. A accusamus aliquid amet at debitis deserunt, dignissimos dolore doloremque
+                doloribus
+                eligendi eos fugit id necessitatibus nihil nisi officiis optio quas quis quo reprehenderit sequi tempora
+                veniam voluptates. Architecto aut blanditiis, excepturi inventore iusto nihil nulla, odio perferendis,
+                placeat quae recusandae reiciendis repudiandae rerum sit voluptatibus. At aut dolore, doloremque
+                doloribus
+                ea, error molestias nemo neque omnis placeat quae quam, quisquam ullam! Aliquid assumenda debitis
+                dolorem
+                illo in nobis quae quisquam? Accusantium animi aspernatur blanditiis commodi debitis distinctio earum
+                eius
+                enim eos esse facere facilis ipsam iste, libero magni maiores nemo nihil nostrum nulla odio odit officia
+                officiis omnis perferendis quas quis repellat sint suscipit tempore temporibus tenetur ut voluptatem
+                voluptatum. Consequuntur dolores enim mollitia placeat quidem tenetur ut veritatis! Ad ea hic laborum
+                nesciunt nisi nulla quibusdam?
+              </p>
+            </div>
+            <hr>
+            <div class="mail-message-attachments">
+              <p><a href="#"><i class="fa fa-fw fa-paperclip"></i> 2 attachments.</a></p>
+              <div class="list-view-item">
+                <a href="#">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <i class="fa fa-file"></i>
+                    </div>
+                    <div class="panel-footer">
+                      <small>
+                        Document.doc
+                      </small>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
