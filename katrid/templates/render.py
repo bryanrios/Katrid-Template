@@ -54,7 +54,7 @@ docs = [
 
 for tmp in templates:
     t = env.get_template(tmp)
-    s = t.render()
+    s = t.render(googleanalytics=True)
     f = open('output/' + tmp, 'w')
     f.write(s)
 
