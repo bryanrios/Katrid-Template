@@ -1,6 +1,9 @@
 import os
 
 base_dir = '/home/alexandre/workspace/katrid/theme-dist/'
+os.chdir('..')
+os.system('python3 render.py')
+
 os.chdir(base_dir)
 
 os.system('rm -rf ' + base_dir + '*')
