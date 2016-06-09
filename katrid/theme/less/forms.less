@@ -127,7 +127,7 @@ select.form-control {
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
-  border-radius: 3px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  border-radius: 2px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   //.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
@@ -345,7 +345,7 @@ input[type="checkbox"] {
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 
 .input-sm {
-  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 3px);
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; 2px);
 }
 .form-group-sm {
   .form-control {
@@ -353,7 +353,7 @@ input[type="checkbox"] {
     padding: @padding-small-vertical @padding-small-horizontal;
     font-size: @font-size-small;
     line-height: @line-height-small;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   select.form-control {
     height: @input-height-small;
@@ -373,7 +373,7 @@ input[type="checkbox"] {
 }
 
 .input-lg {
-  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; 3px);
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; 2px);
 }
 .form-group-lg {
   .form-control {
@@ -381,7 +381,7 @@ input[type="checkbox"] {
     padding: @padding-large-vertical @padding-large-horizontal;
     font-size: @font-size-large;
     line-height: @line-height-large;
-    border-radius: 3px;
+    border-radius: 2px;
   }
   select.form-control {
     height: @input-height-large;

@@ -4247,6 +4247,9 @@ h3.popover-title {
 .badge-danger {
   background-color: #d1504c;
 }
+.label {
+  font-size: 80%;
+}
 .alert-primary {
   background-color: #c7ddef;
   border-color: #c7ddef;
