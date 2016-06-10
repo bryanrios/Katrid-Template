@@ -66,17 +66,7 @@ strong {
   right: 0;
 }
 .content {
-  padding: 6px;
-}
-@media (min-width: 768px) {
-  .content {
-    padding: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .content {
-    padding: 15px;
-  }
+  padding: 15px;
 }
 select.form-control.input-sm {
   padding-top: 2px;
