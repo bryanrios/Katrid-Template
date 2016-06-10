@@ -99,7 +99,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 6px;
 }
 .navbar-search-control::-webkit-input-placeholder {
@@ -1296,11 +1296,11 @@ fieldset[disabled] .btn-blue-gray.focus {
   font-weight: 300;
 }
 #left-side-menu > .menu-item > a {
-  background: linear-gradient(to bottom, #f3f3f3, #eeeeee);
+  background: #f3f3f3;
   font-weight: 600;
 }
 .navbar-default {
-  background: linear-gradient(to bottom, #f3f3f3, #dbdbdb);
+  background: #f3f3f3;
   background-repeat: repeat-x;
   border-bottom: 1px solid #b6b6b6;
 }

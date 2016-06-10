@@ -4,6 +4,10 @@ body {
   background: #eeeeee;
 }
 
+#left-side-menu>li.menu-item .menu-item {
+  border-top: none;
+}
+
 .skin(@bg-color) {
   #header.navbar {
     border: none;
@@ -41,8 +45,15 @@ body {
     background: @bg-color;
     color: lighten(@bg-color, 72%);
   }
-  #left-menu.skin .menu-item > a:hover {
+  #left-menu.skin .menu-item.open a {
     background: darken(@bg-color, 5%);
+  }
+  #left-menu.skin>nav>#left-side-menu>.menu-item > a:hover {
+    background: darken(@bg-color, 5%);
+    color: #ffffff;
+  }
+  #left-menu.skin>nav>#left-side-menu>.menu-item>ul a:hover {
+    background: darken(@bg-color, 8%);
     color: #ffffff;
   }
 
@@ -77,7 +88,7 @@ body {
     outline: none;
   }
 
-  @navbar-search-placeholder: #dedede;
+  @navbar-search-placeholder: #e8e8e8;
 
   .navbar-search-control::-webkit-input-placeholder {
     color: @navbar-search-placeholder;
@@ -116,7 +127,7 @@ body {
 }
 
 .gray-skin {
-  .skin(#363636);
+  .skin(#424141);
 }
 
 .blue-skin {
@@ -124,7 +135,7 @@ body {
 }
 
 .red-skin {
-  .skin(#e64b3b);
+  .skin(#ee6161);
 }
 
 .navy-skin {
