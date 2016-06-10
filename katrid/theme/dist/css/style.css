@@ -36,9 +36,6 @@ body.page-small .small-logo {
 body.show-left-menu .small-logo {
   display: none;
 }
-body.page-small .dropdown-menu {
-  font-size: 18px;
-}
 @media (min-width: 768px) {
   .navbar .navbar-nav .user-dropdown > a {
     padding-top: 10px;
@@ -1370,6 +1367,28 @@ fieldset[disabled] .btn-blue-gray.focus {
 }
 .list-view-item a .panel-body {
   text-align: center;
+}
+a.user-dropdown {
+  position: absolute;
+  right: 2px;
+  color: #ffffff;
+}
+#header #static-nav {
+  float: right !important;
+}
+#header #static-nav {
+  margin: 0;
+  margin-right: -15px;
+}
+#header #static-nav > li > a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+#header #static-nav > li {
+  float: left;
+}
+.show-left-menu.page-small #header #static-nav {
+  display: none !important;
 }
 body.page {
   background: #eeeeee;

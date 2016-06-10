@@ -56,7 +56,7 @@
 <nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
-       aria-expanded="false">Accounting <span class="caret"></span></a>
+       aria-expanded="false">Accounting <i class="fa fa-angle-down"></i></a>
     <ul class="dropdown-menu">
       <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> CRM / Sales</a></li>
       <li><a href="#"><i class="fa fa-fw fa-users"></i> Human Resources</a></li>
@@ -70,8 +70,8 @@
   <div class="small-logo">
     <span id="current-menu-name">Accounting</span>
   </div>
-  <div id="navbar" class="navbar-collapse collapse">
-    <ul class="nav navbar-nav">
+  <div id="navbar" class="navbar-collapse">
+    <ul class="nav navbar-nav hidden-xs hidden-sm hidden-md">
       <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -87,45 +87,44 @@
           <li><a href="#">One more separated link</a></li>
         </ul>
       </li>
+    </ul>
+    <ul id="static-nav" class="nav navbar-nav navbar-right">
       <li><a href="javascript:void(0);" data-action="voiceCommand" title="Execute command voice"><i class="fa fa-microphone"></i></a></li>
       <li><a href="javascript:void(0);" data-action="fullScreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="user-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <img class="user-avatar" src="img/user-avatar-48.jpg"></a>
-        <ul class="dropdown-menu">
-          <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
-          <li><a href="#"><i class="fa fa-fw fa-sign-out"></i> Sign out</a></li>
-        </ul>
-      </li>
       <li><a href="#" title="Logout"><i class="fa fa-lg fa-sign-out"></i></a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </nav>
 <aside id="left-menu" class="sidebar skin">
-  <div class="logo-area animated fadeIn" style="background: transparent">
-    <a href="/">
+  <div class="logo-area" style="background: transparent">
+    <a href="index.html">
       <img id="avatar" src="img/user-avatar.jpg" alt="avatar">
     </a>
-    <div class="user-profile-menu">
+    <a class="user-profile-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>John Smith</span>
-    </div>
+      <span class="user-dropdown"><i class="fa fa-angle-down"></i></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-sign-out"></i> Sign out</a></li>
+    </ul>
   </div>
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span
+            class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
             <a href="dashboard-1.html">Dashboard 1</a>
           </li>
-
-
-
+          
+          
+          
         </ul>
       </li>
       <li class="menu-item">
@@ -154,7 +153,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
+            class="badge pull-right animated bounceIn">32</span><br>
           <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
@@ -169,16 +169,16 @@
           </li>
         </ul>
       </li>
-
-
-
-
-
-
-
-
-
-
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -258,18 +258,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-
-
-
+          
+          
+          
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-
-
-
+          
+          
+          
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -292,14 +292,14 @@
           </li>
         </ul>
       </li>
-
-
-
-
-
-
-
-
+      
+      
+      
+      
+      
+      
+      
+      
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">

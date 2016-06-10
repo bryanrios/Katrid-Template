@@ -1,25 +1,33 @@
 <aside id="left-menu" class="sidebar skin">
-  <div class="logo-area animated fadeIn" style="background: transparent">
-    <a href="/">
+  <div class="logo-area" style="background: transparent">
+    <a href="index.html">
       <img id="avatar" src="img/user-avatar.jpg" alt="avatar">
     </a>
-    <div class="user-profile-menu">
+    <a class="user-profile-menu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <span>John Smith</span>
-    </div>
+      <span class="user-dropdown"><i class="fa fa-angle-down"></i></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-sign-out"></i> Sign out</a></li>
+    </ul>
   </div>
   <nav class="sidebar-nav">
     <ul id="left-side-menu" class="nav" aria-expanded="false">
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span class="label label-danger pull-right animated bounceIn">New</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-home"></i> Dashboard <span
+            class="label label-danger pull-right animated bounceIn">New</span><br>
           <small>This is the menu description...</small>
         </a>
         <ul class="nav">
           <li class="menu-item">
             <a href="dashboard-1.html">Dashboard 1</a>
           </li>
-{#          <li class="menu-item">#}
-{#            <a href="dashboard-2.html">Dashboard 2</a>#}
-{#          </li>#}
+          {#          <li class="menu-item">#}
+          {#            <a href="dashboard-2.html">Dashboard 2</a>#}
+          {#          </li>#}
         </ul>
       </li>
       <li class="menu-item">
@@ -48,7 +56,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span class="badge pull-right animated bounceIn">32</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
+            class="badge pull-right animated bounceIn">32</span><br>
           <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">
@@ -63,16 +72,16 @@
           </li>
         </ul>
       </li>
-{#      <li class="menu-item">#}
-{#        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>#}
-{#          <small>CRUD, REST and Ajax examples...</small>#}
-{#        </a>#}
-{#        <ul class="nav">#}
-{#          <li class="menu-item">#}
-{#            <a href="tables.html">Basic Tables</a>#}
-{#          </li>#}
-{#        </ul>#}
-{#      </li>#}
+      {#      <li class="menu-item">#}
+      {#        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> CRUD <span class="label label-default pull-right animated bounceIn">New</span><br>#}
+      {#          <small>CRUD, REST and Ajax examples...</small>#}
+      {#        </a>#}
+      {#        <ul class="nav">#}
+      {#          <li class="menu-item">#}
+      {#            <a href="tables.html">Basic Tables</a>#}
+      {#          </li>#}
+      {#        </ul>#}
+      {#      </li>#}
       <li class="menu-item"><a href="#"><i class="fa fa-lg fa-fw fa-edit"></i> Forms<span class="fa arrow"></span></a>
         <ul class="nav">
           <li class="menu-item">
@@ -152,18 +161,18 @@
           <li class="menu-item">
             <a href="general.html">General Elements</a>
           </li>
-{#          <li class="menu-item">#}
-{#            <a href="tree-view.html">Tree View</a>#}
-{#          </li>#}
+          {#          <li class="menu-item">#}
+          {#            <a href="tree-view.html">Tree View</a>#}
+          {#          </li>#}
           <li class="menu-item">
             <a href="modals.html">Modals &amp; Dialogs</a>
           </li>
           <li class="menu-item">
             <a href="components.html">Components</a>
           </li>
-{#          <li class="menu-item">#}
-{#            <a href="buttons.html">JQuery UI</a>#}
-{#          </li>#}
+          {#          <li class="menu-item">#}
+          {#            <a href="buttons.html">JQuery UI</a>#}
+          {#          </li>#}
           <li class="menu-item">
             <a href="grid.html">Grid System</a>
           </li>
@@ -186,14 +195,14 @@
           </li>
         </ul>
       </li>
-{#      <li class="menu-item">#}
-{#        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>#}
-{#        <ul class="nav">#}
-{#          <li class="menu-item">#}
-{#            <a href="tables.html">Basic Tables</a>#}
-{#          </li>#}
-{#        </ul>#}
-{#      </li>#}
+      {#      <li class="menu-item">#}
+      {#        <a href="#"><i class="fa fa-lg fa-fw fa-comment"></i> Widgets</a>#}
+      {#        <ul class="nav">#}
+      {#          <li class="menu-item">#}
+      {#            <a href="tables.html">Basic Tables</a>#}
+      {#          </li>#}
+      {#        </ul>#}
+      {#      </li>#}
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-bookmark"></i> Template Pages</a>
         <ul class="nav">
