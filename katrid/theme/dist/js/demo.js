@@ -4,7 +4,7 @@ $(document).ready(function () {
   });
 
   $('#demo-settings').append('<div id="demo-choices" class="animated fadeIn">' +
-    '<div class="checkbox"><label><input id="demo-show-logo" type="checkbox"> Display logo area</label></div>' +
+    '<div class="checkbox"><label><input id="demo-show-logo" type="checkbox" checked> Display logo area</label></div>' +
     '<div class="checkbox"><label><input id="demo-left-navbar-skin" type="checkbox" checked> Apply to navbar menu</label></div>' +
     '<div class="checkbox"><label><input id="demo-left-menu-skin" type="checkbox" checked> Apply to left side menu</label></div>' +
     '<h4>Available Skins</h4>' +
