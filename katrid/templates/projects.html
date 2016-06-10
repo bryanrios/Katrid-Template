@@ -1,0 +1,575 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="data-heading panel panel-default">
+    <div class="panel-body">
+      <div>
+        <a href="#" title="Add to favorite"><i class="fa star fa-star-o pull-right"></i></a>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">App Views</a></li>
+          <li>Projects</li>
+        </ol>
+        <div class="pull-right">
+            <span>
+              1 - 10 of 100
+            </span>
+        </div>
+        <p class="help-block">Here you can add, change or remove projects...</p>
+      </div>
+      {% include "include/form-toolbar.html" %}
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <!-- project item -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-success">New</label> <label class="label label-warning">Hot</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Build a new module</a></h3>
+                <hr>
+                <p>Based on clients request, we need build a new human resources module, and it must be integrated to
+                  main
+                  ERP app.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">John Smith</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">1 month ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-success" style="width: 25%" role="progressbar"
+                           aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    3, 10, 11, 10, 7, 5, 10, 3, 11, 10, 7, 2
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="Kevin K.">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/b-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Jack N.">
+                    <img class="img-circle" src="img/faces/c-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@fabio">
+                    <img class="img-circle" src="img/faces/d-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@dany">
+                    <img class="img-circle" src="img/faces/e-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+        <!-- end project item -->
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-danger">Delayed</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, consectetur eligendi eos excepturi ipsam provident rem voluptates.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">John Smith</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">1 year ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 68%" role="progressbar"
+                           aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    9, 10, 9, 8, 6, 5, 9, 8, 7, 11, 8, 2
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/c-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/e-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-success">Production</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio impedit non rem! Asperiores ex iste neque!</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">@username</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">6 months ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Production</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-success" style="width: 100%" role="progressbar"
+                           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    10, 3, 9, 10, 6, 9, 7, 6, 8, 9, 10, 7
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/b-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/c-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/d-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-warning">Warning</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet expedita omnis! Consectetur ducimus mollitia quidem?</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">John Smith</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">7 months ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-warning" style="width: 18%" role="progressbar"
+                           aria-valuenow="18" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    10, 7, 10, 11, 9, 8, 10, 7, 9, 7, 9, 10
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/e-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/g-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-info">Info</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti dolorum impedit pariatur quam? Voluptatibus!</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">@username</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">1 year ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-info" style="width: 68%" role="progressbar"
+                           aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    10, 11, 12, 13, 10, 9, 8, 10, 11, 12, 10, 9
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/b-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/g-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/i-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label bg-deep-orange">Custom Label</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dicta dolorum ducimus officia porro quae quia.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">John O.</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">2 years ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-info bg-deep-purple" style="width: 78%" role="progressbar"
+                           aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    10,11,12,10,9,9,10,11,12,14,9,8
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/g-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/e-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label bg-cyan">Label</label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo molestias odio temporibus! Deleniti perferendis repellat voluptas.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">@john</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">10 months ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar bg-cyan" style="width: 68%" role="progressbar"
+                           aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    10,9,8,11,11,12,13,10,11,10,10
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/d-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/e-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/a-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <label class="label label-danger"></label>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <h3 class="panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi, consectetur eligendi eos excepturi ipsam provident rem voluptates.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Requested By</span><br>
+                    <span><a href="#" title="Go to partner profile">@smith</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Date</span><br>
+                    <span><a href="#" title="Go to partner profile">1 year ago</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Status</span><br>
+                    <span><a href="#" title="Go to partner profile">Development</a></span>
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="text-uppercase font-600">Progress</span><br>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-success" style="width: 68%" role="progressbar"
+                           aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 text-right margin-top-8">
+                <div class="btn-group">
+                  <button class="btn btn-default btn-xs">View</button>
+                  <button class="btn btn-default btn-xs">Edit</button>
+                  <button class="btn btn-default btn-xs">Delete</button>
+                </div>
+                <div class="margin-top-8 margin-bottom-16">
+                  <div class="sparkline" data-sparkline-height="28px" data-sparkline-width="90px">
+                    9, 10, 9, 8, 6, 5, 9, 8, 7, 11, 8, 2
+                  </div>
+                </div>
+                <div class="project-members">
+                  <a href="#" data-toggle="tooltip" data-title="John Smith">
+                    <img class="img-circle" src="img/faces/b-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="@jack">
+                    <img class="img-circle" src="img/faces/g-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Fabio Diaz">
+                    <img class="img-circle" src="img/faces/i-48.jpg">
+                  </a>
+                  <a href="#" data-toggle="tooltip" data-title="Mario Ortiz">
+                    <img class="img-circle" src="img/faces/f-48.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small>Project additional information.</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <script src="plugins/jquery.sparkline/jquery.sparkline.min.js"></script>
+{% endblock %}

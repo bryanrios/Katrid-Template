@@ -67,9 +67,15 @@
 {% endblock %}
 <script src="js/bootstrap.min.js"></script>
 
+{% block startup_code %}{% endblock %}
+
+<!-- additional scripts -->
+{% block additional_scripts %}{% endblock %}
+<!-- end additional scripts -->
+
 {% block menu_code %}
 
-<!-- startup script -->
+<!-- app startup script -->
 <script src="js/app.js"></script>
 
 <!-- menu-startup -->
@@ -123,17 +129,6 @@ $( document ).ready(function() {
 <script src="js/demo.js"></script>
 
 {% endblock %}
-
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-  });
-</script>
-{% block startup_code %}{% endblock %}
-
-<!-- additional scripts -->
-{% block additional_scripts %}{% endblock %}
-<!-- end additional scripts -->
 
 {% if googleanalytics %}
 <!-- googleanalytics -->

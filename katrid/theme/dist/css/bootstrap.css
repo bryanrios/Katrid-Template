@@ -4979,6 +4979,7 @@ a.thumbnail.active {
 .alert {
   padding: 15px;
   margin-bottom: 18px;
+  border: 1px solid transparent;
   border-radius: 3px;
 }
 .alert h4 {

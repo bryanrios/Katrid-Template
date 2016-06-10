@@ -59,7 +59,7 @@
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
-    <ul class="dropdown-menu animated flipInX">
+    <ul class="dropdown-menu">
       <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> CRM / Sales</a></li>
       <li><a href="#"><i class="fa fa-fw fa-users"></i> Human Resources</a></li>
       <li><a href="#"><i class="fa fa-fw fa-money"></i> Purchases</a></li>
@@ -79,7 +79,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
         </a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="ng-pos.html" target="_blank">POS (Point of Sales)</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
@@ -95,7 +95,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li class="user-dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <img class="user-avatar" src="img/user-avatar-48.jpg"></a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
           <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
           <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
@@ -278,6 +278,9 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li class="menu-item">
             <a href="blog.html">Blog</a>
           </li>
           <li class="menu-item">
@@ -365,7 +368,25 @@
 
 
 
-<!-- startup script -->
+<!-- additional scripts -->
+
+<script src="js/angular/angular.min.js"></script>
+<script src="plugins/ng-report/ng-report.min.js"></script>
+<script src="plugins/ng-report/ng-report-test.js"></script>
+<script>
+  angular.element(document).ready(function() {
+    $('#btn-preview').click(function() {
+      var rep = showReport(angular.element('#report-container'), testReport);
+      $(this).hide();
+    });
+  })
+</script>
+
+<!-- end additional scripts -->
+
+
+
+<!-- app startup script -->
 <script src="js/app.js"></script>
 
 <!-- menu-startup -->
@@ -419,29 +440,6 @@ $( document ).ready(function() {
 <script src="js/demo.js"></script>
 
 
-
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-  });
-</script>
-
-
-<!-- additional scripts -->
-
-<script src="js/angular/angular.min.js"></script>
-<script src="plugins/ng-report/ng-report.min.js"></script>
-<script src="plugins/ng-report/ng-report-test.js"></script>
-<script>
-  angular.element(document).ready(function() {
-    $('#btn-preview').click(function() {
-      var rep = showReport(angular.element('#report-container'), testReport);
-      $(this).hide();
-    });
-  })
-</script>
-
-<!-- end additional scripts -->
 
 
 </body>

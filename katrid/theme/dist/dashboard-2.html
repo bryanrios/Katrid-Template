@@ -55,7 +55,7 @@
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
-    <ul class="dropdown-menu animated flipInX">
+    <ul class="dropdown-menu">
       <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> CRM / Sales</a></li>
       <li><a href="#"><i class="fa fa-fw fa-users"></i> Human Resources</a></li>
       <li><a href="#"><i class="fa fa-fw fa-money"></i> Purchases</a></li>
@@ -75,7 +75,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
         </a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="ng-pos.html" target="_blank">POS (Point of Sales)</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
@@ -91,7 +91,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li class="user-dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <img class="user-avatar" src="img/user-avatar-48.jpg"></a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
           <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
           <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
@@ -274,6 +274,9 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li class="menu-item">
             <a href="blog.html">Blog</a>
           </li>
           <li class="menu-item">
@@ -455,68 +458,6 @@
 
 <script src="js/bootstrap.min.js"></script>
 
-
-
-<!-- startup script -->
-<script src="js/app.js"></script>
-
-<!-- menu-startup -->
-<script>
-  $('.menu-item').each(function () {
-    var li = $(this);
-    if (li.children('ul.nav').length) li.children('a').append('<em class="fa fa-angle-left"></em>')
-  });
-  $('.menu-item>a').click(function (event) {
-    var el = $(this);
-    var li = el.parent();
-    if (li.children('ul').length) {
-      li.toggleClass('open');
-      var span = li.children('a').children('em.fa');
-      span.toggleClass('fa-angle-left');
-      span.toggleClass('fa-angle-down');
-    }
-  });
-</script>
-<script>
-  $(document).ready(function () {
-    // start metisMenu
-    $('#left-side-menu').metisMenu({toggle: false});
-
-    // navbar search
-    var items = [];
-    $('.menu-item>a').each(function (idx, el) {
-      items.push($(el).text());
-    });
-    $('#navbar-search').autocomplete({ source: items });
-  });
-</script>
-<script>
-$( document ).ready(function() {
-  var url = window.location.href.split('/');
-  url = url[url.length-1];
-
-  $('ul.nav a[href="'+ url +'"]').addClass('active').parent().parent().addClass('in').parent().addClass('active');
-
-  // Will also work for relative and absolute hrefs
-  $('ul.nav a').filter(function() {
-      return this.href == url;
-  }).addClass('active').parent().parent().addClass('in').parent().addClass('active');
-
-});
-</script>
-<!-- end menu -->
-
-
-<!-- demo js -->
-<script src="js/demo.js"></script>
-
-
-
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-  });
-</script>
 
 
 <!-- additional scripts -->
@@ -769,6 +710,63 @@ $( document ).ready(function() {
   </script>
 
 <!-- end additional scripts -->
+
+
+
+<!-- app startup script -->
+<script src="js/app.js"></script>
+
+<!-- menu-startup -->
+<script>
+  $('.menu-item').each(function () {
+    var li = $(this);
+    if (li.children('ul.nav').length) li.children('a').append('<em class="fa fa-angle-left"></em>')
+  });
+  $('.menu-item>a').click(function (event) {
+    var el = $(this);
+    var li = el.parent();
+    if (li.children('ul').length) {
+      li.toggleClass('open');
+      var span = li.children('a').children('em.fa');
+      span.toggleClass('fa-angle-left');
+      span.toggleClass('fa-angle-down');
+    }
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    // start metisMenu
+    $('#left-side-menu').metisMenu({toggle: false});
+
+    // navbar search
+    var items = [];
+    $('.menu-item>a').each(function (idx, el) {
+      items.push($(el).text());
+    });
+    $('#navbar-search').autocomplete({ source: items });
+  });
+</script>
+<script>
+$( document ).ready(function() {
+  var url = window.location.href.split('/');
+  url = url[url.length-1];
+
+  $('ul.nav a[href="'+ url +'"]').addClass('active').parent().parent().addClass('in').parent().addClass('active');
+
+  // Will also work for relative and absolute hrefs
+  $('ul.nav a').filter(function() {
+      return this.href == url;
+  }).addClass('active').parent().parent().addClass('in').parent().addClass('active');
+
+});
+</script>
+<!-- end menu -->
+
+
+<!-- demo js -->
+<script src="js/demo.js"></script>
+
+
 
 
 </body>

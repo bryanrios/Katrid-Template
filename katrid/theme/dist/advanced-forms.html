@@ -57,7 +57,7 @@
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
        aria-expanded="false">Accounting <span class="caret"></span></a>
-    <ul class="dropdown-menu animated flipInX">
+    <ul class="dropdown-menu">
       <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> CRM / Sales</a></li>
       <li><a href="#"><i class="fa fa-fw fa-users"></i> Human Resources</a></li>
       <li><a href="#"><i class="fa fa-fw fa-money"></i> Purchases</a></li>
@@ -77,7 +77,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
         </a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="ng-pos.html" target="_blank">POS (Point of Sales)</a></li>
           <li><a href="#">Another action</a></li>
           <li><a href="#">Something else here</a></li>
@@ -93,7 +93,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li class="user-dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Name <img class="user-avatar" src="img/user-avatar-48.jpg"></a>
-        <ul class="dropdown-menu animated flipInX">
+        <ul class="dropdown-menu">
           <li><a href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
           <li><a href="#"><i class="fa fa-fw fa-user"></i> My Profile</a></li>
           <li><a href="#"><i class="fa fa-fw fa-gear"></i> System Settings</a></li>
@@ -276,6 +276,9 @@
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> App Views</a>
         <ul class="nav">
           <li class="menu-item">
+            <a href="projects.html">Projects</a>
+          </li>
+          <li class="menu-item">
             <a href="blog.html">Blog</a>
           </li>
           <li class="menu-item">
@@ -339,49 +342,47 @@
         <p class="help-block">Form help text (leave a useful message here)</p>
       </div>
       <div class="toolbar">
-        <button class="btn btn-primary" type="button">Create New</button>
-        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-remove text-danger"></i> Cancel</button>
-        <button id="id-btn-delete" class="btn btn-danger-outline" type="button"><i class="fa fa-fw fa-trash-o"></i>
-          Delete
-        </button>
+  <button class="btn btn-primary" type="button">Create New</button>
+  <button class="btn btn-default" type="button"><i class="fa fa-fw fa-remove text-danger"></i> Cancel</button>
+  <button id="id-btn-delete" class="btn btn-danger-outline" type="button"><i class="fa fa-fw fa-trash-o"></i>
+    Delete
+  </button>
 
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            Actions <span class="caret"></span></button>
-          <ul class="dropdown-menu animated flipInX">
-            <li><a href="#"><i class="fa fa-fw fa-print"></i> Print Form</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-envelope-o"></i> Send Email</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#"><i class="fa fa-fw fa-file-archive-o"></i> Another Action</a></li>
-          </ul>
-        </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+      Actions <span class="caret"></span></button>
+    <ul class="dropdown-menu animated flipInX">
+      <li><a href="#"><i class="fa fa-fw fa-print"></i> Print Form</a></li>
+      <li><a href="#"><i class="fa fa-fw fa-envelope-o"></i> Send Email</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#"><i class="fa fa-fw fa-file-archive-o"></i> Another Action</a></li>
+    </ul>
+  </div>
 
-        <div class="pull-right">
-          <div class="btn-group" role="group">
-            <button class="btn btn-default" type="button"><i class="fa fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-default" type="button"><i class="fa fa-chevron-right"></i>
-            </button>
-          </div>
+  <div class="pull-right">
+    <div class="btn-group" role="group">
+      <button class="btn btn-default" type="button"><i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="btn btn-default" type="button"><i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
 
-          <div class="btn-group" role="group">
-            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-list"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-edit"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-bar-chart-o"></i></button>
-          </div>
+    <div class="btn-group" role="group">
+      <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-list"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-edit"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
+      <button class="btn btn-default" type="button"><i class="fa fa-bar-chart-o"></i></button>
+    </div>
 
-        </div>
-      </div>
+  </div>
+</div>
+
     </div>
   </div>
 
   <div class="content container">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        Boxed CRUD Form
-      </div>
       <div class="panel-body">
                 <div class="data-panel">
 
@@ -412,7 +413,7 @@
               <div>
                 <div class="col-lg-2">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-default" type="button" title="Change"><i class="fa fa-pencil"></i></button>
                       <button class="btn btn-default" type="button" title="Clear"><i class="fa fa-trash"></i></button>
@@ -575,7 +576,7 @@
 
         Vertical Label
 
-        <div class="status-field status-field-sm pull-right">
+        <div class="status-field status-field-sm pull-right hidden-xs">
           <ul class="steps">
             <li class="active">
               Registered
@@ -602,7 +603,7 @@
               <div>
                 <div class="col-lg-2">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-xs btn-default" type="button" title="Change"><i class="fa fa-pencil"></i>
                       </button>
@@ -788,7 +789,7 @@
               <div>
                 <div class="col-lg-1">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-xs btn-default" type="button" title="Change"><i class="fa fa-pencil"></i>
                       </button>
@@ -973,68 +974,6 @@
 
 
 
-<!-- startup script -->
-<script src="js/app.js"></script>
-
-<!-- menu-startup -->
-<script>
-  $('.menu-item').each(function () {
-    var li = $(this);
-    if (li.children('ul.nav').length) li.children('a').append('<em class="fa fa-angle-left"></em>')
-  });
-  $('.menu-item>a').click(function (event) {
-    var el = $(this);
-    var li = el.parent();
-    if (li.children('ul').length) {
-      li.toggleClass('open');
-      var span = li.children('a').children('em.fa');
-      span.toggleClass('fa-angle-left');
-      span.toggleClass('fa-angle-down');
-    }
-  });
-</script>
-<script>
-  $(document).ready(function () {
-    // start metisMenu
-    $('#left-side-menu').metisMenu({toggle: false});
-
-    // navbar search
-    var items = [];
-    $('.menu-item>a').each(function (idx, el) {
-      items.push($(el).text());
-    });
-    $('#navbar-search').autocomplete({ source: items });
-  });
-</script>
-<script>
-$( document ).ready(function() {
-  var url = window.location.href.split('/');
-  url = url[url.length-1];
-
-  $('ul.nav a[href="'+ url +'"]').addClass('active').parent().parent().addClass('in').parent().addClass('active');
-
-  // Will also work for relative and absolute hrefs
-  $('ul.nav a').filter(function() {
-      return this.href == url;
-  }).addClass('active').parent().parent().addClass('in').parent().addClass('active');
-
-});
-</script>
-<!-- end menu -->
-
-
-<!-- demo js -->
-<script src="js/demo.js"></script>
-
-
-
-<script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip({container: 'body'});
-  });
-</script>
-
-
 <!-- additional scripts -->
 
   <div class="modal fade" id="form-dialog-1" tabindex="-1" role="dialog">
@@ -1075,7 +1014,7 @@ $( document ).ready(function() {
               <div>
                 <div class="col-lg-2">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-default" type="button" title="Change"><i class="fa fa-pencil"></i></button>
                       <button class="btn btn-default" type="button" title="Clear"><i class="fa fa-trash"></i></button>
@@ -1248,6 +1187,63 @@ $( document ).ready(function() {
   </script>
 
 <!-- end additional scripts -->
+
+
+
+<!-- app startup script -->
+<script src="js/app.js"></script>
+
+<!-- menu-startup -->
+<script>
+  $('.menu-item').each(function () {
+    var li = $(this);
+    if (li.children('ul.nav').length) li.children('a').append('<em class="fa fa-angle-left"></em>')
+  });
+  $('.menu-item>a').click(function (event) {
+    var el = $(this);
+    var li = el.parent();
+    if (li.children('ul').length) {
+      li.toggleClass('open');
+      var span = li.children('a').children('em.fa');
+      span.toggleClass('fa-angle-left');
+      span.toggleClass('fa-angle-down');
+    }
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    // start metisMenu
+    $('#left-side-menu').metisMenu({toggle: false});
+
+    // navbar search
+    var items = [];
+    $('.menu-item>a').each(function (idx, el) {
+      items.push($(el).text());
+    });
+    $('#navbar-search').autocomplete({ source: items });
+  });
+</script>
+<script>
+$( document ).ready(function() {
+  var url = window.location.href.split('/');
+  url = url[url.length-1];
+
+  $('ul.nav a[href="'+ url +'"]').addClass('active').parent().parent().addClass('in').parent().addClass('active');
+
+  // Will also work for relative and absolute hrefs
+  $('ul.nav a').filter(function() {
+      return this.href == url;
+  }).addClass('active').parent().parent().addClass('in').parent().addClass('active');
+
+});
+</script>
+<!-- end menu -->
+
+
+<!-- demo js -->
+<script src="js/demo.js"></script>
+
+
 
 
 </body>

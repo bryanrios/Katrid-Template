@@ -47,6 +47,7 @@ templates = [
     'compose-email.html',
     'view-email.html',
     'glyphicons.html',
+    'projects.html',
 ]
 
 docs = [

@@ -19,50 +19,13 @@
         </div>
         <p class="help-block">Form help text (leave a useful message here)</p>
       </div>
-      <div class="toolbar">
-        <button class="btn btn-primary" type="button">Create New</button>
-        <button class="btn btn-default" type="button"><i class="fa fa-fw fa-remove text-danger"></i> Cancel</button>
-        <button id="id-btn-delete" class="btn btn-danger-outline" type="button"><i class="fa fa-fw fa-trash-o"></i>
-          Delete
-        </button>
+      {% include "include/form-toolbar.html" %}
 
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            Actions <span class="caret"></span></button>
-          <ul class="dropdown-menu animated flipInX">
-            <li><a href="#"><i class="fa fa-fw fa-print"></i> Print Form</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-envelope-o"></i> Send Email</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#"><i class="fa fa-fw fa-file-archive-o"></i> Another Action</a></li>
-          </ul>
-        </div>
-
-        <div class="pull-right">
-          <div class="btn-group" role="group">
-            <button class="btn btn-default" type="button"><i class="fa fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-default" type="button"><i class="fa fa-chevron-right"></i>
-            </button>
-          </div>
-
-          <div class="btn-group" role="group">
-            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-list"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-edit"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-            <button class="btn btn-default" type="button"><i class="fa fa-bar-chart-o"></i></button>
-          </div>
-
-        </div>
-      </div>
     </div>
   </div>
 
   <div class="content container">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        Boxed CRUD Form
-      </div>
       <div class="panel-body">
         {% include "include/horz-advanced-form.html" %}
       </div>
@@ -82,7 +45,7 @@
 
         Vertical Label
 
-        <div class="status-field status-field-sm pull-right">
+        <div class="status-field status-field-sm pull-right hidden-xs">
           <ul class="steps">
             <li class="active">
               Registered
@@ -109,7 +72,7 @@
               <div>
                 <div class="col-lg-2">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-xs btn-default" type="button" title="Change"><i class="fa fa-pencil"></i>
                       </button>
@@ -295,7 +258,7 @@
               <div>
                 <div class="col-lg-1">
                   <div class="image-box">
-                    <img src="img/avatar.png">
+                    <img src="img/user-avatar.jpg">
                     <div class="text-right image-box-buttons">
                       <button class="btn btn-xs btn-default" type="button" title="Change"><i class="fa fa-pencil"></i>
                       </button>
