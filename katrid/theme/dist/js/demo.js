@@ -14,6 +14,7 @@ $(document).ready(function () {
     '<button class="btn btn-info btn-block btn-demo-skin" data-value="blue">Blue</button>' +
     '<button class="btn btn-dark btn-block btn-demo-skin" data-value="gray">Gray</button>' +
     '<button class="btn btn-danger btn-block btn-demo-skin" data-value="red">Red</button>' +
+    '<div class="checkbox"><label><input id="demo-custom-bg" type="checkbox"> Custom Background</label></div>' +
     '</div>');
   $('.btn-demo-skin').click(function () {
     var body = $('body');
@@ -43,6 +44,10 @@ $(document).ready(function () {
       $('#left-menu').removeClass('skin');
       $('body').removeClass('bg-skin');
     }
+  });
+
+  $('#demo-custom-bg').click(function () {
+    $('#main-content').toggleClass('custom-bg');
   });
 
   $('#demo-show-logo').change(function () {

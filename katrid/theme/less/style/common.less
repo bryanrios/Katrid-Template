@@ -59,6 +59,7 @@ strong {
 
 #main-content {
   margin-left: 220px;
+  background-repeat: repeat;
   background-color: #f3f5f8;
   border-left: 1px solid #d5d6d8;
   min-height: 100%;
@@ -67,8 +68,12 @@ strong {
   transition: all 0.3s ease 0s;
 }
 
+#main-content.custom-bg {
+  background: url('../img/custom-bg.png');
+}
+
 #main-content>.footer {
-  background: @panel-bg;
+  background-color: @panel-bg;
   padding: 15px;
   position: absolute;
   bottom: 0;
@@ -117,4 +122,9 @@ h3, h4, h5, h6 {
 }
 .navbar-search-control:-ms-input-placeholder {
     color: @navbar-search-placeholder;
+}
+
+.dropdown-notifications-menu {
+  padding: 10px;
+  color: @text-color;
 }

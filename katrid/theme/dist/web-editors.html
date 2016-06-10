@@ -60,7 +60,7 @@
 <nav id="header" class="navbar navbar-default navbar-skin">
   <div class="navbar-header">
     <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
-       aria-expanded="false">Accounting <i class="fa fa-angle-down"></i></a>
+       aria-expanded="false">Accounting <i class="fa fa-fw fa-angle-down"></i></a>
     <ul class="dropdown-menu">
       <li><a href="#"><i class="fa fa-fw fa-pie-chart"></i> CRM / Sales</a></li>
       <li><a href="#"><i class="fa fa-fw fa-users"></i> Human Resources</a></li>
@@ -76,7 +76,8 @@
   </div>
   <div id="navbar" class="navbar-collapse">
     <ul class="nav navbar-nav hidden-xs">
-      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control" placeholder="Find resources here..."></li>
+      <li class="navbar-search"><input id="navbar-search" type="text" class="navbar-search-control"
+                                       placeholder="Find resources here..."></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
            aria-expanded="false">Shortcuts <span class="caret"></span>
@@ -91,10 +92,39 @@
           <li><a href="#">One more separated link</a></li>
         </ul>
       </li>
+      <li><a href="javascript:void(0);" data-action="voiceCommand" title="Execute command voice"><i
+          class="fa fa-microphone"></i></a></li>
     </ul>
     <ul id="static-nav" class="nav navbar-nav navbar-right">
-      <li><a href="javascript:void(0);" data-action="voiceCommand" title="Execute command voice"><i class="fa fa-microphone"></i></a></li>
-      <li><a href="javascript:void(0);" data-action="fullScreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a></li>
+      <li>
+        <a href="javascript:void(0);" data-action="messages" title="View notifications" class="dropdown-toggle"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-bell"></i>
+          <span class="label label-warning label-menu-corner">32</span>
+        </a>
+        <ul class="dropdown-menu dropdown-notifications-menu animated flipInY">
+          <div class="title">
+            You have 32 new notifications.
+          </div>
+          <hr>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-tasks"></i> Pending task notification</a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i> New order</a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i> New purchase</a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i> New order</a>
+          </li>
+          <hr>
+          <a href="#" class="btn btn-default">
+            Read more
+          </a>
+        </ul>
+
+      </li>
+      <li class="hidden-xs">
+        <a href="javascript:void(0);" data-action="fullScreen" title="Full Screen">
+          <i class="fa fa-arrows-alt"></i>
+        </a>
+      </li>
       <li><a href="#" title="Logout"><i class="fa fa-lg fa-sign-out"></i></a></li>
     </ul>
   </div><!--/.nav-collapse -->
@@ -133,7 +163,7 @@
       </li>
       <li class="menu-item">
         <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> CRM / Sales <span
-            class="label label-warning pull-right animated bounceIn">New</span><br>
+            class="label label-info pull-right animated bounceIn">New</span><br>
           <small>CRM, POS and sales management...</small>
         </a>
         <ul class="nav">
@@ -157,8 +187,8 @@
         </ul>
       </li>
       <li class="menu-item">
-        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages <span
-            class="badge pull-right animated bounceIn">32</span><br>
+        <a href="#"><i class="fa fa-lg fa-fw fa-envelope-o"></i> Messages
+          <span class="badge badge-warning pull-right animated bounceIn">32</span><br>
           <small>You got 32 new messages...</small>
         </a>
         <ul class="nav">

@@ -47,6 +47,7 @@ strong {
 }
 #main-content {
   margin-left: 220px;
+  background-repeat: repeat;
   background-color: #f3f5f8;
   border-left: 1px solid #d5d6d8;
   min-height: 100%;
@@ -54,8 +55,11 @@ strong {
   position: relative;
   transition: all 0.3s ease 0s;
 }
+#main-content.custom-bg {
+  background: url('../img/custom-bg.png');
+}
 #main-content > .footer {
-  background: #fff;
+  background-color: #fff;
   padding: 15px;
   position: absolute;
   bottom: 0;
@@ -97,6 +101,10 @@ h6 {
 }
 .navbar-search-control:-ms-input-placeholder {
   color: #747474;
+}
+.dropdown-notifications-menu {
+  padding: 10px;
+  color: #585c5f;
 }
 .bg-white {
   background: #ffffff !important;
@@ -1235,7 +1243,7 @@ fieldset[disabled] .btn-blue-gray.focus {
   transition: all 0.3s ease 0s;
 }
 #left-menu #avatar {
-  max-height: 67px;
+  max-height: 68px;
 }
 #left-menu .logo-area {
   text-align: center;
@@ -1243,7 +1251,7 @@ fieldset[disabled] .btn-blue-gray.focus {
   padding-bottom: 20px;
   position: relative;
 }
-#left-menu a {
+#left-side-menu .menu-item > a {
   color: #4c4e51;
   font-weight: 400;
   background-color: transparent;
@@ -3904,13 +3912,11 @@ label.radio > i:after {
 .data-heading ol.breadcrumb {
   padding: 0;
   margin: 0;
-  font-weight: 300;
   font-size: small;
 }
 .data-heading .help-block {
   margin-top: 0;
   margin-bottom: 4px;
-  font-weight: 300;
 }
 .data-heading .star {
   font-size: large;
@@ -4292,6 +4298,12 @@ h3.popover-title {
   font-size: 10px;
   padding: 3px 8px;
 }
+.label.label-menu-corner {
+  position: absolute;
+  top: 10px;
+  right: -3px;
+  padding: 3px;
+}
 .alert-primary {
   background-color: #c7ddef;
   border-color: #c7ddef;
@@ -4414,6 +4426,28 @@ h3.popover-title {
 .rating-success > input:checked ~ label:hover ~ label,
 .rating-success > label:hover ~ input:checked ~ label {
   color: #5cb85c;
+}
+.dropdown-menu > li > a {
+  padding: 7px 17px;
+  margin: 0 3px;
+  border-radius: 3px;
+}
+.timeline-item .timeline-icon {
+  border-radius: 50%;
+  background-color: #EEEEEE;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  display: table;
+}
+.timeline-item .timeline-icon > i {
+  vertical-align: middle;
+  display: table-cell;
+}
+.timeline-item .timeline-content {
+  border-left: 1px solid #ddd;
+  margin-left: 38px;
+  padding-left: 4px;
 }
 .progress {
   box-shadow: none;
