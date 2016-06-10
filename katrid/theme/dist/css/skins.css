@@ -4,11 +4,21 @@ body {
 #left-side-menu > li.menu-item .menu-item {
   border-top: none;
 }
+#left-menu .user-profile-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: .8;
+  border: none;
+  padding: 5px;
+  color: #f2f2f2;
+  bottom: 0;
+}
 #left-side-menu > .menu-item > a {
   background: #eeeeee;
 }
 #left-menu .logo-area {
-  background: #ffffff;
+  position: relative;
 }
 .navbar-button > i.fa {
   background: transparent;
@@ -21,6 +31,9 @@ body {
 }
 .default-skin #header.navbar {
   border: none;
+}
+.default-skin #left-menu .user-profile-menu {
+  background: #2f3e4d;
 }
 .default-skin #header.navbar-skin {
   background: #2f3e4d;
@@ -100,6 +113,9 @@ body {
 .gray-skin #header.navbar {
   border: none;
 }
+.gray-skin #left-menu .user-profile-menu {
+  background: #424141;
+}
 .gray-skin #header.navbar-skin {
   background: #424141;
   border: none;
@@ -177,6 +193,9 @@ body {
 }
 .blue-skin #header.navbar {
   border: none;
+}
+.blue-skin #left-menu .user-profile-menu {
+  background: #2576ad;
 }
 .blue-skin #header.navbar-skin {
   background: #2576ad;
@@ -256,6 +275,9 @@ body {
 .red-skin #header.navbar {
   border: none;
 }
+.red-skin #left-menu .user-profile-menu {
+  background: #ee6161;
+}
 .red-skin #header.navbar-skin {
   background: #ee6161;
   border: none;
@@ -333,6 +355,9 @@ body {
 }
 .navy-skin #header.navbar {
   border: none;
+}
+.navy-skin #left-menu .user-profile-menu {
+  background: #1f3d52;
 }
 .navy-skin #header.navbar-skin {
   background: #1f3d52;
@@ -412,6 +437,9 @@ body {
 .deep-purple-skin #header.navbar {
   border: none;
 }
+.deep-purple-skin #left-menu .user-profile-menu {
+  background: #512DA8;
+}
 .deep-purple-skin #header.navbar-skin {
   background: #512DA8;
   border: none;
@@ -490,6 +518,9 @@ body {
 .purple-skin #header.navbar {
   border: none;
 }
+.purple-skin #left-menu .user-profile-menu {
+  background: #E040FB;
+}
 .purple-skin #header.navbar-skin {
   background: #E040FB;
   border: none;
@@ -567,6 +598,9 @@ body {
 }
 .indigo-skin #header.navbar {
   border: none;
+}
+.indigo-skin #left-menu .user-profile-menu {
+  background: #303F9F;
 }
 .indigo-skin #header.navbar-skin {
   background: #303F9F;

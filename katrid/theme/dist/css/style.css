@@ -1238,7 +1238,7 @@ fieldset[disabled] .btn-blue-gray.focus {
   transition: all 0.3s ease 0s;
 }
 #left-menu #avatar {
-  max-height: 76px;
+  max-height: 67px;
 }
 #left-menu .logo-area {
   text-align: center;
@@ -4391,6 +4391,9 @@ h3.popover-title {
 .rating-success > input:checked ~ label:hover ~ label,
 .rating-success > label:hover ~ input:checked ~ label {
   color: #5cb85c;
+}
+.progress {
+  box-shadow: none;
 }
 .progress-bar {
   box-shadow: none;
