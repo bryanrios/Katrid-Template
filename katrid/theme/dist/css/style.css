@@ -102,6 +102,15 @@ h6 {
   font-weight: 600;
   margin-top: 6px;
 }
+.navbar-search-control::-webkit-input-placeholder {
+  color: #747474;
+}
+.navbar-search-control::-moz-placeholder {
+  color: #747474;
+}
+.navbar-search-control:-ms-input-placeholder {
+  color: #747474;
+}
 .bg-white {
   background: #ffffff !important;
 }
@@ -3880,7 +3889,6 @@ label.radio > i:after {
   padding: 0;
   margin: 0;
   font-weight: 300;
-  text-transform: uppercase;
   font-size: small;
 }
 .data-heading .help-block {
@@ -3946,9 +3954,6 @@ label.radio > i:after {
 }
 .dashboard-panel .title {
   text-transform: uppercase;
-}
-.dashboard-panel .progress-bar {
-  opacity: 0.8;
 }
 .dashboard-panel .todo-item {
   font-size: small;
@@ -4405,6 +4410,9 @@ h3.popover-title {
 }
 .font-300 {
   font-weight: 300;
+}
+.font-400 {
+  font-weight: 400;
 }
 .font-600 {
   font-weight: 600;

@@ -76,6 +76,18 @@ body {
     border: transparent;
     outline: none;
   }
+
+  @navbar-search-placeholder: #dedede;
+
+  .navbar-search-control::-webkit-input-placeholder {
+    color: @navbar-search-placeholder;
+  }
+  .navbar-search-control::-moz-placeholder {
+    color: @navbar-search-placeholder;
+  }
+  .navbar-search-control:-ms-input-placeholder {
+    color: @navbar-search-placeholder;
+  }
 }
 
 #left-side-menu > .menu-item > a {
@@ -104,7 +116,7 @@ body {
 }
 
 .gray-skin {
-  .skin(#2d2d2d);
+  .skin(#363636);
 }
 
 .blue-skin {

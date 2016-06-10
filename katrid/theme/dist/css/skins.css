@@ -20,7 +20,7 @@ body {
   border: none;
 }
 .gray-skin #header.navbar-skin {
-  background: #2d2d2d;
+  background: #363636;
   border: none;
   color: #ffffff;
 }
@@ -33,37 +33,37 @@ body {
 .gray-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #414141;
+  background: #4a4a4a;
   border-color: transparent;
 }
 .gray-skin .navbar-header > a,
 .gray-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
-  color: #e0e0e0;
+  color: #e9e9e9;
 }
 .gray-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .gray-skin #left-menu.skin .menu-item > a {
-  background: #2d2d2d;
-  color: #e5e5e5;
+  background: #363636;
+  color: #eeeeee;
 }
 .gray-skin #left-menu.skin .menu-item > a:hover {
-  background: #202020;
+  background: #292929;
   color: #ffffff;
 }
 .gray-skin #left-menu.skin li.menu-item {
-  border-top: 1px solid #373737;
+  border-top: 1px solid #404040;
 }
 .gray-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
-  border-bottom: 1px solid #373737;
+  border-bottom: 1px solid #404040;
 }
 .gray-skin #main-content > .footer {
-  background: #2d2d2d;
+  background: #363636;
   color: #ffffff;
 }
 .gray-skin.bg-skin {
-  background: #2d2d2d;
+  background: #363636;
 }
 .gray-skin .navbar-skin .navbar-nav > li > a,
 .gray-skin .navbar-skin .navbar-brand {
@@ -77,6 +77,15 @@ body {
 .gray-skin .navbar-skin .navbar-search-control:focus {
   border: transparent;
   outline: none;
+}
+.gray-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.gray-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.gray-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
 }
 .blue-skin #header.navbar {
   border: none;
@@ -140,6 +149,15 @@ body {
   border: transparent;
   outline: none;
 }
+.blue-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.blue-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.blue-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
+}
 .red-skin #header.navbar {
   border: none;
 }
@@ -201,6 +219,15 @@ body {
 .red-skin .navbar-skin .navbar-search-control:focus {
   border: transparent;
   outline: none;
+}
+.red-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.red-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.red-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
 }
 .navy-skin #header.navbar {
   border: none;
@@ -264,6 +291,15 @@ body {
   border: transparent;
   outline: none;
 }
+.navy-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.navy-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.navy-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
+}
 .deep-purple-skin #header.navbar {
   border: none;
 }
@@ -325,6 +361,15 @@ body {
 .deep-purple-skin .navbar-skin .navbar-search-control:focus {
   border: transparent;
   outline: none;
+}
+.deep-purple-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.deep-purple-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.deep-purple-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
 }
 .purple-skin #header.navbar {
   border: none;
@@ -388,6 +433,15 @@ body {
   border: transparent;
   outline: none;
 }
+.purple-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.purple-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.purple-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
+}
 .indigo-skin #header.navbar {
   border: none;
 }
@@ -449,5 +503,14 @@ body {
 .indigo-skin .navbar-skin .navbar-search-control:focus {
   border: transparent;
   outline: none;
+}
+.indigo-skin .navbar-search-control::-webkit-input-placeholder {
+  color: #dedede;
+}
+.indigo-skin .navbar-search-control::-moz-placeholder {
+  color: #dedede;
+}
+.indigo-skin .navbar-search-control:-ms-input-placeholder {
+  color: #dedede;
 }
 /*# sourceMappingURL=skins.css.map */

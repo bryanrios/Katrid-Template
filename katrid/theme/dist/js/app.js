@@ -50,7 +50,7 @@ $(document).ready(function () {
   // initialize animated elements
   if (config.defaultAnimationEffect) {
     $('.dropdown-menu:not(.animated)').addClass('animated').addClass(config.defaultAnimationEffect);
-    console.log('test');
+    $('.content').addClass('animated fadeIn');
   }
 
   // start charts plugins
