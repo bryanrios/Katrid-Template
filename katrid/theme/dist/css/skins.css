@@ -17,9 +17,6 @@ body {
 #left-side-menu > .menu-item > a {
   background: #eeeeee;
 }
-#left-menu .logo-area {
-  position: relative;
-}
 .navbar-button > i.fa {
   background: transparent;
   width: auto;
