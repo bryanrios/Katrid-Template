@@ -8,8 +8,9 @@ $(document).ready(function () {
     '<div class="checkbox"><label><input id="demo-left-navbar-skin" type="checkbox" checked> Apply to navbar menu</label></div>' +
     '<div class="checkbox"><label><input id="demo-left-menu-skin" type="checkbox" checked> Apply to left side menu</label></div>' +
     '<h4>Available Skins</h4>' +
-    '<button class="btn btn-default btn-block btn-demo-skin" data-value="classic">Classic</button>' +
     '<button class="btn btn-primary btn-block btn-demo-skin" data-value="navy">Navy</button>' +
+    '<button class="btn btn-blue-gray btn-block btn-demo-skin" data-value="default">Blue+Gray</button>' +
+    '<button class="btn btn-default btn-block btn-demo-skin" data-value="classic">Classic</button>' +
     '<button class="btn btn-info btn-block btn-demo-skin" data-value="blue">Blue</button>' +
     '<button class="btn btn-dark btn-block btn-demo-skin" data-value="gray">Gray</button>' +
     '<button class="btn btn-danger btn-block btn-demo-skin" data-value="red">Red</button>' +
@@ -20,6 +21,7 @@ $(document).ready(function () {
     body.removeClass('blue-skin');
     body.removeClass('gray-skin');
     body.removeClass('red-skin');
+    body.removeClass('default-skin');
     var v = $(this).data('value');
     if (v !== 'classic') {
       body.addClass(v + '-skin');

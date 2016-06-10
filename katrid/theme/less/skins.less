@@ -45,7 +45,7 @@ body {
     background: @bg-color;
     color: lighten(@bg-color, 72%);
   }
-  #left-menu.skin .menu-item.open a {
+  #left-menu.skin .menu-item.active a {
     background: darken(@bg-color, 5%);
   }
   #left-menu.skin>nav>#left-side-menu>.menu-item > a:hover {
@@ -57,7 +57,7 @@ body {
     color: #ffffff;
   }
 
-  #left-menu.skin li.menu-item {
+  #left-menu.skin>nav>#left-side-menu>.menu-item {
     border-top: 1px solid lighten(@bg-color, 4%);
   }
   #left-menu.skin #left-side-menu > li.menu-item:last-child {
@@ -122,8 +122,8 @@ body {
   border-right: none;
 }
 
-.navbar-skin .navbar-nav > .open > a, .navbar-skin .navbar-nav > .open > a:hover, .navbar-skin .navbar-nav > .open > a:focus {
-  //background: rgba(0, 0, 0, .2);
+.default-skin {
+  .skin(#2f3e4d);
 }
 
 .gray-skin {

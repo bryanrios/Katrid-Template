@@ -1286,6 +1286,9 @@ fieldset[disabled] .btn-blue-gray.focus {
 #left-menu .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
   padding-left: 48px;
 }
+#left-menu .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
+  padding-left: 56px;
+}
 #left-menu li.menu-item {
   border-top: 1px solid #d4d5d7;
 }
