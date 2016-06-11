@@ -4467,6 +4467,9 @@ h3.popover-title {
 #left-menu .menu-item > a {
   font-size: 14px;
 }
+#left-menu .menu-item > a small {
+  font-size: 12px;
+}
 .timeline-item .timeline-icon {
   border-radius: 50%;
   background-color: #EEEEEE;
