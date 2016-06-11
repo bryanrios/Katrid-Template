@@ -4447,10 +4447,25 @@ h3.popover-title {
 .rating-success > label:hover ~ input:checked ~ label {
   color: #5cb85c;
 }
+#left-menu .user-profile-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: .8;
+  border: none;
+  padding: 5px;
+  color: #3c3c3c;
+  bottom: 0;
+  cursor: pointer;
+  background-color: #bababa;
+}
 .dropdown-menu > li > a {
   padding: 7px 17px;
   margin: 0 3px;
   border-radius: 3px;
+}
+#left-menu .menu-item > a {
+  font-size: 14px;
 }
 .timeline-item .timeline-icon {
   border-radius: 50%;
@@ -4475,6 +4490,7 @@ h3.popover-title {
   border-left: 1px solid #e7eaec;
   margin-left: 38px;
   padding-left: 4px;
+  margin-bottom: 5px;
 }
 .progress {
   box-shadow: none;
