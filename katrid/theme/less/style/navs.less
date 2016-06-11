@@ -8,18 +8,10 @@
   background: rgba(0, 0, 0, .1) !important;
 }
 
-#header {
-  border-radius: 0;
-}
-
 .user-avatar {
   height: 30px;
   margin-left: 10px;
   border-radius: 50%;
-}
-
-.small-logo > img {
-  max-width: 135px;
 }
 
 .header-link {
@@ -34,6 +26,17 @@
   float: left;
 }
 
+#left-side-menu .menu-item > a {
+  color: #4c4e51;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 6px 10px;
+}
+
+#left-side-menu > li.menu-item:last-child {
+  border-bottom: 1px solid #d4d5d7;
+}
+
 #left-menu {
   width: @left-menu-width;
   float: left;
@@ -42,87 +45,58 @@
   //top: 52px;
   background-color: @body-bg;
   transition: all 0.3s ease 0s;
-}
 
-#left-menu #avatar {
-  max-height: 68px;
-}
+  .menu-item > a {
+    background: transparent;
+    transition: all 300ms;
+  }
 
-#left-menu .logo-area {
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 20px;
-  position: relative;
-  //background: linear-gradient(to bottom, darken(@background-color, 10%) 5%, @background-color 100%);
-}
+  #avatar {
+    max-height: 68px;
+  }
 
-#left-side-menu .menu-item > a {
-  color: #4c4e51;
-  font-weight: 400;
-  background-color: transparent;
-  padding: 6px 10px;
-}
+  .logo-area {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    position: relative;
+  }
 
-#left-menu .menu-item > a {
-  background: none;
-  transition: all 300ms;
-}
+  .menu-item > a > em {
+    float: right;
+  }
+  .menu-item a:hover {
+    color: darken(@text-color, 10%);
+  }
 
-#left-side-menu > li.menu-item:last-child {
-  border-bottom: 1px solid #d4d5d7;
-}
+  .menu-item > ul.nav > .menu-item > a {
+    padding-left: 32px;
+  }
+  .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
+    padding-left: 40px;
+  }
 
-#left-menu .menu-item > a > em {
-  float: right;
-}
+  .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
+    padding-left: 48px;
+  }
 
-#left-menu .menu-item a:hover {
-  color: darken(@text-color, 10%);
-}
+  .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
+    padding-left: 56px;
+  }
 
-#left-menu .menu-item > a {
-  background: transparent;
-}
+  li.menu-item > a:hover {
+    background-color: lighten(@body-bg, 7%);
+  }
 
-#left-menu .menu-item > ul.nav > .menu-item > a {
-  padding-left: 32px;
-}
+  .menu-item > a > small {
+    font-weight: 300;
+  }
 
-#left-menu .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
-  padding-left: 40px;
-}
-
-#left-menu .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
-  padding-left: 48px;
-}
-
-#left-menu .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > ul.nav > .menu-item > a {
-  padding-left: 56px;
-}
-
-#left-menu li.menu-item {
-  border-top: 1px solid #d4d5d7;
-}
-
-#left-menu li.menu-item > a:hover {
-  background-color: lighten(@body-bg, 7%);
-}
-
-#left-menu .menu-item > a > small {
-  font-weight: 300;
 }
 
 #left-side-menu > .menu-item > a {
   background: #f3f3f3;
-  //background: linear-gradient(to bottom, #f3f3f3, darken(@body-bg, 3%));
   font-weight: 600;
-}
-
-.navbar-default {
-  background: #f3f3f3;
-  //background: linear-gradient(to bottom, #f3f3f3, #dbdbdb);
-  background-repeat: repeat-x;
-  border-bottom: 1px solid #b6b6b6;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -221,6 +195,8 @@ a.user-dropdown {
 }
 
 #header {
+  border-radius: 0;
+
   #static-nav {
     float: right !important;
   }
@@ -230,14 +206,38 @@ a.user-dropdown {
     margin-right: -15px;
   }
 
-  #static-nav>li>a {
+  #static-nav > li > a {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  #static-nav>li {
+  #static-nav > li {
     float: left;
   }
+
+  &.navbar-default {
+    background: #dbdbdb;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #b6b6b6;
+  }
+}
+
+@navbar-search-placeholder: #6d6d6d;
+
+.navbar-search-control::-webkit-input-placeholder {
+  color: @navbar-search-placeholder;
+}
+
+.navbar-search-control::-moz-placeholder {
+  color: @navbar-search-placeholder;
+}
+
+.navbar-search-control:-ms-input-placeholder {
+  color: @navbar-search-placeholder;
+}
+
+#left-menu.skin > nav > #left-side-menu > .menu-item {
+  border-top: 1px solid #dedede;
 }
 
 .show-left-menu.page-small #header #static-nav {

@@ -105,6 +105,9 @@ body {
 .default-skin .navbar-search-control::-moz-placeholder {
   color: #e8e8e8;
 }
+.default-skin .navbar-search-control:-moz-placeholder {
+  color: #e8e8e8;
+}
 .default-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
@@ -184,6 +187,9 @@ body {
   color: #e8e8e8;
 }
 .gray-skin .navbar-search-control::-moz-placeholder {
+  color: #e8e8e8;
+}
+.gray-skin .navbar-search-control:-moz-placeholder {
   color: #e8e8e8;
 }
 .gray-skin .navbar-search-control:-ms-input-placeholder {
@@ -267,6 +273,9 @@ body {
 .blue-skin .navbar-search-control::-moz-placeholder {
   color: #e8e8e8;
 }
+.blue-skin .navbar-search-control:-moz-placeholder {
+  color: #e8e8e8;
+}
 .blue-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
@@ -346,6 +355,9 @@ body {
   color: #e8e8e8;
 }
 .red-skin .navbar-search-control::-moz-placeholder {
+  color: #e8e8e8;
+}
+.red-skin .navbar-search-control:-moz-placeholder {
   color: #e8e8e8;
 }
 .red-skin .navbar-search-control:-ms-input-placeholder {
@@ -429,6 +441,9 @@ body {
 .navy-skin .navbar-search-control::-moz-placeholder {
   color: #e8e8e8;
 }
+.navy-skin .navbar-search-control:-moz-placeholder {
+  color: #e8e8e8;
+}
 .navy-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
@@ -508,6 +523,9 @@ body {
   color: #e8e8e8;
 }
 .deep-purple-skin .navbar-search-control::-moz-placeholder {
+  color: #e8e8e8;
+}
+.deep-purple-skin .navbar-search-control:-moz-placeholder {
   color: #e8e8e8;
 }
 .deep-purple-skin .navbar-search-control:-ms-input-placeholder {
@@ -591,6 +609,9 @@ body {
 .purple-skin .navbar-search-control::-moz-placeholder {
   color: #e8e8e8;
 }
+.purple-skin .navbar-search-control:-moz-placeholder {
+  color: #e8e8e8;
+}
 .purple-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
@@ -670,6 +691,9 @@ body {
   color: #e8e8e8;
 }
 .indigo-skin .navbar-search-control::-moz-placeholder {
+  color: #e8e8e8;
+}
+.indigo-skin .navbar-search-control:-moz-placeholder {
   color: #e8e8e8;
 }
 .indigo-skin .navbar-search-control:-ms-input-placeholder {
