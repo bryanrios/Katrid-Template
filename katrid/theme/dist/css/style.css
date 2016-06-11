@@ -4421,18 +4421,18 @@ h3.popover-title {
   cursor: pointer;
 }
 .rating > input:checked ~ label {
-  color: #ffad33;
+  color: #fff06e;
 }
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-  color: #FF9800;
+  color: #FFEB3B;
 }
 .rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-  color: #FF9800;
+  color: #FFEB3B;
 }
 .rating-primary > input:checked ~ label {
   color: #4679a6;
