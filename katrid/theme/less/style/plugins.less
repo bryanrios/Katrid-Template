@@ -2697,3 +2697,41 @@ button.ui-button::-moz-focus-inner {
 .jqsplugin {
   font-size: 10px;
 }
+
+#toast-container>:hover {
+  box-shadow: 0 0 4px #999;
+}
+
+#toast-container>div {
+  opacity: .9;
+  box-shadow: 0 0 4px #999;
+}
+
+.toast-info {
+  background-color: @brand-info;
+
+  .toast-progress {
+    background-color: darken(@brand-info, 25%);
+  }
+}
+.toast-success {
+  background-color: @brand-success;
+
+  .toast-progress {
+    background-color: darken(@brand-success, 25%);
+  }
+}
+.toast-warning {
+  background-color: @brand-warning;
+
+  .toast-progress {
+    background-color: darken(@brand-warning, 25%);
+  }
+}
+.toast-error {
+  background-color: @brand-danger;
+
+  .toast-progress {
+    background-color: darken(@brand-danger, 25%);
+  }
+}

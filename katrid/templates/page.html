@@ -12,6 +12,10 @@
 
   <title>Theme Template for Bootstrap</title>
 
+  <!-- extra head -->
+  {% block extra_head %}{% endblock %}
+  <!-- end extra head -->
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Bootstrap example theme -->
@@ -42,10 +46,6 @@
 
   <!-- demo.css -->
   <link href="css/demo.css" rel="stylesheet" type="text/css">
-
-  <!-- extra head -->
-  {% block extra_head %}{% endblock %}
-  <!-- end extra head -->
 </head>
 
 <body class="{% block body_class %}{% endblock %}">

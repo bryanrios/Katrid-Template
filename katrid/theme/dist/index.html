@@ -12,6 +12,12 @@
 
   <title>Theme Template for Bootstrap</title>
 
+  <!-- extra head -->
+  
+  <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
+
+  <!-- end extra head -->
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Bootstrap example theme -->
@@ -42,10 +48,6 @@
 
   <!-- demo.css -->
   <link href="css/demo.css" rel="stylesheet" type="text/css">
-
-  <!-- extra head -->
-  
-  <!-- end extra head -->
 </head>
 
 <body class="default-skin bg-skin">
@@ -368,7 +370,7 @@
               <ul class="media-list">
                 <li class="timeline-item">
                   <div class="timeline-icon pull-left">
-                    <i class="fa fa-envelope"></i>
+                    <img src="img/faces/a-48.jpg">
                   </div>
                   <div class="timeline-content">New message from customer<br>
                     <small class="font-xs"><a href="#">Inbox</a> - 03:56 pm</small>
@@ -384,7 +386,7 @@
                 </li>
                 <li class="timeline-item">
                   <div class="timeline-icon pull-left">
-                    <i class="fa fa-envelope"></i>
+                    <img src="img/faces/b-48.jpg">
                   </div>
                   <div class="timeline-content">Lorem ipsum dolor sit amet.<br>
                     <small class="font-xs"><a href="#">Inbox</a> - 01:22 pm</small>
@@ -876,6 +878,19 @@
         }
       });
 
+    });
+
+  </script>
+  <script src="plugins/toastr/toastr.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      setTimeout(function () {
+        toastr.options = {
+          progressBar: true
+        };
+        toastr.success('You have 32 notifications!', 'Welcome to Katrid Admin Theme');
+      }, 1000);
     });
 
   </script>

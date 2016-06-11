@@ -162,13 +162,13 @@ h6 {
 }
 .btn-primary-outline {
   background: transparent;
-  border-color: #337ab7;
-  color: #337ab7;
+  border-color: #375f82;
+  color: #375f82;
 }
 .btn-primary-outline:hover,
 .btn-primary-outline:focus {
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #375f82;
+  border-color: #375f82;
   color: #ffffff;
 }
 .btn-success-outline {
@@ -2578,7 +2578,7 @@ button.ui-button::-moz-focus-inner {
   display: block;
   border: 0;
   background-position: 0 0;
-  background-color: #337ab7;
+  background-color: #375f82;
 }
 /* support: IE8 - See #6727 */
 .ui-slider.ui-state-disabled .ui-slider-handle,
@@ -2668,7 +2668,7 @@ button.ui-button::-moz-focus-inner {
   text-decoration: none;
 }
 .ui-menu-item.ui-state-focus {
-  border: 1px solid #337ab7;
+  border: 1px solid #375f82;
 }
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
@@ -2676,17 +2676,17 @@ button.ui-button::-moz-focus-inner {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-  background: #337ab7;
+  background: #375f82;
   font-weight: normal;
   color: #fff;
 }
 .ui-slider .ui-slider-handle.ui-state-hover,
 .ui-slider .ui-slider-handle.ui-state-focus {
-  border: 1px solid #337ab7;
+  border: 1px solid #375f82;
   background-color: #d5d5d5;
 }
 .ui-slider .ui-slider-handle.ui-state-active {
-  border: 1px solid #337ab7;
+  border: 1px solid #375f82;
   background-color: #d5d5d5;
 }
 .slider input {
@@ -3637,10 +3637,10 @@ button.ui-button::-moz-focus-inner {
   color: #999;
 }
 .slider-primary .irs-bar {
-  background: #337ab7;
+  background: #375f82;
 }
 .slider-primary .irs-bar-edge {
-  background: #337ab7;
+  background: #375f82;
   border-radius: 16px 0 0 16px;
   -moz-border-radius: 16px 0 0 16px;
 }
@@ -3652,12 +3652,12 @@ button.ui-button::-moz-focus-inner {
 .slider-primary .irs-from,
 .slider-primary .irs-to,
 .slider-primary .irs-single {
-  background: #337ab7;
+  background: #375f82;
 }
 .slider-primary .irs-from:after,
 .slider-primary .irs-to:after,
 .slider-primary .irs-single:after {
-  border-top-color: #337ab7;
+  border-top-color: #375f82;
 }
 .slider-success .irs-bar {
   background: #5cb85c;
@@ -3752,7 +3752,7 @@ button.ui-button::-moz-focus-inner {
   border-top-color: #d1504c;
 }
 .slider-primary .noUi-connect {
-  background: #337ab7;
+  background: #375f82;
 }
 .slider-success .noUi-connect {
   background: #5cb85c;
@@ -3778,6 +3778,37 @@ button.ui-button::-moz-focus-inner {
 }
 .jqsplugin {
   font-size: 10px;
+}
+#toast-container > :hover {
+  box-shadow: 0 0 4px #999;
+}
+#toast-container > div {
+  opacity: .9;
+  box-shadow: 0 0 4px #999;
+}
+.toast-info {
+  background-color: #7fc1df;
+}
+.toast-info .toast-progress {
+  background-color: #2c88b2;
+}
+.toast-success {
+  background-color: #5cb85c;
+}
+.toast-success .toast-progress {
+  background-color: #2d672d;
+}
+.toast-warning {
+  background-color: #FF851B;
+}
+.toast-warning .toast-progress {
+  background-color: #9b4800;
+}
+.toast-error {
+  background-color: #d1504c;
+}
+.toast-error .toast-progress {
+  background-color: #7d2320;
 }
 label.checkbox,
 label.radio {
@@ -3847,7 +3878,7 @@ label.checkbox:hover > input + i,
 label.radio > input:checked + i,
 label.radio > input:focus + i,
 label.radio:hover > input + i {
-  border-color: #337ab7;
+  border-color: #375f82;
 }
 label.checkbox > input:checked + i:after,
 label.radio > input:checked + i:after {
@@ -3859,7 +3890,7 @@ label.radio > input + i:after {
 }
 label.checkbox > i:after {
   position: absolute;
-  color: #337ab7;
+  color: #375f82;
   content: '\f00c';
   top: -1px;
   left: 1px;
@@ -3870,7 +3901,7 @@ label.checkbox > i:after {
 }
 label.radio > i:after {
   position: absolute;
-  background-color: #337ab7;
+  background-color: #375f82;
   content: ' ';
   border-radius: 50%;
   top: 3px;
@@ -4038,7 +4069,7 @@ label.radio > i:after {
   padding-top: 10px;
   padding-left: 5px;
   height: 100%;
-  background: #337ab7;
+  background: #375f82;
   width: 40px;
   display: inline-block;
   color: #ffffff;
@@ -4066,7 +4097,7 @@ label.radio > i:after {
 .blog-panel h4,
 .blog-panel h5,
 .blog-panel h6 {
-  color: #337ab7;
+  color: #375f82;
   font-weight: bold;
 }
 .blog-panel .media-object {
@@ -4159,10 +4190,10 @@ h3.popover-title {
 }
 .callout-primary {
   background-color: #ffffff;
-  border-left-color: #337ab7;
+  border-left-color: #375f82;
 }
 .callout-primary h4 {
-  color: #337ab7;
+  color: #375f82;
 }
 .callout-success {
   background-color: #ffffff;
@@ -4242,10 +4273,10 @@ h3.popover-title {
   color: #009688;
 }
 .modal-primary .modal-content {
-  border-left: 6px solid #337ab7;
+  border-left: 6px solid #375f82;
 }
 .modal-primary .modal-title {
-  color: #337ab7;
+  color: #375f82;
   font-weight: 400;
 }
 .modal-success .modal-content {
@@ -4277,7 +4308,7 @@ h3.popover-title {
   font-weight: 400;
 }
 .badge-primary {
-  background-color: #337ab7;
+  background-color: #375f82;
 }
 .badge-success {
   background-color: #5cb85c;
@@ -4301,16 +4332,23 @@ h3.popover-title {
   right: -3px;
   padding: 3px;
 }
+.label.label-circle {
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  right: -3px;
+  padding: 3px;
+}
 .alert-primary {
-  background-color: #c7ddef;
-  border-color: #c7ddef;
-  color: #337ab7;
+  background-color: #aac4db;
+  border-color: #aac4db;
+  color: #375f82;
 }
 .alert-primary hr {
-  border-top-color: #b3d0ea;
+  border-top-color: #98b8d3;
 }
 .alert-primary .alert-link {
-  color: #285f8f;
+  color: #28455e;
 }
 .alert-deep-purple {
   background-color: #e5def6;
@@ -4346,7 +4384,7 @@ h3.popover-title {
   color: #951246;
 }
 .alert-primary.alert-inverse {
-  background-color: #337ab7;
+  background-color: #375f82;
   color: #ffffff;
 }
 .alert-success.alert-inverse {
@@ -4397,18 +4435,18 @@ h3.popover-title {
   color: #FF9800;
 }
 .rating-primary > input:checked ~ label {
-  color: #4f93ce;
+  color: #4679a6;
 }
 .rating-primary:not(:checked) > label:hover,
 .rating-primary:not(:checked) > label:hover ~ label {
-  color: #337ab7;
+  color: #375f82;
 }
 .rating-primary > input:checked + label:hover,
 .rating-primary > input:checked + label:hover ~ label,
 .rating-primary > input:checked ~ label:hover,
 .rating-primary > input:checked ~ label:hover ~ label,
 .rating-primary > label:hover ~ input:checked ~ label {
-  color: #337ab7;
+  color: #375f82;
 }
 .rating-success > input:checked ~ label {
   color: #80c780;
@@ -4440,6 +4478,13 @@ h3.popover-title {
 .timeline-item .timeline-icon > i {
   vertical-align: middle;
   display: table-cell;
+}
+.timeline-item .timeline-icon > img {
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 32px;
+  max-width: 32px;
+  border-radius: 50%;
 }
 .timeline-item .timeline-content {
   border-left: 1px solid #ddd;

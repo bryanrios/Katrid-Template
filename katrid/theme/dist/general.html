@@ -12,6 +12,12 @@
 
   <title>Theme Template for Bootstrap</title>
 
+  <!-- extra head -->
+  
+  <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
+
+  <!-- end extra head -->
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Bootstrap example theme -->
@@ -42,12 +48,6 @@
 
   <!-- demo.css -->
   <link href="css/demo.css" rel="stylesheet" type="text/css">
-
-  <!-- extra head -->
-  
-  <link href="plugins/toastr/toastr.min.css" rel="stylesheet">
-
-  <!-- end extra head -->
 </head>
 
 <body class="default-skin bg-skin">
@@ -601,6 +601,9 @@
             <button id="toastr-danger" class="btn btn-danger">Error</button>
             <h3>With Progressbar</h3>
             <button id="toastr-info-2" class="btn btn-info">Info</button>
+            <div class="toast toast-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores consectetur culpa cumque dignissimos fugiat, itaque iusto labore nemo non perferendis repellat, saepe ut. Amet labore molestiae ut voluptatum. Ex.
+            </div>
           </div>
         </div>
       </div>
@@ -755,6 +758,7 @@
       });
       $('#toastr-info-2').click(function () {
         toastr.options = {
+          timeOut: 0,
           progressBar: true
         };
         toastr.info('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur doloremque inventore sapiente sed sunt.');
