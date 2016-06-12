@@ -4476,6 +4476,11 @@ h3.popover-title {
 #left-menu .menu-item > a small {
   font-size: 12px;
 }
+.dt-button-collection.dropdown-menu > li > a {
+  padding: 5px 17px;
+  margin: 0 3px;
+  border-radius: 0;
+}
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu.dropdown-notifications-menu {
     position: absolute;
