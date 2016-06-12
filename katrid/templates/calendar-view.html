@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block extra_head %}
+  <!-- link fullcalendar.css -->
+  <link href="plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+  <div class="data-heading panel panel-default">
+    <div class="panel-body">
+      <div>
+        <ol class="breadcrumb">
+          <li><a href="#">Forms</a></li>
+          <li>Calendar View
+            <!-- test only purposes (remember to remove it in future) -->
+            <label title="Click here to toggle no-padding class" onclick="$('.content').toggleClass('no-padding')" class="label label-primary">Toggle no-padding</label>
+          </li>
+        </ol>
+        <p class="help-block">Form help text (leave a useful message here)</p>
+      </div>
+      {% include "include/form-toolbar.html" %}
+
+    </div>
+  </div>
+
+  <div class="content no-padding">
+  <div class="panel panel-default data-panel">
+    <div class="panel-body">
+
+      <div id="calendar"></div>
+
+    </div>
+  </div>
+  </div>
+{% endblock %}
+{% block additional_scripts %}
+  <!-- add moment.js reference -->
+  <script src="plugins/moment/moment.js"></script>
+  <!-- add fullcalendar.js reference -->
+  <script src="plugins/fullcalendar/fullcalendar.js"></script>
+  <script>
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,basicWeek,basicDay'
+			},
+			defaultDate: '2016-05-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2016-05-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2016-05-07',
+					end: '2016-05-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2016-05-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2016-05-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2016-05-11',
+					end: '2016-05-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2016-05-12T10:30:00',
+					end: '2016-05-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2016-05-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2016-05-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2016-05-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2016-05-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2016-05-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2016-05-28'
+				}
+			]
+		});
+
+	});
+  </script>
+{% endblock %}

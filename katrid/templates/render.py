@@ -48,11 +48,15 @@ templates = [
     'view-email.html',
     'glyphicons.html',
     'projects.html',
+    'list-view.html',
+    'calendar-view.html',
 ]
 
 docs = [
     'index.html'
 ]
+
+templs = [x for x in sys.argv if x.endswith('.html')] or templates
 
 for tmp in templates:
     t = env.get_template(tmp)
@@ -60,11 +64,12 @@ for tmp in templates:
     f = open('output/' + tmp, 'w')
     f.write(s)
 
-for tmp in docs:
-    t = env_docs.get_template(tmp)
-    s = t.render()
-    f = open('output/documentation/' + tmp, 'w')
-    f.write(s)
+if len(templs) == len(templates):
+    for tmp in docs:
+        t = env_docs.get_template(tmp)
+        s = t.render()
+        f = open('output/documentation/' + tmp, 'w')
+        f.write(s)
+    os.system('mv output/documentation/*.html ../theme/documentation')
 
 os.system('mv output/*.html ../theme/dist/')
-os.system('mv output/documentation/*.html ../theme/documentation')
