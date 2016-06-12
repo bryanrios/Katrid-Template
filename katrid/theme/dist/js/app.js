@@ -21,7 +21,6 @@ $(document).ready(function () {
     var content = mContent.height();
 
     var h = Math.max($("#left-menu").height(), mContent.height());
-    console.log(h);
     mContent.css("min-height", h + 'px');
   };
 

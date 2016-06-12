@@ -118,8 +118,8 @@
           </li>
 
           <hr>
-          <a href="#" class="btn btn-default">
-            Read more
+          <a href="#" class="btn btn-default btn-block">
+            View More
           </a>
         </ul>
 
@@ -367,7 +367,7 @@
 <div id="main-content" role="main">
 
   <div class="panel page-heading">
-    <h2>Data Tables</h2>
+    <h2>Data Tables <label class="label label-info">Responsive</label></h2>
     <ol class="breadcrumb">
       <li>
         <a href="#">Home</a>
@@ -386,7 +386,7 @@
       </div>
       <div class="panel-body">
 
-        <table id="data-table-1" class="table table-striped table-bordered table-hover">
+        <table id="data-table-1" class="table table-striped table-bordered table-hover display responsive nowrap" width="100%">
           <thead>
           <tr>
             <th>Name</th>
@@ -747,7 +747,7 @@
       </div>
       <div class="panel-body">
 
-        <table id="data-table-2" class="table table-striped table-bordered table-hover">
+        <table id="data-table-2" class="table table-striped table-bordered table-hover display responsive nowrap" width="100%">
           <thead>
           <tr>
             <th>Name</th>
@@ -1134,11 +1134,15 @@
 
 
   <script src="plugins/datatables/datatables.js"></script>
+  <script src="plugins/datatables/datatables.responsive.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('#data-table-1').dataTable();
+      $('#data-table-1').dataTable({
+        responsive: true
+      });
       $('#data-table-2').dataTable({
         dom: 'Bfrtip',
+        responsive: true,
         buttons: [
           'colvis'
         ]
