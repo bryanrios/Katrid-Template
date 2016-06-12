@@ -45,11 +45,17 @@ body.show-left-menu .small-logo {
 strong {
   font-weight: 600;
 }
+#page-content {
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 290px;
+}
 #main-content {
   margin-left: 220px;
   background-repeat: repeat;
   background-color: #f3f5f8;
   border-left: 1px solid #d5d6d8;
+  min-width: 290px;
   min-height: 100%;
   padding-bottom: 50px;
   position: relative;
@@ -4469,6 +4475,24 @@ h3.popover-title {
 }
 #left-menu .menu-item > a small {
   font-size: 12px;
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu.dropdown-notifications-menu {
+    position: absolute;
+    float: left;
+    min-width: 160px;
+    left: auto;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  }
+  .navbar-nav .open .dropdown-menu.dropdown-notifications-menu > li > a {
+    padding: 7px 17px;
+    color: #585c5f;
+  }
 }
 .timeline-item .timeline-icon {
   border-radius: 50%;
