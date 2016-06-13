@@ -4531,6 +4531,11 @@ h3.popover-title {
   padding: 8px;
   display: block;
   font-size: 14px;
+  background-color: #496d8d;
+  color: #ffffff;
+}
+#left-menu .module-menu > a > i {
+  margin-top: 3px;
 }
 .timeline-item .timeline-icon {
   border-radius: 50%;
@@ -4555,7 +4560,7 @@ h3.popover-title {
   border-left: 1px solid #e7eaec;
   margin-left: 38px;
   padding-left: 4px;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 .progress {
   box-shadow: none;
