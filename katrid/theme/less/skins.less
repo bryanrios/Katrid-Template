@@ -18,6 +18,11 @@ body {
     color: #f2f2f2;
   }
 
+  #left-menu .module-menu a {
+    background: @bg-color;
+    color: #f2f2f2;
+  }
+
   #header.navbar-skin {
     background: @bg-color;
     border: none;
@@ -95,16 +100,16 @@ body {
 
   @navbar-search-placeholder: #e8e8e8;
 
-  .navbar-search-control::-webkit-input-placeholder {
+  .navbar-skin .navbar-search-control::-webkit-input-placeholder {
     color: @navbar-search-placeholder;
   }
-  .navbar-search-control::-moz-placeholder {
+  .navbar-skin .navbar-search-control::-moz-placeholder {
     color: @navbar-search-placeholder;
   }
-  .navbar-search-control:-moz-placeholder {
+  .navbar-skin .navbar-search-control:-moz-placeholder {
     color: @navbar-search-placeholder;
   }
-  .navbar-search-control:-ms-input-placeholder {
+  .navbar-skin .navbar-search-control:-ms-input-placeholder {
     color: @navbar-search-placeholder;
   }
 }
