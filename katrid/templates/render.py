@@ -58,7 +58,7 @@ docs = [
 
 templs = [x for x in sys.argv if x.endswith('.html')] or templates
 
-for tmp in templates:
+for tmp in templs:
     t = env.get_template(tmp)
     s = t.render(googleanalytics='demo' in sys.argv)
     f = open('output/' + tmp, 'w')

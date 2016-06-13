@@ -4524,6 +4524,9 @@ h3.popover-title {
     color: #585c5f;
   }
 }
+#left-menu .module-menu {
+  position: relative;
+}
 #left-menu .module-menu > a {
   padding: 8px;
   display: block;
