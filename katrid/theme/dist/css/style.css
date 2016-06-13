@@ -3919,11 +3919,19 @@ label.radio > i:after {
 .table .action-checkbox > .checkbox,
 .table .action-checkbox-column > .checkbox,
 .table.table-bordered .action-checkbox-column,
-.table.table-bordered .action-checkbox {
-  min-height: 20px;
+.table.table-bordered .action-checkbox > .checkbox {
+  min-height: 20px !important;
+  min-width: 18px !important;
+  height: 20px !important;
+  width: 18px !important;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 36px;
+  padding-left: 0;
+}
+.table.table-bordered .action-checkbox-column,
+.table.table-bordered .action-checkbox-column {
+  padding-left: 8px;
+  padding-right: 6px;
 }
 .table.table-selection .selected td {
   background-color: #f9f9f9;
