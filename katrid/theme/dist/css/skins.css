@@ -23,9 +23,12 @@ body {
   background: #2f3e4d;
   color: #f2f2f2;
 }
-.default-skin #left-menu .module-menu a {
+.default-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.default-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .default-skin #header.navbar-skin {
   background: #2f3e4d;
@@ -112,9 +115,12 @@ body {
   background: #424141;
   color: #f2f2f2;
 }
-.gray-skin #left-menu .module-menu a {
+.gray-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.gray-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .gray-skin #header.navbar-skin {
   background: #424141;
@@ -201,9 +207,12 @@ body {
   background: #2576ad;
   color: #f2f2f2;
 }
-.blue-skin #left-menu .module-menu a {
+.blue-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.blue-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .blue-skin #header.navbar-skin {
   background: #2576ad;
@@ -290,9 +299,12 @@ body {
   background: #ee6161;
   color: #f2f2f2;
 }
-.red-skin #left-menu .module-menu a {
+.red-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.red-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .red-skin #header.navbar-skin {
   background: #ee6161;
@@ -379,9 +391,12 @@ body {
   background: #1f3d52;
   color: #f2f2f2;
 }
-.navy-skin #left-menu .module-menu a {
+.navy-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.navy-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .navy-skin #header.navbar-skin {
   background: #1f3d52;
@@ -468,9 +483,12 @@ body {
   background: #512DA8;
   color: #f2f2f2;
 }
-.deep-purple-skin #left-menu .module-menu a {
+.deep-purple-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.deep-purple-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .deep-purple-skin #header.navbar-skin {
   background: #512DA8;
@@ -557,9 +575,12 @@ body {
   background: #E040FB;
   color: #f2f2f2;
 }
-.purple-skin #left-menu .module-menu a {
+.purple-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.purple-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .purple-skin #header.navbar-skin {
   background: #E040FB;
@@ -646,9 +667,12 @@ body {
   background: #303F9F;
   color: #f2f2f2;
 }
-.indigo-skin #left-menu .module-menu a {
+.indigo-skin #left-menu .module-menu > a {
   background: #ec8157;
   color: #f2f2f2;
+}
+.indigo-skin #left-menu .module-menu > a i {
+  margin-top: 3px;
 }
 .indigo-skin #header.navbar-skin {
   background: #303F9F;
