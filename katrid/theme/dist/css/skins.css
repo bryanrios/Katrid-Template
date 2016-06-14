@@ -77,7 +77,7 @@ body {
   background: #2f3e4d;
   color: #ffffff;
 }
-.default-skin.bg-skin {
+.default-skin.bg-skin #page-content {
   background: #2f3e4d;
 }
 .default-skin .navbar-skin .navbar-nav > li > a,
@@ -166,7 +166,7 @@ body {
   background: #424141;
   color: #ffffff;
 }
-.gray-skin.bg-skin {
+.gray-skin.bg-skin #page-content {
   background: #424141;
 }
 .gray-skin .navbar-skin .navbar-nav > li > a,
@@ -255,7 +255,7 @@ body {
   background: #2576ad;
   color: #ffffff;
 }
-.blue-skin.bg-skin {
+.blue-skin.bg-skin #page-content {
   background: #2576ad;
 }
 .blue-skin .navbar-skin .navbar-nav > li > a,
@@ -344,7 +344,7 @@ body {
   background: #ee6161;
   color: #ffffff;
 }
-.red-skin.bg-skin {
+.red-skin.bg-skin #page-content {
   background: #ee6161;
 }
 .red-skin .navbar-skin .navbar-nav > li > a,
@@ -433,7 +433,7 @@ body {
   background: #1f3d52;
   color: #ffffff;
 }
-.navy-skin.bg-skin {
+.navy-skin.bg-skin #page-content {
   background: #1f3d52;
 }
 .navy-skin .navbar-skin .navbar-nav > li > a,
@@ -522,7 +522,7 @@ body {
   background: #512DA8;
   color: #ffffff;
 }
-.deep-purple-skin.bg-skin {
+.deep-purple-skin.bg-skin #page-content {
   background: #512DA8;
 }
 .deep-purple-skin .navbar-skin .navbar-nav > li > a,
@@ -611,7 +611,7 @@ body {
   background: #E040FB;
   color: #ffffff;
 }
-.purple-skin.bg-skin {
+.purple-skin.bg-skin #page-content {
   background: #E040FB;
 }
 .purple-skin .navbar-skin .navbar-nav > li > a,
@@ -700,7 +700,7 @@ body {
   background: #303F9F;
   color: #ffffff;
 }
-.indigo-skin.bg-skin {
+.indigo-skin.bg-skin #page-content {
   background: #303F9F;
 }
 .indigo-skin .navbar-skin .navbar-nav > li > a,

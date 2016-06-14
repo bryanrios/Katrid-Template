@@ -1,12 +1,4 @@
 
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
 body.hide-left-menu #left-menu, body.page-small #left-menu {
   margin-left: -@left-menu-width;
 }
@@ -83,13 +75,12 @@ strong {
   background: url('../img/custom-bg.png');
 }
 
-#main-content>.footer {
+#footer.page-footer {
   background-color: @panel-bg;
   padding: 15px;
-  position: absolute;
+  //position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  margin-left: @left-menu-width;
 }
 
 .content {

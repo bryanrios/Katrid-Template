@@ -4,7 +4,10 @@ $(document).ready(function () {
   });
 
   $('#demo-settings').append('<div id="demo-choices" class="animated fadeIn">' +
-    '<div class="checkbox"><label><input id="demo-show-logo" type="checkbox" checked> Display logo area</label></div>' +
+    '<div class="checkbox"><label><input id="demo-fixed-header" type="checkbox"> Fixed Header</label></div>' +
+    '<div class="checkbox"><label><input id="demo-fixed-footer" type="checkbox"> Fixed Footer</label></div>' +
+    '<div class="checkbox"><label><input id="demo-boxed-layout" type="checkbox"> Boxed Layout</label></div>' +
+    '<hr>' +
     '<div class="checkbox"><label><input id="demo-left-navbar-skin" type="checkbox" checked> Apply to navbar menu</label></div>' +
     '<div class="checkbox"><label><input id="demo-left-menu-skin" type="checkbox" checked> Apply to left side menu</label></div>' +
     '<h4>Available Skins</h4>' +
@@ -50,8 +53,15 @@ $(document).ready(function () {
     $('#main-content').toggleClass('custom-bg');
   });
 
-  $('#demo-show-logo').change(function () {
-    if (this.checked) $('.logo-area').show();
-    else $('.logo-area').hide();
+  $('#demo-fixed-header').change(function () {
+    $('body').toggleClass('fixed-header');
+  });
+
+  $('#demo-fixed-footer').change(function () {
+    $('body').toggleClass('fixed-footer');
+  });
+
+  $('#demo-boxed-layout').change(function () {
+    $('body').toggleClass('container');
   });
 });
