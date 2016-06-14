@@ -13,6 +13,9 @@ body.page-small.show-left-menu #left-menu,
 body.page-small #main-content {
   margin-left: 0;
 }
+#main-content {
+  height: auto;
+}
 body.page-small.show-left-menu #main-content {
   margin-left: 220px;
 }
@@ -105,6 +108,10 @@ h6 {
 }
 .form-control {
   padding: 4px 8px;
+}
+.breadcrumb > li + li:before {
+  content: "\f105";
+  font-family: FontAwesome;
 }
 .bg-white {
   background: #ffffff !important;
@@ -3825,7 +3832,8 @@ label.radio {
 label.checkbox.checkbox-inline {
   margin-top: 0;
 }
-label.checkbox input[type=checkbox] {
+label.checkbox input[type=checkbox],
+label.radio input[type=radio] {
   position: absolute;
   left: -9999px;
 }
@@ -4437,18 +4445,18 @@ h3.popover-title {
   cursor: pointer;
 }
 .rating > input:checked ~ label {
-  color: #fff06e;
+  color: #00c5da;
 }
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-  color: #FFEB3B;
+  color: #0097A7;
 }
 .rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-  color: #FFEB3B;
+  color: #0097A7;
 }
 .rating-primary > input:checked ~ label {
   color: #4679a6;

@@ -17,6 +17,10 @@ body.page-small #main-content {
   margin-left: 0;
 }
 
+#main-content {
+  height: auto;
+}
+
 body.page-small.show-left-menu #main-content {
   margin-left: @left-menu-width;
 }
@@ -126,4 +130,9 @@ h3, h4, h5, h6 {
 
 .form-control {
   padding: 4px 8px;
+}
+
+.breadcrumb>li+li:before {
+  content: "\f105";
+  font-family: FontAwesome;
 }
