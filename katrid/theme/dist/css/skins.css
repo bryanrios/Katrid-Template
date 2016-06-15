@@ -1,6 +1,3 @@
-body {
-  background: #eeeeee;
-}
 #left-side-menu > li.menu-item .menu-item {
   border-top: none;
 }
@@ -73,8 +70,9 @@ body {
 .default-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #37485a;
 }
-.default-skin #main-content > .footer {
-  background: #2f3e4d;
+.default-skin #footer.page-footer {
+  border-left: 1px solid #42576d;
+  background: #56626e;
   color: #ffffff;
 }
 .default-skin.bg-skin #page-content {
@@ -162,8 +160,9 @@ body {
 .gray-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #4c4b4b;
 }
-.gray-skin #main-content > .footer {
-  background: #424141;
+.gray-skin #footer.page-footer {
+  border-left: 1px solid #5c5a5a;
+  background: #56626e;
   color: #ffffff;
 }
 .gray-skin.bg-skin #page-content {
@@ -251,8 +250,9 @@ body {
 .blue-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #2982be;
 }
-.blue-skin #main-content > .footer {
-  background: #2576ad;
+.blue-skin #footer.page-footer {
+  border-left: 1px solid #3292d3;
+  background: #56626e;
   color: #ffffff;
 }
 .blue-skin.bg-skin #page-content {
@@ -340,8 +340,9 @@ body {
 .red-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #f07373;
 }
-.red-skin #main-content > .footer {
-  background: #ee6161;
+.red-skin #footer.page-footer {
+  border-left: 1px solid #f38f8f;
+  background: #56626e;
   color: #ffffff;
 }
 .red-skin.bg-skin #page-content {
@@ -429,8 +430,9 @@ body {
 .navy-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #254861;
 }
-.navy-skin #main-content > .footer {
-  background: #1f3d52;
+.navy-skin #footer.page-footer {
+  border-left: 1px solid #2d5977;
+  background: #56626e;
   color: #ffffff;
 }
 .navy-skin.bg-skin #page-content {
@@ -518,8 +520,9 @@ body {
 .deep-purple-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #5931b8;
 }
-.deep-purple-skin #main-content > .footer {
-  background: #512DA8;
+.deep-purple-skin #footer.page-footer {
+  border-left: 1px solid #673dcb;
+  background: #56626e;
   color: #ffffff;
 }
 .deep-purple-skin.bg-skin #page-content {
@@ -607,8 +610,9 @@ body {
 .purple-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #e354fb;
 }
-.purple-skin #main-content > .footer {
-  background: #E040FB;
+.purple-skin #footer.page-footer {
+  border-left: 1px solid #e872fc;
+  background: #56626e;
   color: #ffffff;
 }
 .purple-skin.bg-skin #page-content {
@@ -696,8 +700,9 @@ body {
 .indigo-skin #left-menu.skin #left-side-menu > li.menu-item:last-child {
   border-bottom: 1px solid #3545af;
 }
-.indigo-skin #main-content > .footer {
-  background: #303F9F;
+.indigo-skin #footer.page-footer {
+  border-left: 1px solid #3d50c5;
+  background: #56626e;
   color: #ffffff;
 }
 .indigo-skin.bg-skin #page-content {

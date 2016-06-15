@@ -1,9 +1,5 @@
 @import "variables.less";
 
-body {
-  background: #eeeeee;
-}
-
 #left-side-menu > li.menu-item .menu-item {
   border-top: none;
 }
@@ -73,8 +69,10 @@ body {
   #left-menu.skin #left-side-menu > li.menu-item:last-child {
     border-bottom: 1px solid lighten(@bg-color, 4%);
   }
-  #main-content > .footer {
-    background: @bg-color;
+  #footer.page-footer {
+    border-left: 1px solid lighten(@bg-color, 10%);
+    background: #56626e;
+    //background: @bg-color;
     color: #ffffff;
   }
 
