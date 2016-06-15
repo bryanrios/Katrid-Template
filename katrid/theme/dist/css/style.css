@@ -4492,6 +4492,7 @@ h3.popover-title {
 #left-menu .user-profile-menu {
   width: 100%;
   position: absolute;
+  text-align: center;
   left: 0;
   opacity: .8;
   border: none;
