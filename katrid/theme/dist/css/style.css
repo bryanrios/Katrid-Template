@@ -101,6 +101,16 @@ h6 {
   content: "\f105";
   font-family: FontAwesome;
 }
+.user-info {
+  padding: 4px 8px 0 0;
+  font-weight: 300;
+}
+.user-info .user-value {
+  font-size: 16px;
+}
+.user-info .progress {
+  background-color: #ffffff;
+}
 .bg-white {
   background: #ffffff !important;
 }
@@ -155,6 +165,12 @@ h6 {
 .bg-pink {
   background-color: #C2185B !important;
   color: #fbdee9 !important;
+}
+.text-cyan {
+  color: #0097A7;
+}
+.text-green {
+  color: #388E3C;
 }
 .btn:focus,
 .btn:active,
@@ -1251,7 +1267,6 @@ fieldset[disabled] .btn-blue-gray.focus {
   max-height: 68px;
 }
 #left-menu .logo-area {
-  text-align: center;
   padding-top: 2px;
   padding-bottom: 20px;
   position: relative;
