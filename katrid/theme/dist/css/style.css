@@ -1273,7 +1273,7 @@ fieldset[disabled] .btn-blue-gray.focus {
 }
 #left-menu .logo-area {
   padding-top: 2px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   position: relative;
 }
 #left-menu .menu-item > a > em {
@@ -1409,7 +1409,7 @@ a.user-dropdown {
   border-top: none;
 }
 .navbar-brand {
-  padding-top: 14px;
+  padding-top: 15px;
   font-size: 15px;
 }
 body.page {
