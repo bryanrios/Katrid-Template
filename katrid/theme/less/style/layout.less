@@ -1,12 +1,13 @@
 
 html {
   position: relative;
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
   background-color: #ffffff;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   background: #efefef;
 }
 
@@ -53,7 +54,9 @@ body.container {
   margin-left: auto;
   margin-right: auto;
 
-  box-shadow: 0 2px 32px rgba(0,0,0,.5);
+  #page-content {
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.5)
+  }
 
   #header {
     max-width: 1170px;

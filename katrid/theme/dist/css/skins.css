@@ -15,6 +15,7 @@
 }
 .default-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .default-skin #left-menu .user-profile-menu {
   background: #2f3e4d;
@@ -105,6 +106,7 @@
 }
 .gray-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .gray-skin #left-menu .user-profile-menu {
   background: #424141;
@@ -195,6 +197,7 @@
 }
 .blue-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .blue-skin #left-menu .user-profile-menu {
   background: #2576ad;
@@ -285,6 +288,7 @@
 }
 .red-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .red-skin #left-menu .user-profile-menu {
   background: #ee6161;
@@ -375,6 +379,7 @@
 }
 .navy-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .navy-skin #left-menu .user-profile-menu {
   background: #1f3d52;
@@ -465,6 +470,7 @@
 }
 .deep-purple-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .deep-purple-skin #left-menu .user-profile-menu {
   background: #512DA8;
@@ -555,6 +561,7 @@
 }
 .purple-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .purple-skin #left-menu .user-profile-menu {
   background: #E040FB;
@@ -645,6 +652,7 @@
 }
 .indigo-skin #header.navbar {
   border: none;
+  border-bottom: 1px solid #d9dbda;
 }
 .indigo-skin #left-menu .user-profile-menu {
   background: #303F9F;

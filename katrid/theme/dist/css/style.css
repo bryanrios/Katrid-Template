@@ -47,6 +47,7 @@ strong {
   overflow: hidden;
   min-height: 100%;
   min-width: 310px;
+  width: 100%;
 }
 #main-content {
   margin-left: 220px;
@@ -4730,11 +4731,12 @@ h3.popover-title {
 }
 html {
   position: relative;
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
   background-color: #ffffff;
 }
 body {
-  height: 100%;
+  min-height: 100%;
   background: #efefef;
 }
 #header {
@@ -4771,6 +4773,8 @@ body.container {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+body.container #page-content {
   box-shadow: 0 2px 32px rgba(0, 0, 0, 0.5);
 }
 body.container #header {
