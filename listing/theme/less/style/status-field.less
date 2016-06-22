@@ -1,0 +1,123 @@
+@wizard-border-color: #cdcdcd;
+@wizard-bg-color: white;
+@wizard-bg-color-active: @brand-light-blue;
+
+.status-field {
+  margin-bottom: 10px;
+}
+.status-field ul.steps {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.status-field ul.steps > li {
+  position: relative;
+  float: left;
+  height: 42px;
+  padding: 0 20px 0 30px;
+  margin: 0;
+  line-height: 40px;
+  color: #999;
+  cursor: default;
+  background: @wizard-bg-color;
+  border-bottom: 1px solid @wizard-border-color;
+  border-top: 1px solid @wizard-border-color;
+}
+
+.status-field ul.steps > li.active {
+  background-color: @wizard-bg-color-active;
+  color: white;
+}
+
+.status-field ul.steps > li > .arrow {
+  position: absolute;
+  top: 0;
+  right: -14px;
+  z-index: 1;
+  display: block;
+  border: 20px solid transparent;
+  border-right: 0;
+  border-left: 14px solid #d4d4d4;
+}
+
+.status-field ul.steps > li:first-child {
+  border-left: 1px solid @wizard-border-color;
+}
+
+.status-field ul.steps > li:last-child > .arrow {
+  display: none;
+  border-right: 1px solid @wizard-border-color;
+}
+
+.status-field ul.steps > li:last-child {
+  border-right: 1px solid @wizard-border-color;
+}
+
+.status-field ul.steps > li > .arrow::before {
+  position: absolute;
+  top: -21px;
+  right: 1px;
+  display: block;
+  border: 21px solid transparent;
+  border-right: 0;
+  border-left: 14px solid @wizard-bg-color;
+  content: "";
+}
+
+.status-field ul.steps > li.active > .arrow::before {
+  border-left: 14px solid @wizard-bg-color-active;
+}
+
+.status-field.bg-deep-purple ul.steps > li.active {
+  background-color: @brand-deep-purple;
+}
+.status-field.bg-deep-purple ul.steps > li.active > .arrow::before {
+  border-left: 14px solid @brand-deep-purple;
+}
+
+.status-field.bg-deep-orange ul.steps > li.active {
+  background-color: @brand-deep-orange;
+}
+.status-field.bg-deep-orange ul.steps > li.active > .arrow::before {
+  border-left: 14px solid @brand-deep-orange;
+}
+
+.panel-heading .status-field-sm {
+  margin-top: -10px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  border: transparent;
+}
+
+.status-field-sm>ul.steps>li {
+  height: 38px;
+  line-height: 37px;
+}
+
+.status-field-sm ul.steps > li > .arrow {
+  top: 0;
+  border: 19px solid transparent;
+  border-right: 0;
+  border-left: 14px solid #ffffff;
+}
+.status-field-sm ul.steps > li > .arrow::before {
+  position: absolute;
+  top: -20px;
+  right: 1px;
+  display: block;
+  border: 19px solid transparent;
+  border-right: 0;
+  border-left: 20px solid @wizard-bg-color;
+  content: "";
+}
+
+.panel-heading .status-field-sm ul.steps > li > .arrow::before {
+  top: -19px;
+}
+
+.panel-heading .status-field>ul.steps>li,
+.panel-heading .status-field>ul.steps>li:first-child {
+  border: 0;
+}
