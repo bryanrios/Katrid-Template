@@ -5,13 +5,13 @@
 }
 
 .skin(@bg-color; @h-menu: #ec8157) {
-  #header.navbar {
+  #header.navbar1 {
     border: none;
     border-bottom: 1px solid #d9dbda;
   }
 
   #left-menu .user-profile-menu {
-    background: @bg-color;
+    background: transparent;
     color: #f2f2f2;
   }
 
@@ -33,7 +33,7 @@
     }
   }
 
-  .navbar-header {
+  .navbar-header1 {
     width: 220px;
     border-right: none;
     background: lighten(@bg-color, 8%);
@@ -129,7 +129,7 @@
 }
 
 .default-skin {
-  .skin(#2f3e4d);
+  .skin(#2f3e4d, #2f3e4d);
 }
 
 .gray-skin {
