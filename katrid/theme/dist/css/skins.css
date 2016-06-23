@@ -15,7 +15,6 @@
 }
 .default-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .default-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -35,18 +34,17 @@
   border: 1px solid #3e5266;
   border-radius: 4px;
 }
-.default-skin .navbar-header1 {
+.default-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #3e5266;
-  border-color: transparent;
 }
-.default-skin .navbar-header1 > a,
-.default-skin .navbar-header1 > a.navbar-brand:focus {
+.default-skin .navbar-header > a,
+.default-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #edf1f4;
 }
-.default-skin .navbar-header1 > a.navbar-brand:hover {
+.default-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .default-skin #left-menu.skin .menu-item > a {
@@ -105,7 +103,6 @@
 }
 .gray-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .gray-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -125,18 +122,17 @@
   border: 1px solid #575555;
   border-radius: 4px;
 }
-.gray-skin .navbar-header1 {
+.gray-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #575555;
-  border-color: transparent;
 }
-.gray-skin .navbar-header1 > a,
-.gray-skin .navbar-header1 > a.navbar-brand:focus {
+.gray-skin .navbar-header > a,
+.gray-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #f4f4f4;
 }
-.gray-skin .navbar-header1 > a.navbar-brand:hover {
+.gray-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .gray-skin #left-menu.skin .menu-item > a {
@@ -195,7 +191,6 @@
 }
 .blue-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .blue-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -215,18 +210,17 @@
   border: 1px solid #2c8dce;
   border-radius: 4px;
 }
-.blue-skin .navbar-header1 {
+.blue-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #2c8dce;
-  border-color: transparent;
 }
-.blue-skin .navbar-header1 > a,
-.blue-skin .navbar-header1 > a.navbar-brand:focus {
+.blue-skin .navbar-header > a,
+.blue-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #ffffff;
 }
-.blue-skin .navbar-header1 > a.navbar-brand:hover {
+.blue-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .blue-skin #left-menu.skin .menu-item > a {
@@ -285,7 +279,6 @@
 }
 .red-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .red-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -305,18 +298,17 @@
   border: 1px solid #f28686;
   border-radius: 4px;
 }
-.red-skin .navbar-header1 {
+.red-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #f28686;
-  border-color: transparent;
 }
-.red-skin .navbar-header1 > a,
-.red-skin .navbar-header1 > a.navbar-brand:focus {
+.red-skin .navbar-header > a,
+.red-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #ffffff;
 }
-.red-skin .navbar-header1 > a.navbar-brand:hover {
+.red-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .red-skin #left-menu.skin .menu-item > a {
@@ -375,7 +367,6 @@
 }
 .navy-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .navy-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -395,18 +386,17 @@
   border: 1px solid #2a5370;
   border-radius: 4px;
 }
-.navy-skin .navbar-header1 {
+.navy-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #2a5370;
-  border-color: transparent;
 }
-.navy-skin .navbar-header1 > a,
-.navy-skin .navbar-header1 > a.navbar-brand:focus {
+.navy-skin .navbar-header > a,
+.navy-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #e2edf4;
 }
-.navy-skin .navbar-header1 > a.navbar-brand:hover {
+.navy-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .navy-skin #left-menu.skin .menu-item > a {
@@ -465,7 +455,6 @@
 }
 .deep-purple-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .deep-purple-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -485,18 +474,17 @@
   border: 1px solid #6136c8;
   border-radius: 4px;
 }
-.deep-purple-skin .navbar-header1 {
+.deep-purple-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #6136c8;
-  border-color: transparent;
 }
-.deep-purple-skin .navbar-header1 > a,
-.deep-purple-skin .navbar-header1 > a.navbar-brand:focus {
+.deep-purple-skin .navbar-header > a,
+.deep-purple-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #ffffff;
 }
-.deep-purple-skin .navbar-header1 > a.navbar-brand:hover {
+.deep-purple-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .deep-purple-skin #left-menu.skin .menu-item > a {
@@ -555,7 +543,6 @@
 }
 .purple-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .purple-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -575,18 +562,17 @@
   border: 1px solid #e668fc;
   border-radius: 4px;
 }
-.purple-skin .navbar-header1 {
+.purple-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #e668fc;
-  border-color: transparent;
 }
-.purple-skin .navbar-header1 > a,
-.purple-skin .navbar-header1 > a.navbar-brand:focus {
+.purple-skin .navbar-header > a,
+.purple-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #ffffff;
 }
-.purple-skin .navbar-header1 > a.navbar-brand:hover {
+.purple-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .purple-skin #left-menu.skin .menu-item > a {
@@ -645,7 +631,6 @@
 }
 .indigo-skin #header.navbar {
   border: none;
-  border-bottom: 1px solid #d9dbda;
 }
 .indigo-skin #left-menu .user-profile-menu {
   background: transparent;
@@ -665,18 +650,17 @@
   border: 1px solid #394bbe;
   border-radius: 4px;
 }
-.indigo-skin .navbar-header1 {
+.indigo-skin .navbar-header {
   width: 220px;
   border-right: none;
   background: #394bbe;
-  border-color: transparent;
 }
-.indigo-skin .navbar-header1 > a,
-.indigo-skin .navbar-header1 > a.navbar-brand:focus {
+.indigo-skin .navbar-header > a,
+.indigo-skin .navbar-header > a.navbar-brand:focus {
   transition: all 300ms;
   color: #ffffff;
 }
-.indigo-skin .navbar-header1 > a.navbar-brand:hover {
+.indigo-skin .navbar-header > a.navbar-brand:hover {
   color: #ffffff;
 }
 .indigo-skin #left-menu.skin .menu-item > a {
