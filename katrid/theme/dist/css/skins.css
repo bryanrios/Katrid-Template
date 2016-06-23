@@ -13,7 +13,7 @@
 .navbar.navbar-skin li.border-right {
   border-right: none;
 }
-.default-skin #header.navbar1 {
+.default-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -103,7 +103,7 @@
 .default-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.gray-skin #header.navbar1 {
+.gray-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -193,7 +193,7 @@
 .gray-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.blue-skin #header.navbar1 {
+.blue-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -283,7 +283,7 @@
 .blue-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.red-skin #header.navbar1 {
+.red-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -373,7 +373,7 @@
 .red-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.navy-skin #header.navbar1 {
+.navy-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -463,7 +463,7 @@
 .navy-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.deep-purple-skin #header.navbar1 {
+.deep-purple-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -553,7 +553,7 @@
 .deep-purple-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.purple-skin #header.navbar1 {
+.purple-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
@@ -643,7 +643,7 @@
 .purple-skin .navbar-skin .navbar-search-control:-ms-input-placeholder {
   color: #e8e8e8;
 }
-.indigo-skin #header.navbar1 {
+.indigo-skin #header.navbar {
   border: none;
   border-bottom: 1px solid #d9dbda;
 }
