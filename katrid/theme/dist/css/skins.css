@@ -37,7 +37,7 @@
 .default-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #3e5266;
+  background: #2f3e4d;
 }
 .default-skin .navbar-header > a,
 .default-skin .navbar-header > a.navbar-brand:focus {
@@ -125,7 +125,7 @@
 .gray-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #575555;
+  background: #424141;
 }
 .gray-skin .navbar-header > a,
 .gray-skin .navbar-header > a.navbar-brand:focus {
@@ -213,7 +213,7 @@
 .blue-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #2c8dce;
+  background: #2576ad;
 }
 .blue-skin .navbar-header > a,
 .blue-skin .navbar-header > a.navbar-brand:focus {
@@ -301,7 +301,7 @@
 .red-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #f28686;
+  background: #ee6161;
 }
 .red-skin .navbar-header > a,
 .red-skin .navbar-header > a.navbar-brand:focus {
@@ -389,7 +389,7 @@
 .navy-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #2a5370;
+  background: #1f3d52;
 }
 .navy-skin .navbar-header > a,
 .navy-skin .navbar-header > a.navbar-brand:focus {
@@ -477,7 +477,7 @@
 .deep-purple-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #6136c8;
+  background: #512DA8;
 }
 .deep-purple-skin .navbar-header > a,
 .deep-purple-skin .navbar-header > a.navbar-brand:focus {
@@ -565,7 +565,7 @@
 .purple-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #e668fc;
+  background: #E040FB;
 }
 .purple-skin .navbar-header > a,
 .purple-skin .navbar-header > a.navbar-brand:focus {
@@ -653,7 +653,7 @@
 .indigo-skin .navbar-header {
   width: 220px;
   border-right: none;
-  background: #394bbe;
+  background: #303F9F;
 }
 .indigo-skin .navbar-header > a,
 .indigo-skin .navbar-header > a.navbar-brand:focus {
